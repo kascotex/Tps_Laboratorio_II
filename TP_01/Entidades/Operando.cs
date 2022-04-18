@@ -13,9 +13,8 @@ namespace Entidades
 
 
 
-        public Operando()
+        public Operando() : this(0)
         {
-            numero = 0;
         }
         public Operando(string strNumero)
         {

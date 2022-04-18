@@ -74,10 +74,9 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void ButtonConvertirEnBinario_Click(object sender, EventArgs e)
         {
-            int num;
             string msj = "Sólo los números enteros se podrán convertir a Binarios.\n\n";
 
-            if (int.TryParse(labelResultado.Text, out num))
+            if (int.TryParse(labelResultado.Text, out int num))
             {
                 labelResultado.Text = new Operando().DecimalBinario(num);
                 listBoxOperaciones.Items.Add($"{num} = {labelResultado.Text}[bin]");
