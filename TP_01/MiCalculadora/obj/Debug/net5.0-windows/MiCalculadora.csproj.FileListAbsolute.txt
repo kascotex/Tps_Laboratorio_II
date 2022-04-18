@@ -40,3 +40,24 @@ C:\Users\Usuario\source\repos\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCal
 C:\Users\Usuario\source\repos\TP_01\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
 C:\Users\Usuario\source\repos\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
 C:\Users\Usuario\source\repos\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\ref\MiCalculadora.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.AssemblyReference.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfo.cs
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CoreCompileInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_01\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache

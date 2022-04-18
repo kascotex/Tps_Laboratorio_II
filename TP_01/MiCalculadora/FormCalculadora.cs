@@ -43,7 +43,6 @@ namespace MiCalculadora
 
                 if (resultado != double.MinValue)
                 {
-                    SetConversores(true);
                     labelResultado.Text = resultado.ToString();
                 }
                 else labelResultado.Text = "ERROR DIV/0!";
@@ -80,7 +79,6 @@ namespace MiCalculadora
 
             if (int.TryParse(labelResultado.Text, out num))
             {
-                SetConversores(true, false);
                 labelResultado.Text = new Operando().DecimalBinario(num);
                 listBoxOperaciones.Items.Add($"{num} = {labelResultado.Text}[bin]");
             }
@@ -99,7 +97,6 @@ namespace MiCalculadora
 
             if (num != "Valor inválido")
             {
-                SetConversores(false, true);
                 listBoxOperaciones.Items.Add($"{labelResultado.Text}[bin] = {num}");
                 labelResultado.Text = num;
             }
@@ -117,7 +114,6 @@ namespace MiCalculadora
             textBoxNumero1.Text = textBoxNumero2.Text = string.Empty;
             labelResultado.Text = "";
             comboBoxOperador.SelectedIndex = -1;
-            SetConversores(false);
         }
         /// <summary>
         /// Borra los datos del formulario
@@ -157,19 +153,6 @@ namespace MiCalculadora
             Close();
         }
 
-
-
-
-        // metodos hechos para no repetir codigo
-        private void SetConversores(bool permitir)
-        {
-            SetConversores(permitir, permitir);
-        }
-        private void SetConversores(bool aDecimal, bool aBinario)
-        {
-            buttonConvertirEnBinario.Enabled = aBinario;
-            buttonConvertirEnDecimal.Enabled = aDecimal;
-        }
 
 
         // metodo hecho para brindar ayuda al usuario
