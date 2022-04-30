@@ -31,3 +31,13 @@ C:\Users\Usuario\Downloads\Tp2\TP-02-Cascara.r2\TP-02\TP-02\bin\Debug\Entidades.
 C:\Users\Usuario\Downloads\Tp2\TP-02-Cascara.r2\TP-02\TP-02\bin\Debug\Entidades.pdb
 C:\Users\Usuario\Downloads\Tp2\TP-02-Cascara.r2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\Usuario\Downloads\Tp2\TP-02-Cascara.r2\TP-02\TP-02\obj\Debug\TP-02.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\bin\Debug\TP-02.exe.config
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\bin\Debug\TP-02.exe
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\bin\Debug\TP-02.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\bin\Debug\Entidades.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\bin\Debug\Entidades.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\obj\Debug\TP-02.exe
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_02\TP-02\obj\Debug\TP-02.pdb

@@ -27,10 +27,9 @@ namespace Entidades
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine(".---------------------------.");
-            sb.AppendLine("|           SUV             |");
-            sb.AppendLine("|--------.------------------|");
+            sb.AppendLine(".-----.");
+            sb.AppendLine("| SUV |");
+            sb.AppendLine("|-----'--.------------------.");
             sb.Append(base.Mostrar());
 
             return sb.ToString();

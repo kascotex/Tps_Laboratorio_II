@@ -49,11 +49,11 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(string.Format("| CHASIS : {0,-17}|", p.chasis));
-            sb.AppendLine(string.Format("| MARCA  : {0,-17}|", p.marca.ToString()));
-            sb.AppendLine(string.Format("| COLOR  : {0,-17}|", p.color.ToString()));
-            sb.AppendLine(string.Format("| TAMAÑO : {0,-17}|", p.Tamanio));
-                          sb.AppendLine("'--------'------------------'");
+            sb.AppendFormat("| CHASIS : {0,-17}|\n", p.chasis);
+            sb.AppendFormat("| MARCA  : {0,-17}|\n", p.marca);
+            sb.AppendFormat("| COLOR  : {0,-17}|\n", p.color);
+            sb.AppendFormat("| TAMAÑO : {0,-17}|\n", p.Tamanio);
+            sb.AppendLine("'--------'------------------'");
 
             return sb.ToString();
         }

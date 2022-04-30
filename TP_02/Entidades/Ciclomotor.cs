@@ -28,9 +28,9 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine(".---------------------------.");
-            sb.AppendLine("|        CICLOMOTOR         |");
-            sb.AppendLine("|--------.------------------|");
+            sb.AppendLine(".------------.");
+            sb.AppendLine("| CICLOMOTOR |");
+            sb.AppendLine("|--------.---'--------------.");
             sb.Append(base.Mostrar());
 
             return sb.ToString();

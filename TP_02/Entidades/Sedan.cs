@@ -47,10 +47,10 @@ namespace Entidades
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(".---------------------------.");
-            sb.AppendLine("|           SEDAN           |");
-            sb.AppendLine("|--------.------------------|");
-            sb.AppendLine(string.Format("| TIPO   : {0,-17}|", this.tipo));
+            sb.AppendLine(".-------.");
+            sb.AppendLine("| SEDAN |");
+            sb.AppendLine("|-------'.------------------.");
+            sb.AppendFormat("| TIPO   : {0,-17}|\n", this.tipo);
             sb.Append(base.Mostrar());
 
             return sb.ToString();
