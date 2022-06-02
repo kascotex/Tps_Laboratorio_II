@@ -1,0 +1,119 @@
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\CarteleraUnder\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\PP_Labo_II_2D_1er_cuatri_2022\PP_Labo_II_2D_1er_cuatri_2022-eee99048558c24c1125a8b7e752eb23a5b75bc25\LES_UTN_Bar\MisFunciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\00 Mis Funciones\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Nuevo\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Heladeria\MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.AssemblyReference.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.pdb

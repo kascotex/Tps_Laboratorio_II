@@ -1,0 +1,30 @@
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.deps.json
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\ref\Biblioteca.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.pdb
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CopyComplete
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\ref\Biblioteca.dll
+C:\Users\Usuario\source\repos\Apellido.Nombre.Division.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.deps.json
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\ref\Biblioteca.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.pdb
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.AssemblyReference.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfoInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfo.cs
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CoreCompileInputs.cache
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CopyComplete
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\ref\Biblioteca.dll
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.pdb

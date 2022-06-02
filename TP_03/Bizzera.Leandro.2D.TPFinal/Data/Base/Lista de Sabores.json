@@ -1,0 +1,116 @@
+[
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Chocolate",
+    "Costo": 258,
+    "Stock": 30000,
+    "Etiquetas": [
+      1,
+      5
+    ],
+    "EtiquetasString": [
+      "Chocolates",
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Chocolate Con Almendras",
+    "Costo": 205,
+    "Stock": 30000,
+    "Etiquetas": [
+      1,
+      5
+    ],
+    "EtiquetasString": [
+      "Chocolates",
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Chocolate Amargo",
+    "Costo": 224,
+    "Stock": 30000,
+    "Etiquetas": [
+      1,
+      5
+    ],
+    "EtiquetasString": [
+      "Chocolates",
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Crema",
+    "Costo": 232,
+    "Stock": 30000,
+    "Etiquetas": [
+      0,
+      5
+    ],
+    "EtiquetasString": [
+      "Cremas",
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Granizado",
+    "Costo": 206,
+    "Stock": 30000,
+    "Etiquetas": [
+      0,
+      5
+    ],
+    "EtiquetasString": [
+      "Cremas",
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Dulce de Leche",
+    "Costo": 215,
+    "Stock": 30000,
+    "Etiquetas": [
+      5
+    ],
+    "EtiquetasString": [
+      "De_Crema"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Frutilla",
+    "Costo": 255,
+    "Stock": 30000,
+    "Etiquetas": [
+      4
+    ],
+    "EtiquetasString": [
+      "De_Agua"
+    ]
+  },
+  {
+    "Id": 0,
+    "Minimo": 20000,
+    "Nombre": "Limon",
+    "Costo": 210,
+    "Stock": 30000,
+    "Etiquetas": [
+      4
+    ],
+    "EtiquetasString": [
+      "De_Agua"
+    ]
+  }
+]
