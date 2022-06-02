@@ -30,7 +30,7 @@ namespace Heladeria
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CtrlOpciones));
-            this.buttonEstadisticas = new System.Windows.Forms.Button();
+            this.buttonClientes = new System.Windows.Forms.Button();
             this.buttonFacturacion = new System.Windows.Forms.Button();
             this.buttonVentas = new System.Windows.Forms.Button();
             this.buttonEmpleados = new System.Windows.Forms.Button();
@@ -38,18 +38,18 @@ namespace Heladeria
             this.buttonInicio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonEstadisticas
+            // buttonClientes
             // 
-            this.buttonEstadisticas.BackColor = System.Drawing.Color.Transparent;
-            this.buttonEstadisticas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEstadisticas.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonEstadisticas.FlatAppearance.BorderSize = 3;
-            this.buttonEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEstadisticas.Location = new System.Drawing.Point(0, 400);
-            this.buttonEstadisticas.Name = "buttonEstadisticas";
-            this.buttonEstadisticas.Size = new System.Drawing.Size(140, 100);
-            this.buttonEstadisticas.TabIndex = 5;
-            this.buttonEstadisticas.UseVisualStyleBackColor = false;
+            this.buttonClientes.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonClientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonClientes.FlatAppearance.BorderSize = 3;
+            this.buttonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClientes.Location = new System.Drawing.Point(0, 400);
+            this.buttonClientes.Name = "buttonClientes";
+            this.buttonClientes.Size = new System.Drawing.Size(140, 100);
+            this.buttonClientes.TabIndex = 5;
+            this.buttonClientes.UseVisualStyleBackColor = false;
             // 
             // buttonFacturacion
             // 
@@ -124,7 +124,7 @@ namespace Heladeria
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Controls.Add(this.buttonEstadisticas);
+            this.Controls.Add(this.buttonClientes);
             this.Controls.Add(this.buttonFacturacion);
             this.Controls.Add(this.buttonVentas);
             this.Controls.Add(this.buttonEmpleados);
@@ -138,7 +138,7 @@ namespace Heladeria
 
         #endregion
 
-        private System.Windows.Forms.Button buttonEstadisticas;
+        private System.Windows.Forms.Button buttonClientes;
         private System.Windows.Forms.Button buttonFacturacion;
         private System.Windows.Forms.Button buttonVentas;
         private System.Windows.Forms.Button buttonEmpleados;

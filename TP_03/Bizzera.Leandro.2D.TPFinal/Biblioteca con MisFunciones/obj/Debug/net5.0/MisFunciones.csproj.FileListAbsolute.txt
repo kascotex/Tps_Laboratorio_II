@@ -117,3 +117,15 @@ D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal
 D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.dll
 D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
 D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.deps.json
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\ref\MisFunciones.dll
+C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca con MisFunciones\obj\Debug\net5.0\MisFunciones.pdb

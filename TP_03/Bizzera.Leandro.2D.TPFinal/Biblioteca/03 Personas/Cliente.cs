@@ -8,6 +8,7 @@ namespace Biblioteca
 {
     public class Cliente : Persona
     {
+        static int ultimonumSocio;
 
         private int puntos;
         private int numSocio;
@@ -16,19 +17,31 @@ namespace Biblioteca
 
 
 
-        public Cliente(string nombre, string apellido, int numSocio) : base(nombre, apellido)
+        public Cliente()
         {
-            pedidos = new List<int>();
-            alta = DateTime.Now;
-            this.numSocio = numSocio;
         }
-
+        public Cliente(string nombre, string apellido, int dni)
+           : base(nombre, apellido, dni)
+        {
+            numSocio = ++ultimonumSocio;
+            alta = DateTime.Now;
+            pedidos = new List<int>();
+        }
+        public Cliente(string nombre, string apellido, int dni, DateTime alta)
+            : this(nombre, apellido, dni)
+        {
+            this.alta = alta;
+        }
 
 
         public int NumSocio
         {
             get { return numSocio; }
             set { numSocio = value; }
+        }
+        public string NumSocioString
+        {
+            get { return IdToString(NumSocio); }
         }
         public int Puntos
         {
@@ -45,6 +58,7 @@ namespace Biblioteca
             get { return pedidos; }
             set { pedidos = value; }
         }
+
 
 
         private void CalcularPuntaje(Pedido pedido)

@@ -77,7 +77,7 @@
         LigqAdJ/gNgoJbU4mYGB0QDIzi4vKQCKM84BskWSssHsDSB2UUiQM5B9BMjmS4ewr4DYSRD2ExC7COgJ
         IPsLSH06mM3EATYHwpYBsUtSK0D2MjjnF1QWZaZnlCgYWlpaKjim5CelKgRXFpek5hYreOYl5xcV5Bcl
         lqSmANVC3AcGghCFoBDTAGq00GSgMgDFA4T1ORAcvoxiZxBiCJBcWlQGZTIyGRPmI8yYI8HA4L+UgYHl
-        D0LMpJeBYYEOAwP/VISYmiEDg4A+A8O+OQDAxk/9b5LlBAAAAAlwSFlzAAALDgAACw4BQL7hQQAAAAd0
+        D0LMpJeBYYEOAwP/VISYmiEDg4A+A8O+OQDAxk/9b5LlBAAAAAlwSFlzAAALDAAACwwBP0AiyAAAAAd0
         SU1FB+MCCwwaORf3nFoAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAA/iBJREFU
         eF5s/WV7JEm6rAv3mmkurpJKzMzMzEpGQYqZuaQSs1TM0Dw9Pbhw773O+YP2mnkou3vt837wK1KphMgI
         99vN3B9//BNX0jV0xnyJtuivWK7BlngH/sx78KXeRHecnvsCrVelna8Ll67Yr/i+r9B47xp8TaVYdRdi
@@ -2067,7 +2067,7 @@
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>46</value>
+    <value>40</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

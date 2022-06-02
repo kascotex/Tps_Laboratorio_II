@@ -13,7 +13,7 @@ namespace Biblioteca
 
 
         /// <summary>
-        /// Crea un BarUTN y le carga los datos harcodeados
+        /// Crea una Heladeria y le carga los datos harcodeados
         /// </summary>
         /// <returns></returns>       
         public static void CrearHeladeria()
@@ -22,18 +22,20 @@ namespace Biblioteca
             Empresa.Empleados = CrearPersonal(5, 9);
             Empresa.Sabores = CrearSabores();
             Empresa.Envases = CrearEnvases();
+            Empresa.Clientes = CrearCliente(50);
         }
+
 
         private static List<Envase> CrearEnvases()
         {
             List<Envase> lista = new List<Envase>();
 
-            lista.Add(new Envase("Kilo",4));
-            lista.Add(new Envase("Medio",4));
-            lista.Add(new Envase("Cuarto",3));
-            lista.Add(new Envase("Tacita",3));
-            lista.Add(new Envase("Cucurucho",2));
-            lista.Add(new Envase("Vasito",2));
+            lista.Add(new Envase("Kilo", 4));
+            lista.Add(new Envase("Medio", 4));
+            lista.Add(new Envase("Cuarto", 3));
+            lista.Add(new Envase("Tacita", 3));
+            lista.Add(new Envase("Cucurucho", 2));
+            lista.Add(new Envase("Vasito", 2));
 
             return lista;
         }
@@ -43,19 +45,20 @@ namespace Biblioteca
             List<Sabor.ETipo> listaChoco = new List<Sabor.ETipo>();
             List<Sabor.ETipo> listaCrema = new List<Sabor.ETipo>();
             List<Sabor> lista = new List<Sabor>();
+
             listaChoco.Add(Sabor.ETipo.Chocolates);
             listaChoco.Add(Sabor.ETipo.De_Crema);
             listaCrema.Add(Sabor.ETipo.Cremas);
             listaCrema.Add(Sabor.ETipo.De_Crema);
 
-            lista.Add(new Sabor("Chocolate", CostoRnd(), listaChoco,30000));
-            lista.Add(new Sabor("Chocolate Con Almendras", CostoRnd(), listaChoco,30000));
-            lista.Add(new Sabor("Chocolate Amargo", CostoRnd(), listaChoco,30000));
+            lista.Add(new Sabor("Chocolate", CostoRnd(), listaChoco, 30000));
+            lista.Add(new Sabor("Chocolate Con Almendras", CostoRnd(), listaChoco, 30000));
+            lista.Add(new Sabor("Chocolate Amargo", CostoRnd(), listaChoco, 30000));
             lista.Add(new Sabor("Crema", CostoRnd(), listaCrema, 30000));
             lista.Add(new Sabor("Granizado", CostoRnd(), listaCrema, 30000));
-            lista.Add(new Sabor("Dulce de Leche", CostoRnd(), Sabor.ETipo.De_Crema,30000));
-            lista.Add(new Sabor("Frutilla", CostoRnd(), Sabor.ETipo.De_Agua,30000));
-            lista.Add(new Sabor("Limon", CostoRnd(), Sabor.ETipo.De_Agua,30000));
+            lista.Add(new Sabor("Dulce de Leche", CostoRnd(), Sabor.ETipo.De_Crema, 30000));
+            lista.Add(new Sabor("Frutilla", CostoRnd(), Sabor.ETipo.De_Agua, 30000));
+            lista.Add(new Sabor("Limon", CostoRnd(), Sabor.ETipo.De_Agua, 30000));
 
             return lista;
         }
@@ -63,11 +66,11 @@ namespace Biblioteca
 
 
         /// <summary>
-        /// Crea una lista de usuarios 
+        /// Crea una lista de empleados 
         /// </summary>
-        /// <param name="administrativos">Cantidad de usuarios con el puesto administrativo</param>
-        /// <param name="empleados">Cantidad de usuarios con el puesto empleados</param>
-        /// <returns>Una lista de usuarios con la suma
+        /// <param name="administrativos">Cantidad de empleados con el puesto administrativo</param>
+        /// <param name="empleados">Cantidad de empleados con el puesto empleados</param>
+        /// <returns>Una lista de empleados con la suma
         /// de las cantidades en los puestos indicados</returns>
         private static List<Empleado> CrearPersonal(int administrativos, int empleados)
         {
@@ -76,14 +79,14 @@ namespace Biblioteca
             lista.AddRange(CrearPersonalAdministrativo(administrativos));
             lista.AddRange(CrearPersonalEmpleado(empleados));
 
-            return CargarClaves(lista);
+            return lista;
         }
 
         /// <summary>
-        /// Crea una lista de usuarios en el puesto administrativo
+        /// Crea una lista de empleados en el puesto administrativo
         /// </summary>
-        /// <param name="administrativos">Cantidad de usuarios en el puesto administrativo</param>
-        /// <returns>Una lista de usuarios en el puesto administrativo</returns>
+        /// <param name="administrativos">Cantidad de empleados en el puesto administrativo</param>
+        /// <returns>Una lista de empleados en el puesto administrativo</returns>
         private static List<Empleado> CrearPersonalAdministrativo(int administrativos)
         {
             List<Empleado> lista = new List<Empleado>();
@@ -96,10 +99,10 @@ namespace Biblioteca
         }
 
         /// <summary>
-        /// Crea una lista de usuarios en el puesto empleado
+        /// Crea una lista de empleados en el puesto empleado
         /// </summary>
-        /// <param name="empleados">Cantidad de usuarios en el puesto empleado</param>
-        /// <returns>Una lista de usuarios en el puesto empleado</returns>
+        /// <param name="empleados">Cantidad de empleados en el puesto empleado</param>
+        /// <returns>Una lista de empleados en el puesto empleado</returns>
         private static List<Empleado> CrearPersonalEmpleado(int empleados)
         {
             List<Empleado> lista = new List<Empleado>();
@@ -112,27 +115,13 @@ namespace Biblioteca
         }
 
         /// <summary>
-        /// Crea un usuario en el puesto pasado como parametro
+        /// Crea un empleados en el puesto pasado como parametro
         /// </summary>
-        /// <param name="puesto">puesto que tendra el usuario</param>
-        /// <returns>Un usuario con el puesto indicado</returns>
+        /// <param name="puesto">puesto que tendra el empleados</param>
+        /// <returns>Un empleados con el puesto indicado</returns>
         private static Empleado CrearUsuario(Empleado.EPuesto puesto)
         {
             return new Empleado(DniRnd(), EdadRnd(), NombreRnd(), ApellidoRnd(), puesto);
-        }
-
-        /// <summary>
-        /// Carga las claves de la lista de usuarios pasada como parametro
-        /// </summary>
-        /// <param name="personal">Lista de usuarios</param>
-        /// <returns>Lista de usuarios con las claves cargadas</returns>
-        private static List<Empleado> CargarClaves(List<Empleado> personal)
-        {
-            foreach (Empleado item in personal)
-            {
-                item.Clave = "xxx";
-            }
-            return personal;
         }
 
 
@@ -158,7 +147,15 @@ namespace Biblioteca
         /// <returns>Un cliente</returns>
         public static Cliente CrearCliente()
         {
-            return new Cliente(NombreRnd(), ApellidoRnd(),0);
+            int dni;
+
+            do
+            {
+                dni = DniRnd();
+
+            } while (!Empresa.EsDniRepetido(dni));
+
+            return new Cliente(NombreRnd(), ApellidoRnd(), dni, FechaAltaRnd());
         }
 
 
@@ -179,22 +176,21 @@ namespace Biblioteca
             return false;
         }
 
-        /// <summary>
-        /// Simula una clave random
-        /// </summary>
-        /// <returns>Devuelve una clave random</returns>
-        private static string ClaveRnd()
+
+
+
+        private static DateTime FechaAltaRnd()
         {
-            string[] clave = {"qwerty123", "000000", "1q2w3e", "aa1234", "abc123", "qwertyuiop", "123321", "1q2w3e4r5t",
-                              "iloveyou", "666", "9876", "qwe123", "1q2w3e4r", "1qaz2wsx", "123qwe", "zxcvbnm", "asdasd",
-                              "dragon", "monkey", "qazwsx", "159753", "asdfg", "123abc", "asdfgh", "myspace", "football",
-                              "princess", "sunshine", "computer", "shadow", "killer", "asd123", "superman", "master", "7.zip",
-                              "azerty", "zxcvbn", "target123", "baseball", "qwert", "asdasd123", "soccer", "tinkle", "asdf",
-                              "test1", "zag12wsx", "147258", "qweqwe", "pokemon", "welcome", "hello", "andrew", "Status",
-                              "fyou", "hunter", "princess","joshua", "2Min", "1Seg", "809.461", "1qazxsw2", "love123",
-                              "letmein", "secret", "freedom", "internet", "q1w2e3", "starwars", "mynoob", "lol123", "xxx"
-                             };
-            return clave[rnd.Next(0, 70)];
+            return FechaRnd(true, 2400, 24);
+        }
+        private static DateTime FechaRnd(bool previo, int max, int min)
+        {
+            int horas = rnd.Next(min, max);
+            int minutos = rnd.Next(1, 60);
+
+            if (previo) horas *= -1;
+
+            return DateTime.Now.Add(new TimeSpan(horas, minutos, 0));
         }
 
         /// <summary>
@@ -212,13 +208,13 @@ namespace Biblioteca
         /// <returns>Devuelve un numero entre (10456400, 47681739) random</returns>
         private static int EdadRnd()
         {
-            return rnd.Next(20, 60);
+            return rnd.Next(20, 70);
         }
 
         /// <summary>
         /// Simula un costo random
         /// </summary>
-        /// <returns>Devuelve un numero entre (10456400, 47681739) random</returns>
+        /// <returns>Devuelve un numero entre (200, 300) random</returns>
         private static int CostoRnd()
         {
             return rnd.Next(200, 300);

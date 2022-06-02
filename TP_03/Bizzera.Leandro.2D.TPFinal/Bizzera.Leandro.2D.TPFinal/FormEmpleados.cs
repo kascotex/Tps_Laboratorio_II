@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Heladeria
 {
-    public partial class FormEmpleados : Form
+    public partial class FormEmpleados : Form, IControlOpcionActual
     {
         private string opcionActual;
         CtrlEmpleado ctrlActual;
@@ -22,7 +22,7 @@ namespace Heladeria
             InitializeComponent();
         }
 
-
+       
         public string OpcionActual
         {
             get { return opcionActual; }
@@ -93,7 +93,7 @@ namespace Heladeria
             string apellido = textBoxApellido.Text;
             string nombre = textBoxNombre.Text;
 
-            msj = Empleado.EsEmpleadoValido(nombre, apellido, edad, dni,true);
+            msj = Empleado.EsEmpleadoValido(nombre, apellido, edad, dni, true);
 
             if (string.IsNullOrEmpty(msj))
             {
@@ -109,7 +109,7 @@ namespace Heladeria
         private bool EditarEmpleado(Empleado empleado)
         {
             string msj;
-              
+
             Empleado.EPuesto puesto = (Empleado.EPuesto)comboBoxPuesto.SelectedValue;
             int.TryParse(textBoxDni.Text.Remove(0, 6), out int dni);
             int edad = (int)numericUpDownEdad.Value;

@@ -48,6 +48,9 @@ namespace Heladeria
             this.buttonChocolate = new System.Windows.Forms.Button();
             this.pictureBoxEnvase = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelSabores = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBoxSabores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnvase)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +74,7 @@ namespace Heladeria
             // 
             // ctrlEnvases
             // 
+            this.ctrlEnvases.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ctrlEnvases.BackColor = System.Drawing.Color.Transparent;
             this.ctrlEnvases.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ctrlEnvases.BackgroundImage")));
             this.ctrlEnvases.Location = new System.Drawing.Point(1100, 0);
@@ -236,9 +240,9 @@ namespace Heladeria
             // pictureBoxEnvase
             // 
             this.pictureBoxEnvase.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxEnvase.Location = new System.Drawing.Point(146, 9);
+            this.pictureBoxEnvase.Location = new System.Drawing.Point(150, 3);
             this.pictureBoxEnvase.Name = "pictureBoxEnvase";
-            this.pictureBoxEnvase.Size = new System.Drawing.Size(250, 250);
+            this.pictureBoxEnvase.Size = new System.Drawing.Size(300, 300);
             this.pictureBoxEnvase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEnvase.TabIndex = 11;
             this.pictureBoxEnvase.TabStop = false;
@@ -246,19 +250,54 @@ namespace Heladeria
             // flowLayoutPanelSabores
             // 
             this.flowLayoutPanelSabores.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanelSabores.Location = new System.Drawing.Point(146, 268);
+            this.flowLayoutPanelSabores.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanelSabores.Location = new System.Drawing.Point(150, 320);
             this.flowLayoutPanelSabores.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelSabores.Name = "flowLayoutPanelSabores";
-            this.flowLayoutPanelSabores.Size = new System.Drawing.Size(250, 300);
+            this.flowLayoutPanelSabores.Size = new System.Drawing.Size(300, 265);
             this.flowLayoutPanelSabores.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGreen;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(534, 518);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 50);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Agregar\r\nPedido";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(721, 518);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 50);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(908, 518);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 50);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Terminar";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // FormVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanelSabores);
             this.Controls.Add(this.pictureBoxEnvase);
             this.Controls.Add(this.groupBoxSabores);
@@ -267,6 +306,8 @@ namespace Heladeria
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
@@ -299,5 +340,8 @@ namespace Heladeria
         private System.Windows.Forms.Button buttonChocolate;
         private System.Windows.Forms.PictureBox pictureBoxEnvase;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSabores;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Heladeria
 {
-    public partial class FormVentas : Form
+    public partial class FormVentas : Form, IControlOpcionActual
     {
         private string opcionActual;
         Envase envaseActual;

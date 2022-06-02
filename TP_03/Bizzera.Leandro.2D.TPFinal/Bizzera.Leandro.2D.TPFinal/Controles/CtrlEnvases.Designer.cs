@@ -49,9 +49,8 @@ namespace Heladeria
             this.pictureBoxVasito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxVasito.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxVasito.Image")));
             this.pictureBoxVasito.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxVasito.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxVasito.Name = "pictureBoxVasito";
-            this.pictureBoxVasito.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxVasito.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxVasito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxVasito.TabIndex = 0;
             this.pictureBoxVasito.TabStop = false;
@@ -60,9 +59,8 @@ namespace Heladeria
             // 
             this.pictureBoxTacita.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxTacita.Location = new System.Drawing.Point(0, 200);
-            this.pictureBoxTacita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxTacita.Name = "pictureBoxTacita";
-            this.pictureBoxTacita.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxTacita.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxTacita.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxTacita.TabIndex = 1;
             this.pictureBoxTacita.TabStop = false;
@@ -71,9 +69,8 @@ namespace Heladeria
             // 
             this.pictureBoxMedio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxMedio.Location = new System.Drawing.Point(0, 400);
-            this.pictureBoxMedio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxMedio.Name = "pictureBoxMedio";
-            this.pictureBoxMedio.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxMedio.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxMedio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMedio.TabIndex = 2;
             this.pictureBoxMedio.TabStop = false;
@@ -82,9 +79,8 @@ namespace Heladeria
             // 
             this.pictureBoxKilo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKilo.Location = new System.Drawing.Point(0, 500);
-            this.pictureBoxKilo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxKilo.Name = "pictureBoxKilo";
-            this.pictureBoxKilo.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxKilo.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxKilo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxKilo.TabIndex = 3;
             this.pictureBoxKilo.TabStop = false;
@@ -93,9 +89,8 @@ namespace Heladeria
             // 
             this.pictureBoxCucurucho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCucurucho.Location = new System.Drawing.Point(0, 100);
-            this.pictureBoxCucurucho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxCucurucho.Name = "pictureBoxCucurucho";
-            this.pictureBoxCucurucho.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxCucurucho.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCucurucho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCucurucho.TabIndex = 4;
             this.pictureBoxCucurucho.TabStop = false;
@@ -105,17 +100,15 @@ namespace Heladeria
             this.pictureBoxCuarto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCuarto.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCuarto.Image")));
             this.pictureBoxCuarto.Location = new System.Drawing.Point(0, 300);
-            this.pictureBoxCuarto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBoxCuarto.Name = "pictureBoxCuarto";
-            this.pictureBoxCuarto.Size = new System.Drawing.Size(114, 100);
+            this.pictureBoxCuarto.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCuarto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCuarto.TabIndex = 5;
             this.pictureBoxCuarto.TabStop = false;
             // 
             // CtrlEnvases
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.pictureBoxCuarto);
@@ -124,9 +117,8 @@ namespace Heladeria
             this.Controls.Add(this.pictureBoxMedio);
             this.Controls.Add(this.pictureBoxTacita);
             this.Controls.Add(this.pictureBoxVasito);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CtrlEnvases";
-            this.Size = new System.Drawing.Size(114, 600);
+            this.Size = new System.Drawing.Size(100, 600);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVasito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTacita)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMedio)).EndInit();

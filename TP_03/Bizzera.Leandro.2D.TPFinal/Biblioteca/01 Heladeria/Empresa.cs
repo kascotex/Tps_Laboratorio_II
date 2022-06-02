@@ -9,7 +9,6 @@ namespace Biblioteca
 {
     public static class Empresa
     {
-        const string ARCHIVO_EMPLEADOS = "Lista de Empleados";
 
         /*
         /// Se aplica lo aprendido en la Clase 10 - Excepciones.
@@ -19,8 +18,11 @@ namespace Biblioteca
         /// Se aplica lo aprendido en la clase 14 - Serializacion
         */
 
+        
+
         private static string nombre;
         private static Empleado usuarioActual;
+        private static Cliente clienteActual;
         private static List<Sabor> sabores;
         private static List<Envase> envases;
         private static List<Pedido> pedidos;
@@ -47,6 +49,11 @@ namespace Biblioteca
         {
             get { return usuarioActual; }
             set { usuarioActual = value; }
+        }
+        public static Cliente ClienteActual
+        {
+            get { return clienteActual; }
+            set { clienteActual = value; }
         }
         public static List<Sabor> Sabores
         {
@@ -86,83 +93,36 @@ namespace Biblioteca
         }
 
 
-
-
-
-
-
-        internal static bool EsDniValido(int dni)
+        internal static bool EsDniRepetido(int dni)
         {
-            foreach (Empleado item in empleados)
+            List<Persona> lista = new List<Persona>();
+
+            lista.AddRange(empleados);
+            lista.AddRange(clientes);
+
+            foreach (Persona item in lista)
             {
                 if (item is not null && item.Dni == dni) return false;
             }
+
             return true;
         }
-
-
-
-
 
 
 
         public static void RespaldarInfo()
         {
             GuardarListaEmpleados();
+            GuardarListaClientes();
             GuardarListaSabores();
             GuardarListaEnvases();
         }
         public static void RecuperarInfo()
         {
             CargarListaEmpleados();
+            CargarListaClientes();
             CargarListaEnvases();
             CargarListaSabores();
-        }
-
-
-
-
-        private static void CargarListaSabores()
-        {
-            string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Sabores");
-            try
-            {
-                sabores = new SerializadorJson<List<Sabor>>().Leer(ruta);
-            }
-            catch (Exception e)
-            {
-                Log.GuardarExcepcion(new Exception("Error al cargar lista de sabores", e));
-            }
-        }
-        private static void CargarListaEnvases()
-        {
-            string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Envases");
-            try
-            {
-                envases = new SerializadorJson<List<Envase>>().Leer(ruta);
-            }
-            catch (Exception e)
-            {
-                Log.GuardarExcepcion(new Exception("Error al cargar lista de envases", e));
-            }
-        }
-        private static void CargarListaEmpleados()
-        {
-            string ruta = Ruta.ArchivoXml(Ruta.Base, ARCHIVO_EMPLEADOS);
-            List<Persona> lista = new List<Persona>();
-            try
-            {
-                lista = new SerializadorXml<List<Persona>>().Leer(ruta);
-
-                foreach (Persona item in lista)
-                {
-                    if (item is not null && item is Empleado e) empleados.Add(e);
-                }
-            }
-            catch (Exception e)
-            {
-                Log.GuardarExcepcion(new Exception("Error al cargar lista de empleados", e));
-            }
         }
 
 
@@ -178,21 +138,122 @@ namespace Biblioteca
                 throw;
             }
         }
+        private static T CargarBase<T>(IPersistencia<T> lista, string ruta)
+        {
+            try
+            {
+                return lista.Leer(ruta);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        private static void CargarListaSabores()
+        {
+            string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Sabores");
+            try
+            {
+                sabores = CargarBase(new SerializadorJson<List<Sabor>>(), ruta);
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de sabores", e));
+            }
+        }
+        private static void CargarListaEnvases()
+        {
+            string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Envases");
+            try
+            {
+                envases = CargarBase(new SerializadorJson<List<Envase>>(), ruta);
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de envases", e));
+            }
+        }
+        private static void CargarListaEmpleados()
+        {
+            string ruta = Ruta.ArchivoXml(Ruta.Base, "Lista de Empleados");
+            List<Persona> lista;
+            try
+            {
+                lista = CargarBase(new SerializadorXml<List<Persona>>(),ruta);
+
+                foreach (Persona item in lista)
+                {
+                    if (item is not null && item is Empleado empleado) empleados.Add(empleado);
+                }
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de empleados", e));
+            }
+        }
+        private static void CargarListaClientes()
+        {
+
+            string ruta = Ruta.ArchivoXml(Ruta.Base, "Lista de clientes");
+            List<Persona> lista;
+            try
+            {
+                lista = CargarBase(new SerializadorXml<List<Persona>>(), ruta);
+
+                foreach (Persona item in lista)
+                {
+                    if (item is not null && item is Cliente cliente) clientes.Add(cliente);
+                }
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de clientes", e));
+            }
+        }
+
 
         private static void GuardarListaEmpleados()
         {
-            string ruta = Ruta.ArchivoXml(Ruta.Base, ARCHIVO_EMPLEADOS);
-
             List<Persona> lista = new List<Persona>();
 
             try
             {
-                lista.AddRange(empleados);
-                GuardarBase<List<Persona>>(new SerializadorXml<List<Persona>>(), ruta, lista);
+                lista.AddRange(Empleados);
+                GuardarListaPersonas(lista, "Empleados");
             }
             catch (Exception e)
             {
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de empleados", e));
+            }
+        }
+        private static void GuardarListaClientes()
+        {
+            List<Persona> lista = new List<Persona>();
+
+            try
+            {
+                lista.AddRange(Clientes);
+                GuardarListaPersonas(lista, "Clientes");
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al guardar lista de clientes", e));
+            }
+
+        }
+        private static void GuardarListaPersonas(List<Persona> lista, string tipo)
+        {
+            string ruta = Ruta.ArchivoXml(Ruta.Base, $"Lista de {tipo}");
+
+            try
+            {
+                GuardarBase(new SerializadorXml<List<Persona>>(), ruta, lista);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
         private static void GuardarListaSabores()
@@ -200,7 +261,7 @@ namespace Biblioteca
             string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Sabores");
             try
             {
-                GuardarBase<List<Sabor>>(new SerializadorJson<List<Sabor>>(), ruta, sabores);
+                GuardarBase(new SerializadorJson<List<Sabor>>(), ruta, sabores);
             }
             catch (Exception e)
             {
@@ -212,13 +273,14 @@ namespace Biblioteca
             string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Envases");
             try
             {
-                GuardarBase<List<Envase>>(new SerializadorJson<List<Envase>>(), ruta, envases);
+                GuardarBase(new SerializadorJson<List<Envase>>(), ruta, envases);
             }
             catch (Exception e)
             {
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de envases", e));
             }
         }
+
 
 
     }

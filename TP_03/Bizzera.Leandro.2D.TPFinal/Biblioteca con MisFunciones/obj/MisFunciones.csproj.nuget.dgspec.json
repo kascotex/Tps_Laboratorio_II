@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {}
   },
   "projects": {
-    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "projectName": "MisFunciones",
-        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Usuario\\Documents\\Visual Studio 2019\\Paquetes NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

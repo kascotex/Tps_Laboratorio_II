@@ -50,10 +50,13 @@ namespace Heladeria
             switch (opcion)
             {
                 case "buttonEmpleados":
-                    MostrarFormEmpleados();
+                    MostrarForm(new FormEmpleados());
                     break;
                 case "buttonVentas":
-                    MostrarFormVentas();
+                    MostrarForm(new FormVentas());
+                    break;
+                case "buttonClientes":
+                    MostrarForm(new FormClientes());
                     break;
                 case "buttonSalir":
                     Close();
@@ -63,23 +66,18 @@ namespace Heladeria
             }
         }
 
-        private void MostrarFormEmpleados()// << interfaz IControlOpcioneActual
+        private void MostrarForm(Form form)
         {
-            FormEmpleados form = new FormEmpleados();
-            Hide();
-            form.ShowDialog();
-            Show();
-            ManejadorDeOpciones(form.OpcionActual);
-        }
-        private void MostrarFormVentas()
-        {
-            FormVentas form = new FormVentas();
-            Hide();
-            form.ShowDialog();
-            Show();
-            ManejadorDeOpciones(form.OpcionActual);
+            if (form is IControlOpcionActual f)
+            {
+                Hide();
+                form.ShowDialog();
+                Show();
+                ManejadorDeOpciones(f.OpcionActual);
+            }
         }
 
+       
         public void CtrlOpciones_Click(object sender, EventArgs e)
         {
             if (sender is Control ctrl && ctrl is Button boton)

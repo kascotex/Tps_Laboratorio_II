@@ -40,7 +40,7 @@ namespace Heladeria
             this.labelSabor.ForeColor = System.Drawing.Color.Black;
             this.labelSabor.Location = new System.Drawing.Point(0, 0);
             this.labelSabor.Name = "labelSabor";
-            this.labelSabor.Size = new System.Drawing.Size(240, 70);
+            this.labelSabor.Size = new System.Drawing.Size(290, 60);
             this.labelSabor.TabIndex = 0;
             this.labelSabor.Text = "Sabor Del Helado";
             this.labelSabor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -50,8 +50,7 @@ namespace Heladeria
             this.buttonEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEliminar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEliminar.Location = new System.Drawing.Point(215, 0);
-            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonEliminar.Location = new System.Drawing.Point(265, 0);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(25, 25);
             this.buttonEliminar.TabIndex = 1;
@@ -60,17 +59,15 @@ namespace Heladeria
             // 
             // CtrlSabor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.labelSabor);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CtrlSabor";
-            this.Size = new System.Drawing.Size(240, 70);
+            this.Size = new System.Drawing.Size(290, 60);
             this.Load += new System.EventHandler(this.CtrlSabor_Load);
             this.ResumeLayout(false);
 

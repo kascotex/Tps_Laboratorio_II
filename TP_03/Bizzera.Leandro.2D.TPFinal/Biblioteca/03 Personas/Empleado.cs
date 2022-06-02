@@ -14,7 +14,6 @@ namespace Biblioteca
         public enum EPuesto { Administrativo, Empleado };
 
         private int id;
-        private int dni;
         private int edad;
         private EPuesto puesto;
         private string clave;
@@ -24,19 +23,16 @@ namespace Biblioteca
         public Empleado()
         {
         }
-
-        private Empleado(string nombre, string apellido)
-            : base(nombre, apellido)
+        private Empleado(string nombre, string apellido, int dni)
+            : base(nombre, apellido,dni)
         {
             id = ++ultimoId;
             puesto = EPuesto.Empleado;
             estaLogeado = false;
         }
-
         public Empleado(int dni, int edad, string nombre, string apellido, EPuesto puesto)
-            : this(nombre, apellido)
+            : this(nombre, apellido,dni)
         {
-            this.dni = dni;
             this.edad = edad;
             this.puesto = puesto;
         }
@@ -45,11 +41,7 @@ namespace Biblioteca
         public string IdString
         {
             get { return IdToString(id); }
-        }
-        public string DnIString
-        {
-            get { return string.Format(" DNI : {0}", dni); }
-        }
+        }       
         public string Clave
         {
             set { clave = value; }
@@ -67,12 +59,7 @@ namespace Biblioteca
                 if (value > ultimoId) ultimoId = value + 1;
                 id = value;
             }
-        }        
-        public int Dni
-        {
-            get { return dni; }
-            set { if (Empresa.EsDniValido(value)) dni = value; }
-        }
+        }               
         public EPuesto Puesto
         {
             get { return puesto; }
@@ -84,10 +71,7 @@ namespace Biblioteca
             set { estaLogeado = value; }
         }
 
-        public static string IdToString(int id)
-        {
-            return string.Format(" ID : {0:0000}", id);
-        }
+       
         public static string NextIdString()
         {
             return IdToString(NextId());
@@ -105,7 +89,7 @@ namespace Biblioteca
             if (!EsNombreValido(apellido)) msj += "El apellido es invalido. (solo letras y al menos dos carecteres)\n";
             if (!MfBasic.EnRango(edad, 16, 99)) msj += "La Edad es invalida. (solo numeros desde 16 a 99 años)\n";
             if (!MfBasic.EnRango(dni, 100000, 99999999)) msj += "El Dni es invalido. (solo numeros entre 6 u 8 digitos)\n";
-            if (agregar && !Empresa.EsDniValido(dni)) msj += "El Dni es invalido. (Este Dni ya senencuentra registrado)\n";
+            if (agregar && !Empresa.EsDniRepetido(dni)) msj += "El Dni es invalido. (Este Dni ya senencuentra registrado)\n";
 
             return msj;
         }
