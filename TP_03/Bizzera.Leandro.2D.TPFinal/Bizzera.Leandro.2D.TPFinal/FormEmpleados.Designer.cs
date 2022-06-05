@@ -37,15 +37,17 @@ namespace Heladeria
             this.labelEdad = new System.Windows.Forms.Label();
             this.textBoxDni = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelEmpleados = new System.Windows.Forms.FlowLayoutPanel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.buttonAgregar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.groupBoxEditar = new System.Windows.Forms.GroupBox();
             this.comboBoxPuesto = new System.Windows.Forms.ComboBox();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEdad)).BeginInit();
             this.groupBoxEditar.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxNombre
@@ -125,14 +127,6 @@ namespace Heladeria
             this.flowLayoutPanelEmpleados.TabIndex = 6;
             this.flowLayoutPanelEmpleados.WrapContents = false;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 600);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1200, 22);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // ctrlOpciones
             // 
             this.ctrlOpciones.BackColor = System.Drawing.Color.Transparent;
@@ -204,17 +198,31 @@ namespace Heladeria
             this.comboBoxPuesto.Size = new System.Drawing.Size(240, 29);
             this.comboBoxPuesto.TabIndex = 6;
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 600);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1200, 22);
+            this.statusStrip.TabIndex = 22;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            // 
             // FormEmpleados
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.ctrlOpciones);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.flowLayoutPanelEmpleados);
             this.Controls.Add(this.groupBoxEditar);
             this.DoubleBuffered = true;
@@ -230,6 +238,8 @@ namespace Heladeria
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEdad)).EndInit();
             this.groupBoxEditar.ResumeLayout(false);
             this.groupBoxEditar.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,12 +254,13 @@ namespace Heladeria
         private System.Windows.Forms.Label labelEdad;
         private System.Windows.Forms.TextBox textBoxDni;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelEmpleados;
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private CtrlOpciones ctrlOpciones;
         private System.Windows.Forms.Button buttonAgregar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.GroupBox groupBoxEditar;
         private System.Windows.Forms.ComboBox comboBoxPuesto;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }
 }

@@ -24,14 +24,14 @@ namespace Biblioteca
         {
         }
         private Empleado(string nombre, string apellido, int dni)
-            : base(nombre, apellido,dni)
+            : base(nombre, apellido, dni)
         {
             id = ++ultimoId;
             puesto = EPuesto.Empleado;
             estaLogeado = false;
         }
         public Empleado(int dni, int edad, string nombre, string apellido, EPuesto puesto)
-            : this(nombre, apellido,dni)
+            : this(nombre, apellido, dni)
         {
             this.edad = edad;
             this.puesto = puesto;
@@ -41,7 +41,7 @@ namespace Biblioteca
         public string IdString
         {
             get { return IdToString(id); }
-        }       
+        }
         public string Clave
         {
             set { clave = value; }
@@ -59,7 +59,7 @@ namespace Biblioteca
                 if (value > ultimoId) ultimoId = value + 1;
                 id = value;
             }
-        }               
+        }
         public EPuesto Puesto
         {
             get { return puesto; }
@@ -71,7 +71,12 @@ namespace Biblioteca
             set { estaLogeado = value; }
         }
 
-       
+
+
+        public static string IdToString(int id)
+        {
+            return string.Format(" ID :{0:0000}", id);
+        }
         public static string NextIdString()
         {
             return IdToString(NextId());

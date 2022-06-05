@@ -32,15 +32,18 @@ namespace Heladeria
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 600);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1200, 22);
             this.statusStrip.TabIndex = 0;
-            this.statusStrip.Text = "statusStrip";
             // 
             // ctrlOpciones
             // 
@@ -50,6 +53,11 @@ namespace Heladeria
             this.ctrlOpciones.Name = "ctrlOpciones";
             this.ctrlOpciones.Size = new System.Drawing.Size(140, 600);
             this.ctrlOpciones.TabIndex = 8;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // FormPrincipal
             // 
@@ -68,6 +76,8 @@ namespace Heladeria
             this.Text = "Inicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,6 +87,7 @@ namespace Heladeria
 
         private System.Windows.Forms.StatusStrip statusStrip;
         private CtrlOpciones ctrlOpciones;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }
 }
 

@@ -30,7 +30,6 @@ namespace Heladeria
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVentas));
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.ctrlEnvases = new Heladeria.CtrlEnvases();
             this.groupBoxSabores = new System.Windows.Forms.GroupBox();
@@ -51,17 +50,12 @@ namespace Heladeria
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBoxSabores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnvase)).BeginInit();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 600);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1200, 22);
-            this.statusStrip.TabIndex = 0;
-            this.statusStrip.Text = "statusStrip";
             // 
             // ctrlOpciones
             // 
@@ -289,12 +283,27 @@ namespace Heladeria
             this.button3.Text = "Terminar";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 600);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1200, 22);
+            this.statusStrip.TabIndex = 22;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            // 
             // FormVentas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -303,7 +312,6 @@ namespace Heladeria
             this.Controls.Add(this.groupBoxSabores);
             this.Controls.Add(this.ctrlEnvases);
             this.Controls.Add(this.ctrlOpciones);
-            this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -312,17 +320,17 @@ namespace Heladeria
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormVenta_FormClosing);
-            this.Load += new System.EventHandler(this.FormVenta_Load);
+            this.Load += new System.EventHandler(this.FormVentas_Load);
             this.groupBoxSabores.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnvase)).EndInit();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.StatusStrip statusStrip;
         private CtrlOpciones ctrlOpciones;
         private CtrlEnvases ctrlEnvases;
         private System.Windows.Forms.GroupBox groupBoxSabores;
@@ -343,5 +351,7 @@ namespace Heladeria
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }
 }

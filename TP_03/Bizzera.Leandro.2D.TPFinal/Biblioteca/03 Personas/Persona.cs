@@ -47,7 +47,7 @@ namespace Biblioteca
             get { return dni; }
             set { if (Empresa.EsDniRepetido(value)) dni = value; }
         }
-        public string DnIString
+        public string DniString
         {
             get { return string.Format(" DNI : {0}", dni); }
         }
@@ -57,10 +57,7 @@ namespace Biblioteca
 
 
 
-        public static string IdToString(int id)
-        {
-            return string.Format(" ID : {0:0000}", id);
-        }
+       
 
     }
 }

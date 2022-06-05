@@ -60,7 +60,10 @@ namespace Biblioteca
         }
 
 
-
+        public static string IdToString(int numSocio)
+        {
+            return string.Format("Socio:{0:0000}", numSocio);
+        }
         private void CalcularPuntaje(Pedido pedido)
         {
 

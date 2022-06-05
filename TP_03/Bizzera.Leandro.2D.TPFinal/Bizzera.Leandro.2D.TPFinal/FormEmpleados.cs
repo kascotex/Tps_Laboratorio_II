@@ -31,11 +31,35 @@ namespace Heladeria
 
         private void FormEmpleados_Load(object sender, EventArgs e)
         {
+            CargarImagenes();
+            MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
             RefrescarPanelEmpleados();
             comboBoxPuesto.DataSource = Enum.GetValues(typeof(Empleado.EPuesto));
             ctrlActual = (CtrlEmpleado)flowLayoutPanelEmpleados.Controls[0];
             MostrarEmpleado(ctrlActual.Empleado);
+        }
+
+        private void CargarImagenes()
+        {
+            Imagen.CargarBasicas(this);
+        }
+
+        /// <summary>
+        /// Actualiza el StatusLabel con el nombre del Cliente seleccionado
+        /// </summary>
+        private void MostrarStatusLabel()
+        {
+            if (Empresa.ClienteActual is null)
+            {
+                statusLabel.Text = "Ningun Cliente Seleccionado";
+                statusStrip.BackColor = Color.Silver;
+            }
+            else
+            {
+                statusLabel.Text = $"Cliente Seleccionado: [{Empresa.ClienteActual.NombreCompleto}]";
+                statusStrip.BackColor = Color.Orange;
+            }
         }
 
         private void ManejadorDeOpciones(string opcion)
@@ -50,6 +74,7 @@ namespace Heladeria
             }
         }
 
+       
         /// <summary>
         /// Actualiza el panel de usuarios logeados
         /// </summary>
@@ -77,7 +102,7 @@ namespace Heladeria
             if (labelId.Text != Empleado.NextIdString()) labelId.Text = empleado.IdString;
             textBoxNombre.Text = empleado.Nombre;
             textBoxApellido.Text = empleado.Apellido;
-            textBoxDni.Text = empleado.DnIString;
+            textBoxDni.Text = empleado.DniString;
             numericUpDownEdad.Value = empleado.Edad;
             comboBoxPuesto.SelectedItem = empleado.Puesto;
         }

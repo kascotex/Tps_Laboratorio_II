@@ -74,3 +74,5 @@ C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Bizzera.Lean
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro._2D.TPFinal.Properties.Resources.resources
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormClientes.resources
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormClientes.resources
+D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro._2D.TPFinal.Properties.Resources.resources

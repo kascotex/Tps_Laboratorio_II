@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj": {}
+    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
+    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "projectName": "MisFunciones",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
+        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Usuario\\Documents\\Visual Studio 2019\\Paquetes NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,25 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
+    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\obj\\",
+        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,15 +76,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Usuario\\Documents\\Visual Studio 2019\\Paquetes NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj"
+              "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
+                "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj"
               }
             }
           }
@@ -122,25 +112,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj": {
+    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
         "projectName": "Bizzera.Leandro.2D.TPFinal",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
+        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,15 +134,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Usuario\\Documents\\Visual Studio 2019\\Paquetes NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\source\\repos\\2° cuatri\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
+              "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
+                "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
               }
             }
           }
@@ -188,7 +173,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

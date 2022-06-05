@@ -27,6 +27,7 @@ namespace Heladeria
             CargarImagenes();
            // Harcodear();
             CargarBase();
+            MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
         }
 
@@ -43,7 +44,22 @@ namespace Heladeria
             Imagen.CargarBasicas(this);
         }
 
-
+        /// <summary>
+        /// Actualiza el StatusLabel con el nombre del Cliente seleccionado
+        /// </summary>
+        private void MostrarStatusLabel()
+        {
+            if (Empresa.ClienteActual is null )
+            {
+                statusLabel.Text = "Ningun Cliente Seleccionado";
+                statusStrip.BackColor = Color.Silver;
+            }
+            else
+            {
+                statusLabel.Text = $"Cliente Seleccionado: [{Empresa.ClienteActual.NombreCompleto}]";
+                statusStrip.BackColor = Color.Orange;
+            }
+        }
 
         private void ManejadorDeOpciones(string opcion)
         {
@@ -66,6 +82,7 @@ namespace Heladeria
             }
         }
 
+
         private void MostrarForm(Form form)
         {
             if (form is IControlOpcionActual f)
@@ -73,6 +90,7 @@ namespace Heladeria
                 Hide();
                 form.ShowDialog();
                 Show();
+                MostrarStatusLabel();
                 ManejadorDeOpciones(f.OpcionActual);
             }
         }
@@ -94,7 +112,6 @@ namespace Heladeria
             }
         }
 
-
-
+       
     }
 }
