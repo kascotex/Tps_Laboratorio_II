@@ -33,11 +33,18 @@ namespace Biblioteca
             this.alta = alta;
         }
 
-
+        public static int UltimonumSocio
+        {
+            get { return ultimonumSocio; }
+        }
         public int NumSocio
         {
             get { return numSocio; }
-            set { numSocio = value; }
+            set
+            {
+                if (value > ultimonumSocio) ultimonumSocio = value + 1;
+                numSocio = value;
+            }
         }
         public string NumSocioString
         {
@@ -62,7 +69,7 @@ namespace Biblioteca
 
         public static string IdToString(int numSocio)
         {
-            return string.Format("Socio:{0:0000}", numSocio);
+            return string.Format("{0:0000}", numSocio);
         }
         private void CalcularPuntaje(Pedido pedido)
         {

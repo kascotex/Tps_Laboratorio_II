@@ -43,3 +43,18 @@ C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca\o
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.dll
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\ref\Biblioteca.dll
 C:\Users\Usuario\source\repos\2° cuatri\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.pdb
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.deps.json
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.dll
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\ref\Biblioteca.dll
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\Biblioteca.pdb
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.dll
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\bin\Debug\net5.0\MisFunciones.pdb
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.csproj.CopyComplete
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.dll
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\ref\Biblioteca.dll
+C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Biblioteca\obj\Debug\net5.0\Biblioteca.pdb

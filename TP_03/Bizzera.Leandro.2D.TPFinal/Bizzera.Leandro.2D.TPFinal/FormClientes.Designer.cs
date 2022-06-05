@@ -34,17 +34,15 @@ namespace Heladeria
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonElejir = new System.Windows.Forms.Button();
+            this.buttonSeleccionar = new System.Windows.Forms.Button();
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelDni = new System.Windows.Forms.Label();
             this.textBoxNumSocio = new System.Windows.Forms.TextBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelSocio = new System.Windows.Forms.Label();
             this.textBoxDni = new System.Windows.Forms.TextBox();
             this.buttonAgregar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTitulo = new System.Windows.Forms.Label();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBoxCliente.SuspendLayout();
@@ -64,45 +62,33 @@ namespace Heladeria
             // 
             this.buttonEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.buttonEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEliminar.Location = new System.Drawing.Point(778, 256);
+            this.buttonEliminar.Location = new System.Drawing.Point(728, 256);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(100, 53);
+            this.buttonEliminar.Size = new System.Drawing.Size(150, 53);
             this.buttonEliminar.TabIndex = 16;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = false;
             this.buttonEliminar.Click += new System.EventHandler(this.ButtonEliminar_Click);
             // 
-            // buttonEditar
+            // buttonSeleccionar
             // 
-            this.buttonEditar.BackColor = System.Drawing.Color.Gold;
-            this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEditar.Location = new System.Drawing.Point(654, 256);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(100, 53);
-            this.buttonEditar.TabIndex = 15;
-            this.buttonEditar.Text = "Editar";
-            this.buttonEditar.UseVisualStyleBackColor = false;
-            this.buttonEditar.Click += new System.EventHandler(this.ButtonEditar_Click);
-            // 
-            // buttonElejir
-            // 
-            this.buttonElejir.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonElejir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonElejir.Location = new System.Drawing.Point(528, 256);
-            this.buttonElejir.Name = "buttonElejir";
-            this.buttonElejir.Size = new System.Drawing.Size(100, 53);
-            this.buttonElejir.TabIndex = 14;
-            this.buttonElejir.Text = "Elejir";
-            this.buttonElejir.UseVisualStyleBackColor = false;
-            this.buttonElejir.Click += new System.EventHandler(this.ButtonElejir_Click);
+            this.buttonSeleccionar.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonSeleccionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSeleccionar.Location = new System.Drawing.Point(528, 256);
+            this.buttonSeleccionar.Name = "buttonSeleccionar";
+            this.buttonSeleccionar.Size = new System.Drawing.Size(150, 53);
+            this.buttonSeleccionar.TabIndex = 14;
+            this.buttonSeleccionar.Text = "Seleccionar";
+            this.buttonSeleccionar.UseVisualStyleBackColor = false;
+            this.buttonSeleccionar.Click += new System.EventHandler(this.ButtonSeleccionar_Click);
             // 
             // groupBoxCliente
             // 
             this.groupBoxCliente.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxCliente.Controls.Add(this.label4);
+            this.groupBoxCliente.Controls.Add(this.labelDni);
             this.groupBoxCliente.Controls.Add(this.textBoxNumSocio);
             this.groupBoxCliente.Controls.Add(this.textBoxNombre);
-            this.groupBoxCliente.Controls.Add(this.label3);
+            this.groupBoxCliente.Controls.Add(this.labelSocio);
             this.groupBoxCliente.Controls.Add(this.textBoxDni);
             this.groupBoxCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -112,16 +98,16 @@ namespace Heladeria
             this.groupBoxCliente.TabIndex = 17;
             this.groupBoxCliente.TabStop = false;
             // 
-            // label4
+            // labelDni
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(164, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 29);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "DNI:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDni.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelDni.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDni.Location = new System.Drawing.Point(164, 82);
+            this.labelDni.Name = "labelDni";
+            this.labelDni.Size = new System.Drawing.Size(51, 34);
+            this.labelDni.TabIndex = 7;
+            this.labelDni.Text = "DNI:";
+            this.labelDni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxNumSocio
             // 
@@ -129,7 +115,7 @@ namespace Heladeria
             this.textBoxNumSocio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxNumSocio.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNumSocio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBoxNumSocio.Location = new System.Drawing.Point(70, 82);
+            this.textBoxNumSocio.Location = new System.Drawing.Point(78, 82);
             this.textBoxNumSocio.Name = "textBoxNumSocio";
             this.textBoxNumSocio.PlaceholderText = "0000";
             this.textBoxNumSocio.Size = new System.Drawing.Size(60, 34);
@@ -149,16 +135,16 @@ namespace Heladeria
             this.textBoxNombre.TabIndex = 0;
             this.textBoxNombre.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
-            // label3
+            // labelSocio
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(10, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 29);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Socio:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSocio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelSocio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelSocio.Location = new System.Drawing.Point(10, 82);
+            this.labelSocio.Name = "labelSocio";
+            this.labelSocio.Size = new System.Drawing.Size(70, 34);
+            this.labelSocio.TabIndex = 6;
+            this.labelSocio.Text = "Socio:";
+            this.labelSocio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxDni
             // 
@@ -178,34 +164,24 @@ namespace Heladeria
             // 
             this.buttonAgregar.BackColor = System.Drawing.Color.LightGreen;
             this.buttonAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonAgregar.Location = new System.Drawing.Point(322, 501);
+            this.buttonAgregar.Location = new System.Drawing.Point(928, 26);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(100, 53);
+            this.buttonAgregar.Size = new System.Drawing.Size(100, 52);
             this.buttonAgregar.TabIndex = 18;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.ButtonAgregar_Click);
             // 
-            // label1
+            // labelTitulo
             // 
-            this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(518, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 52);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Buscar Cliente";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.LightGreen;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(552, 496);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(373, 52);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Agregar Cliente";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTitulo.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.labelTitulo.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTitulo.Location = new System.Drawing.Point(518, 26);
+            this.labelTitulo.Name = "labelTitulo";
+            this.labelTitulo.Size = new System.Drawing.Size(373, 52);
+            this.labelTitulo.TabIndex = 19;
+            this.labelTitulo.Text = "Buscar Cliente";
+            this.labelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // statusStrip
             // 
@@ -229,13 +205,11 @@ namespace Heladeria
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTitulo);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.groupBoxCliente);
             this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonEditar);
-            this.Controls.Add(this.buttonElejir);
+            this.Controls.Add(this.buttonSeleccionar);
             this.Controls.Add(this.ctrlOpciones);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -259,17 +233,15 @@ namespace Heladeria
         #endregion
         private CtrlOpciones ctrlOpciones;
         private System.Windows.Forms.Button buttonEliminar;
-        private System.Windows.Forms.Button buttonEditar;
-        private System.Windows.Forms.Button buttonElejir;
+        private System.Windows.Forms.Button buttonSeleccionar;
         private System.Windows.Forms.GroupBox groupBoxCliente;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxDni;
         private System.Windows.Forms.TextBox textBoxNumSocio;
         private System.Windows.Forms.Button buttonAgregar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTitulo;
+        private System.Windows.Forms.Label labelSocio;
+        private System.Windows.Forms.Label labelDni;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }

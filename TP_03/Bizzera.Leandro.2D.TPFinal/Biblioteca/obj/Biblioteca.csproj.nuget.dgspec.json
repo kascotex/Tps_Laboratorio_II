@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
+    "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "projectName": "MisFunciones",
-        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
-                "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj"
+              "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj"
               }
             }
           }

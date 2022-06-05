@@ -70,8 +70,8 @@ namespace Heladeria
                 Close();
             }
         }
-    
-        
+
+
         private void CargarBuscarClientes()
         {
             textBoxNombre.AutoCompleteCustomSource.AddRange(Empresa.NombresDeClientes);
@@ -111,24 +111,6 @@ namespace Heladeria
 
 
 
-        private bool HabilitarEdicion(bool habilitar)
-        {
-            buttonEditar.Visible = !habilitar;
-            //groupBox Editar.Enabled = habilitar;
-
-            if (habilitar) HabilitarEdicion();
-            else
-            {
-                buttonElejir.Text = "Agregar";
-                buttonEliminar.Text = "Eliminar";
-            }
-            return !habilitar;
-        }
-        private void HabilitarEdicion()
-        {
-            buttonElejir.Text = "Confirmar";
-            buttonEliminar.Text = "Cancelar";
-        }
 
 
 
@@ -174,11 +156,7 @@ namespace Heladeria
 
         private void ButtonEliminar_Click(object sender, EventArgs e)
         {
-            if (!buttonEditar.Visible)
-            {
-               // <<  cancelar agregar cliente
-            }
-            else if ( cliente is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{cliente.NombreCompleto}"))
+            if (cliente is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{cliente.NombreCompleto}"))
             {
                 Empresa.Clientes.Remove(cliente);
                 cliente = null;
@@ -187,7 +165,7 @@ namespace Heladeria
             }
         }
 
-        private void ButtonElejir_Click(object sender, EventArgs e)
+        private void ButtonSeleccionar_Click(object sender, EventArgs e)
         {
             if (cliente is not null)
             {
@@ -196,9 +174,36 @@ namespace Heladeria
             }
             else MessageBox.Show("Ningún Cliente seleccionado.");
         }
+        private void ButtonAgregar_Click(object sender, EventArgs e)
+        {
+            LimpiarGroupBox();
+            if (buttonAgregar.Text == "Agregar") OpcionAgregar();
+            else OpcionBuscar();
+        }
         
-
-
+        private void OpcionBuscar()
+        {
+            labelTitulo.Text = "Buscar Cliente";
+            labelTitulo.BackColor = Color.LightSkyBlue;
+            buttonAgregar.Text = "Agregar";
+            buttonAgregar.BackColor = Color.LightGreen;
+            buttonSeleccionar.Text = "Seleccionar";
+            buttonSeleccionar.BackColor = Color.LightSkyBlue;
+            buttonEliminar.Text = "Eliminar";
+            labelSocio.Enabled = textBoxNumSocio.Enabled = true;
+        }
+        private void OpcionAgregar()
+        {
+            labelTitulo.Text = "Agregar Cliente";
+            labelTitulo.BackColor = Color.LightGreen;
+            buttonAgregar.Text = "Buscar";
+            buttonAgregar.BackColor = Color.LightSkyBlue;
+            buttonSeleccionar.Text = "Agregar";
+            buttonSeleccionar.BackColor = Color.LightGreen;
+            buttonEliminar.Text = "Cancelar";
+            textBoxNumSocio.Text = Cliente.IdToString(Cliente.UltimonumSocio+1);
+            labelSocio.Enabled = textBoxNumSocio.Enabled = false;
+        }
 
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
