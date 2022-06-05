@@ -41,10 +41,12 @@ namespace Heladeria
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.labelSocio = new System.Windows.Forms.Label();
             this.textBoxDni = new System.Windows.Forms.TextBox();
-            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.buttonModo = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.groupBoxCliente.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -130,7 +132,7 @@ namespace Heladeria
             this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.PlaceholderText = "Nombre";
+            this.textBoxNombre.PlaceholderText = "Apellido, Nombre";
             this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
             this.textBoxNombre.TabIndex = 0;
             this.textBoxNombre.Leave += new System.EventHandler(this.TextBox_Leave);
@@ -160,17 +162,17 @@ namespace Heladeria
             this.textBoxDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxDni.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
-            // buttonAgregar
+            // buttonModo
             // 
-            this.buttonAgregar.BackColor = System.Drawing.Color.LightGreen;
-            this.buttonAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonAgregar.Location = new System.Drawing.Point(928, 26);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(100, 52);
-            this.buttonAgregar.TabIndex = 18;
-            this.buttonAgregar.Text = "Agregar";
-            this.buttonAgregar.UseVisualStyleBackColor = false;
-            this.buttonAgregar.Click += new System.EventHandler(this.ButtonAgregar_Click);
+            this.buttonModo.BackColor = System.Drawing.Color.LightGreen;
+            this.buttonModo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonModo.Location = new System.Drawing.Point(928, 26);
+            this.buttonModo.Name = "buttonModo";
+            this.buttonModo.Size = new System.Drawing.Size(100, 52);
+            this.buttonModo.TabIndex = 18;
+            this.buttonModo.Text = "Agregar";
+            this.buttonModo.UseVisualStyleBackColor = false;
+            this.buttonModo.Click += new System.EventHandler(this.ButtonModo_Click);
             // 
             // labelTitulo
             // 
@@ -198,19 +200,45 @@ namespace Heladeria
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(0, 16);
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancelar.Location = new System.Drawing.Point(728, 256);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(150, 53);
+            this.buttonCancelar.TabIndex = 23;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.ButtonCancelar_Click);
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.BackColor = System.Drawing.Color.LightGreen;
+            this.buttonAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonAgregar.Location = new System.Drawing.Point(528, 256);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(150, 53);
+            this.buttonAgregar.TabIndex = 22;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.ButtonAgregar_Click);
+            // 
             // FormClientes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.buttonSeleccionar);
+            this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.labelTitulo);
-            this.Controls.Add(this.buttonAgregar);
+            this.Controls.Add(this.buttonModo);
             this.Controls.Add(this.groupBoxCliente);
-            this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonSeleccionar);
             this.Controls.Add(this.ctrlOpciones);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonAgregar);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -238,12 +266,14 @@ namespace Heladeria
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxDni;
         private System.Windows.Forms.TextBox textBoxNumSocio;
-        private System.Windows.Forms.Button buttonAgregar;
+        private System.Windows.Forms.Button buttonModo;
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.Label labelSocio;
         private System.Windows.Forms.Label labelDni;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.Button buttonCancelar;
+        private System.Windows.Forms.Button buttonAgregar;
     }
 }
 

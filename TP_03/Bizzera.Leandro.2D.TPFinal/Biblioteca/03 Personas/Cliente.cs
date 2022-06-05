@@ -42,7 +42,7 @@ namespace Biblioteca
             get { return numSocio; }
             set
             {
-                if (value > ultimonumSocio) ultimonumSocio = value + 1;
+                if (value > ultimonumSocio) ultimonumSocio = value;
                 numSocio = value;
             }
         }
@@ -74,6 +74,12 @@ namespace Biblioteca
         private void CalcularPuntaje(Pedido pedido)
         {
 
+        }
+
+
+        public static string EsClienteValido(string nombre, string apellido, int dni)
+        {            
+            return EsPersonaValida(nombre,apellido,dni,true);
         }
 
 

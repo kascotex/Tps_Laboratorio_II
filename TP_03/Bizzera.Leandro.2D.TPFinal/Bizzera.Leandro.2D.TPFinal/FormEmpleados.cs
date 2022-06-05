@@ -22,7 +22,7 @@ namespace Heladeria
             InitializeComponent();
         }
 
-       
+
         public string OpcionActual
         {
             get { return opcionActual; }
@@ -74,7 +74,7 @@ namespace Heladeria
             }
         }
 
-       
+
         /// <summary>
         /// Actualiza el panel de usuarios logeados
         /// </summary>
@@ -213,6 +213,7 @@ namespace Heladeria
             if (!buttonEditar.Visible)
             {
                 HabilitarEdicion(buttonEditar.Visible);
+                ctrlActual = null;
                 LimpiarGroupBox(0);
             }
             else if (ctrlActual is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{ctrlActual.Empleado.NombreCompleto}?"))
@@ -243,7 +244,8 @@ namespace Heladeria
 
         private void ButtonEditar_Click(object sender, EventArgs e)
         {
-            HabilitarEdicion(buttonEditar.Visible);
+            if (ctrlActual is not null) HabilitarEdicion(buttonEditar.Visible);
+            else MessageBox.Show("Ningun Empleado seleccionado para editar.");
         }
 
 

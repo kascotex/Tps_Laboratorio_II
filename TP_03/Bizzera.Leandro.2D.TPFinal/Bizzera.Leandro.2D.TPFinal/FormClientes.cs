@@ -109,11 +109,58 @@ namespace Heladeria
             }
         }
 
+        private bool CrearCliente()
+        {
+            string msj = string.Empty;
+            string nombre = string.Empty;
+            string apellido = string.Empty;
+            string[] nombreCompleto = textBoxNombre.Text.Split(',');
+            int.TryParse(textBoxDni.Text, out int dni);
+
+            if (nombreCompleto.Count() == 2)
+            {
+                apellido = nombreCompleto[0];
+                nombre = nombreCompleto[1];
+                msj += Cliente.EsClienteValido(nombre, apellido, dni);
+            }
+            else msj += "Ingre el Apellido y luego el Nombre separados por una coma.\n";
+
+
+            if (string.IsNullOrEmpty(msj))
+            {
+                Empresa.Clientes.Add(new Cliente(nombre.Trim(), apellido.Trim(), dni));
+                MessageBox.Show($"Agregado Cliente: {apellido}, {nombre}");
+                return true;
+            }
+
+            MessageBox.Show(msj);
+            return false;
+        }
 
 
 
 
-
+        private void OpcionBuscar()
+        {
+            labelTitulo.Text = "Buscar Cliente";
+            labelTitulo.BackColor = Color.LightSkyBlue;
+            buttonModo.Text = "Agregar";
+            buttonModo.BackColor = Color.LightGreen;
+            buttonEliminar.Visible = buttonSeleccionar.Visible = true;
+            buttonCancelar.Visible = buttonAgregar.Visible = false;
+            labelSocio.Enabled = textBoxNumSocio.Enabled = true;
+        }
+        private void OpcionAgregar()
+        {
+            labelTitulo.Text = "Agregar Cliente";
+            labelTitulo.BackColor = Color.LightGreen;
+            buttonModo.Text = "Buscar";
+            buttonModo.BackColor = Color.LightSkyBlue;
+            buttonEliminar.Visible = buttonSeleccionar.Visible = false;
+            buttonCancelar.Visible = buttonAgregar.Visible = true;
+            textBoxNumSocio.Text = Cliente.IdToString(Cliente.UltimonumSocio + 1);
+            labelSocio.Enabled = textBoxNumSocio.Enabled = false;
+        }
 
 
         public void CtrlOpciones_Click(object sender, EventArgs e)
@@ -132,7 +179,7 @@ namespace Heladeria
         /// <param name="e"></param>       
         private void TextBox_Leave(object sender, EventArgs e)
         {
-            if (sender is TextBox tb)
+            if (buttonSeleccionar.Visible && sender is TextBox tb)
             {
                 switch (tb.Name)
                 {
@@ -154,6 +201,13 @@ namespace Heladeria
 
 
 
+        private void ButtonModo_Click(object sender, EventArgs e)
+        {
+            LimpiarGroupBox();
+            if (buttonModo.Text == "Agregar") OpcionAgregar();
+            else OpcionBuscar();
+        }
+
         private void ButtonEliminar_Click(object sender, EventArgs e)
         {
             if (cliente is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{cliente.NombreCompleto}"))
@@ -164,7 +218,6 @@ namespace Heladeria
                 LimpiarGroupBox();
             }
         }
-
         private void ButtonSeleccionar_Click(object sender, EventArgs e)
         {
             if (cliente is not null)
@@ -174,42 +227,26 @@ namespace Heladeria
             }
             else MessageBox.Show("Ningún Cliente seleccionado.");
         }
-        private void ButtonAgregar_Click(object sender, EventArgs e)
+
+        private void ButtonCancelar_Click(object sender, EventArgs e)
         {
             LimpiarGroupBox();
-            if (buttonAgregar.Text == "Agregar") OpcionAgregar();
-            else OpcionBuscar();
+            OpcionAgregar();
         }
-        
-        private void OpcionBuscar()
+        private void ButtonAgregar_Click(object sender, EventArgs e)
         {
-            labelTitulo.Text = "Buscar Cliente";
-            labelTitulo.BackColor = Color.LightSkyBlue;
-            buttonAgregar.Text = "Agregar";
-            buttonAgregar.BackColor = Color.LightGreen;
-            buttonSeleccionar.Text = "Seleccionar";
-            buttonSeleccionar.BackColor = Color.LightSkyBlue;
-            buttonEliminar.Text = "Eliminar";
-            labelSocio.Enabled = textBoxNumSocio.Enabled = true;
+            if (CrearCliente()) CargarBuscarClientes();
         }
-        private void OpcionAgregar()
-        {
-            labelTitulo.Text = "Agregar Cliente";
-            labelTitulo.BackColor = Color.LightGreen;
-            buttonAgregar.Text = "Buscar";
-            buttonAgregar.BackColor = Color.LightSkyBlue;
-            buttonSeleccionar.Text = "Agregar";
-            buttonSeleccionar.BackColor = Color.LightGreen;
-            buttonEliminar.Text = "Cancelar";
-            textBoxNumSocio.Text = Cliente.IdToString(Cliente.UltimonumSocio+1);
-            labelSocio.Enabled = textBoxNumSocio.Enabled = false;
-        }
+
+
 
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }
+
+
 
     }
 }

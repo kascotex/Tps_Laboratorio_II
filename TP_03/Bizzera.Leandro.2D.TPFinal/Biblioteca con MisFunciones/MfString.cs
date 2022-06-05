@@ -11,7 +11,7 @@ namespace MisFunciones
 
     public static class MfString
     {
-       
+
 
         /// <summary>
         /// Evalua las cadenas estan vacias son null o contienen todos espacios en blancos
@@ -86,9 +86,21 @@ namespace MisFunciones
         /// <returns><see langword="true"></see> si todos los caracteres son letras</returns>
         public static bool SonLetras(string cadena)
         {
+            if (cadena is null) return false;
+            
             foreach (char item in cadena)
             {
                 if (!char.IsLetter(item)) return false;
+            }
+            return true;
+        }
+        public static bool SonLetrasConEspacios(string cadena)
+        {
+            if (cadena is null) return false;
+
+            foreach (char item in cadena)
+            {
+                if (!char.IsLetter(item) || item != ' ') return false;
             }
             return true;
         }

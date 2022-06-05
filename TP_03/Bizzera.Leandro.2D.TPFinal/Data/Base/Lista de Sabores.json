@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Chocolate",
     "Costo": 272,
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "Id": 2,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Chocolate Con Almendras",
     "Costo": 234,
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "Id": 3,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Chocolate Amargo",
     "Costo": 240,
@@ -45,7 +45,7 @@
     ]
   },
   {
-    "Id": 4,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Crema",
     "Costo": 207,
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "Id": 5,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Granizado",
     "Costo": 265,
@@ -75,7 +75,7 @@
     ]
   },
   {
-    "Id": 6,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Dulce de Leche",
     "Costo": 234,
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "Id": 7,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Frutilla",
     "Costo": 285,
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "Id": 8,
+    "Id": 0,
     "Minimo": 20000,
     "Nombre": "Limon",
     "Costo": 281,

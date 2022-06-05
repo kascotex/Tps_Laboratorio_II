@@ -450,4 +450,13 @@
     <Alta>2022-04-23T02:48:29.4918161-03:00</Alta>
     <Pedidos />
   </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>lio</Nombre>
+    <Apellido>pol</Apellido>
+    <Dni>123123</Dni>
+    <NumSocio>51</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-06-05T20:15:24.9780808-03:00</Alta>
+    <Pedidos />
+  </Persona>  
 </ArrayOfPersona>

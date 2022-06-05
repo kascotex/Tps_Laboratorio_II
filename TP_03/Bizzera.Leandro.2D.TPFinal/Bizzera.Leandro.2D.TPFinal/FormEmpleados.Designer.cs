@@ -56,7 +56,7 @@ namespace Heladeria
             this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.PlaceholderText = "Nombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(350, 29);
+            this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
             this.textBoxNombre.TabIndex = 0;
             // 
             // textBoxApellido
@@ -65,7 +65,7 @@ namespace Heladeria
             this.textBoxApellido.Location = new System.Drawing.Point(10, 82);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.PlaceholderText = "Apellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(350, 29);
+            this.textBoxApellido.Size = new System.Drawing.Size(350, 34);
             this.textBoxApellido.TabIndex = 1;
             // 
             // labelId
@@ -73,7 +73,7 @@ namespace Heladeria
             this.labelId.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelId.Location = new System.Drawing.Point(10, 190);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(100, 29);
+            this.labelId.Size = new System.Drawing.Size(100, 36);
             this.labelId.TabIndex = 2;
             this.labelId.Text = "ID: 0000";
             this.labelId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +88,7 @@ namespace Heladeria
             0,
             0});
             this.numericUpDownEdad.Name = "numericUpDownEdad";
-            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 29);
+            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 34);
             this.numericUpDownEdad.TabIndex = 3;
             this.numericUpDownEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDownEdad.Value = new decimal(new int[] {
@@ -100,9 +100,9 @@ namespace Heladeria
             // labelEdad
             // 
             this.labelEdad.BackColor = System.Drawing.SystemColors.Window;
-            this.labelEdad.Location = new System.Drawing.Point(248, 136);
+            this.labelEdad.Location = new System.Drawing.Point(238, 136);
             this.labelEdad.Name = "labelEdad";
-            this.labelEdad.Size = new System.Drawing.Size(50, 29);
+            this.labelEdad.Size = new System.Drawing.Size(60, 34);
             this.labelEdad.TabIndex = 4;
             this.labelEdad.Text = "Edad:";
             this.labelEdad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,7 +113,7 @@ namespace Heladeria
             this.textBoxDni.Location = new System.Drawing.Point(10, 136);
             this.textBoxDni.Name = "textBoxDni";
             this.textBoxDni.PlaceholderText = "DNI";
-            this.textBoxDni.Size = new System.Drawing.Size(200, 29);
+            this.textBoxDni.Size = new System.Drawing.Size(200, 34);
             this.textBoxDni.TabIndex = 5;
             // 
             // flowLayoutPanelEmpleados
@@ -121,9 +121,9 @@ namespace Heladeria
             this.flowLayoutPanelEmpleados.AutoScroll = true;
             this.flowLayoutPanelEmpleados.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanelEmpleados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelEmpleados.Location = new System.Drawing.Point(146, 92);
+            this.flowLayoutPanelEmpleados.Location = new System.Drawing.Point(146, 62);
             this.flowLayoutPanelEmpleados.Name = "flowLayoutPanelEmpleados";
-            this.flowLayoutPanelEmpleados.Size = new System.Drawing.Size(650, 500);
+            this.flowLayoutPanelEmpleados.Size = new System.Drawing.Size(650, 516);
             this.flowLayoutPanelEmpleados.TabIndex = 6;
             this.flowLayoutPanelEmpleados.WrapContents = false;
             // 
@@ -140,9 +140,9 @@ namespace Heladeria
             // 
             this.buttonAgregar.BackColor = System.Drawing.Color.LightGreen;
             this.buttonAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonAgregar.Location = new System.Drawing.Point(825, 503);
+            this.buttonAgregar.Location = new System.Drawing.Point(815, 314);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(100, 53);
+            this.buttonAgregar.Size = new System.Drawing.Size(120, 53);
             this.buttonAgregar.TabIndex = 9;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = false;
@@ -152,9 +152,9 @@ namespace Heladeria
             // 
             this.buttonEditar.BackColor = System.Drawing.Color.Gold;
             this.buttonEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEditar.Location = new System.Drawing.Point(950, 503);
+            this.buttonEditar.Location = new System.Drawing.Point(941, 314);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(100, 53);
+            this.buttonEditar.Size = new System.Drawing.Size(120, 53);
             this.buttonEditar.TabIndex = 10;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = false;
@@ -164,9 +164,9 @@ namespace Heladeria
             // 
             this.buttonEliminar.BackColor = System.Drawing.Color.LightCoral;
             this.buttonEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEliminar.Location = new System.Drawing.Point(1075, 503);
+            this.buttonEliminar.Location = new System.Drawing.Point(1068, 314);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(100, 53);
+            this.buttonEliminar.Size = new System.Drawing.Size(120, 53);
             this.buttonEliminar.TabIndex = 11;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = false;
@@ -184,9 +184,9 @@ namespace Heladeria
             this.groupBoxEditar.Controls.Add(this.textBoxDni);
             this.groupBoxEditar.Enabled = false;
             this.groupBoxEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxEditar.Location = new System.Drawing.Point(815, 80);
+            this.groupBoxEditar.Location = new System.Drawing.Point(815, 48);
             this.groupBoxEditar.Name = "groupBoxEditar";
-            this.groupBoxEditar.Size = new System.Drawing.Size(373, 235);
+            this.groupBoxEditar.Size = new System.Drawing.Size(373, 244);
             this.groupBoxEditar.TabIndex = 12;
             this.groupBoxEditar.TabStop = false;
             // 
@@ -195,11 +195,12 @@ namespace Heladeria
             this.comboBoxPuesto.FormattingEnabled = true;
             this.comboBoxPuesto.Location = new System.Drawing.Point(120, 191);
             this.comboBoxPuesto.Name = "comboBoxPuesto";
-            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 29);
+            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 36);
             this.comboBoxPuesto.TabIndex = 6;
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 600);
@@ -210,7 +211,7 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel.Size = new System.Drawing.Size(0, 16);
             // 
             // FormEmpleados
             // 

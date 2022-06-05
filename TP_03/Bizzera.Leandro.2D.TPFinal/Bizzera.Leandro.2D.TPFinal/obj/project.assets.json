@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+      "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
       "projectName": "Bizzera.Leandro.2D.TPFinal",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+      "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
+      "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,8 +71,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
+            "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
+              "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
             }
           }
         }

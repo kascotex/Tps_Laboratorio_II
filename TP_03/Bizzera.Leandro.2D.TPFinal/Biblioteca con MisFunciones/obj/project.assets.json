@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+      "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
       "projectName": "MisFunciones",
-      "projectPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
+      "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\MisFunciones.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Downloads\\Tps_Laboratorio_II-main\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
+      "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca con MisFunciones\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
