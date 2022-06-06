@@ -11,10 +11,9 @@ using System.Windows.Forms;
 
 namespace Heladeria
 {
-    public partial class FormHerramientas : Form
+    public partial class FormHerramientas : Form, IControlOpcionActual
     {
         private string opcionActual;
-        CtrlEmpleado ctrlActual;
 
         string rutaDelArchivo;
         string nombreDelArchivo;
@@ -86,36 +85,57 @@ namespace Heladeria
 
 
 
-
-
-
-
-        private bool ObtenerRutaParaGuardarArchivo()
+        private void CargarClientes()
         {
-            return ObtenerRutaParaGuardarArchivo(Ruta.Data);
+            if (ObtenerRutaParaCargarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
+            {
+                try
+                {
+                    Empresa.Clientes = new SerializadorXml<List<Cliente>>().Leer(RutaDelArchivo);
+                    MessageBox.Show($"Se Cargo la lista de clientes\n con {Empresa.Clientes.Count} clientes.");
+                }
+                catch (Exception e)
+                {
+                    Log.GuardarExcepcion(new Exception("Error al guardar lista de clientes", e));
+                }
+            }
         }
-        private bool ObtenerRutaParaCargarArchivo()
+        private void GuardarClientes()
         {
-            return ObtenerRutaParaCargarArchivo(Ruta.Data);
+            if (ObtenerRutaParaGuardarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
+            {
+                try
+                {
+                    new SerializadorXml<List<Cliente>>().Guardar(RutaDelArchivo, Empresa.Clientes);
+                    MessageBox.Show($"Se guardo la lista de clientes\n con {Empresa.Clientes.Count} clientes.");
+                }
+                catch (Exception e)
+                {
+                    Log.GuardarExcepcion(new Exception("Error al guardar lista de clientes", e));
+                }
+            }
         }
-        private bool ObtenerRutaParaCargarArchivo(string directorioInicial)
+
+
+
+        private bool ObtenerRutaParaCargarArchivo(string directorioInicial, string filtro)
         {
             OpenFileDialog archivo = new OpenFileDialog();
-            ObtenerRuta(archivo, directorioInicial);
+            ObtenerRuta(archivo, directorioInicial, filtro);
             if (RutaDelArchivo is null) return false;
             return true;
         }
-        private bool ObtenerRutaParaGuardarArchivo(string directorioInicial)
+        private bool ObtenerRutaParaGuardarArchivo(string directorioInicial, string filtro)
         {
             SaveFileDialog archivo = new SaveFileDialog();
-            ObtenerRuta(archivo, directorioInicial);
+            ObtenerRuta(archivo, directorioInicial, filtro);
             if (RutaDelArchivo is null) return false;
             return true;
         }
-        private void ObtenerRuta(FileDialog archivo, string directorioInicial)
+        private void ObtenerRuta(FileDialog archivo, string directorioInicial, string filtro)
         {
-            archivo.Filter = "Archivos de texto|*.txt";
-            archivo.InitialDirectory = Ruta.ArchivosDeTexto;
+            archivo.Filter = filtro;
+            archivo.InitialDirectory = directorioInicial;
 
             if (archivo.ShowDialog() == DialogResult.OK) RutaDelArchivo = archivo.FileName;
             else RutaDelArchivo = null;
@@ -143,5 +163,17 @@ namespace Heladeria
                 }
             }
         }
+
+        private void ButtonGuardarClientes_Click(object sender, EventArgs e)
+        {
+            GuardarClientes();
+        }
+
+        private void ButtonCargarClientes_Click(object sender, EventArgs e)
+        {
+            CargarClientes();
+        }
+
+
     }
 }

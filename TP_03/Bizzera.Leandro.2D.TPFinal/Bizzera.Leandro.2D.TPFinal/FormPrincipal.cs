@@ -25,7 +25,7 @@ namespace Heladeria
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             CargarImagenes();
-           // Harcodear();
+            // Harcodear();
             CargarBase();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
@@ -49,7 +49,7 @@ namespace Heladeria
         /// </summary>
         private void MostrarStatusLabel()
         {
-            if (Empresa.ClienteActual is null )
+            if (Empresa.ClienteActual is null)
             {
                 statusLabel.Text = "Ningun Cliente Seleccionado";
                 statusStrip.BackColor = Color.Silver;
@@ -74,6 +74,9 @@ namespace Heladeria
                 case "buttonClientes":
                     MostrarForm(new FormClientes());
                     break;
+                case "buttonHerramientas":
+                    MostrarForm(new FormHerramientas());
+                    break;
                 case "buttonSalir":
                     Close();
                     break;
@@ -95,7 +98,7 @@ namespace Heladeria
             }
         }
 
-       
+
         public void CtrlOpciones_Click(object sender, EventArgs e)
         {
             if (sender is Control ctrl && ctrl is Button boton)
@@ -112,6 +115,6 @@ namespace Heladeria
             }
         }
 
-       
+
     }
 }

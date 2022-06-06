@@ -34,6 +34,7 @@ namespace Heladeria
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.buttonGuardarClientes = new System.Windows.Forms.Button();
+            this.buttonCargarClientes = new System.Windows.Forms.Button();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +70,17 @@ namespace Heladeria
             this.buttonGuardarClientes.TabIndex = 9;
             this.buttonGuardarClientes.Text = "Guardar \r\nClientes";
             this.buttonGuardarClientes.UseVisualStyleBackColor = true;
+            this.buttonGuardarClientes.Click += new System.EventHandler(this.ButtonGuardarClientes_Click);
+            // 
+            // buttonCargarClientes
+            // 
+            this.buttonCargarClientes.Location = new System.Drawing.Point(518, 67);
+            this.buttonCargarClientes.Name = "buttonCargarClientes";
+            this.buttonCargarClientes.Size = new System.Drawing.Size(167, 83);
+            this.buttonCargarClientes.TabIndex = 10;
+            this.buttonCargarClientes.Text = "Cargar \r\nClientes";
+            this.buttonCargarClientes.UseVisualStyleBackColor = true;
+            this.buttonCargarClientes.Click += new System.EventHandler(this.ButtonCargarClientes_Click);
             // 
             // FormHerramientas
             // 
@@ -76,6 +88,7 @@ namespace Heladeria
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.buttonCargarClientes);
             this.Controls.Add(this.buttonGuardarClientes);
             this.Controls.Add(this.ctrlOpciones);
             this.Controls.Add(this.statusStrip);
@@ -103,6 +116,7 @@ namespace Heladeria
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private CtrlOpciones ctrlOpciones;
         private System.Windows.Forms.Button buttonGuardarClientes;
+        private System.Windows.Forms.Button buttonCargarClientes;
     }
 }
 
