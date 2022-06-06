@@ -47,7 +47,7 @@ namespace Heladeria
             }
             catch (Exception e)
             {
-                Log.GuardarExcepcion(new Exception("Error al CargarImagenPng empleado", e));//<< poner nueva exception
+                Log.GuardarExcepcion(new Exception("Error al CargarImagenPng empleado", e));
             }
             labelNombre.Text = empleado.NombreCompleto;
             labelId.Text = empleado.IdString;

@@ -16,7 +16,11 @@
     <NumSocio>2</NumSocio>
     <Puntos>0</Puntos>
     <Alta>2022-05-26T03:51:29.491733-03:00</Alta>
-    <Pedidos />
+    <Pedidos>
+      <int>1</int>
+      <int>1</int>
+      <int>1</int>
+    </Pedidos>
   </Persona>
   <Persona xsi:type="Cliente">
     <Nombre>Lililana</Nombre>
@@ -458,5 +462,5 @@
     <Puntos>0</Puntos>
     <Alta>2022-06-05T20:15:24.9780808-03:00</Alta>
     <Pedidos />
-  </Persona>  
+  </Persona>
 </ArrayOfPersona>

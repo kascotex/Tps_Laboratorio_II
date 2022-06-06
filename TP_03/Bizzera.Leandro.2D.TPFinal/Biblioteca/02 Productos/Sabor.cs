@@ -19,7 +19,6 @@ namespace Biblioteca
 
         public Sabor()
         {
-
         }
         private Sabor(string nombre, float costo, float? cantidad)
         {
@@ -53,7 +52,11 @@ namespace Biblioteca
         public int Id
         {
             get { return id; }
-            //<< corregir set { }
+            set
+            {
+                if (value > ultimoId) ultimoId = value;
+                id = value;
+            }
         }
         public float Minimo
         {
@@ -93,7 +96,7 @@ namespace Biblioteca
             get { return etiquetas; }
             set { etiquetas = value; }
         }
-        public List<string> EtiquetasString //<< hacer metodo? quitar propiedad Etiquetas? se usa Etiquetas?
+        public List<string> EtiquetasString 
         {
             get
             {

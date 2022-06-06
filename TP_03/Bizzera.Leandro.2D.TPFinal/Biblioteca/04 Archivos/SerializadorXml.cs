@@ -12,7 +12,6 @@ namespace Biblioteca
 {
 
     public class SerializadorXml<T> : IPersistencia<T>
-    //<< revisar:   where T : class, new() //<< revisar where
     {
         /// <summary>
         /// Guarda los datos recibidos en un 
@@ -59,8 +58,7 @@ namespace Biblioteca
                 using (StreamReader sr = new StreamReader(ruta))
                 {
                     XmlSerializer xml = new XmlSerializer(typeof(T));
-                    return (T)xml.Deserialize(sr);//<< revisar
-                    // return xml.Deserialize(sr) as T;
+                    return (T)xml.Deserialize(sr);
                 }
             }
             catch (Exception e)

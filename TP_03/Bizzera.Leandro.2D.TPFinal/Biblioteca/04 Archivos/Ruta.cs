@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MisFunciones;
+using System;
 using System.IO;
 
 

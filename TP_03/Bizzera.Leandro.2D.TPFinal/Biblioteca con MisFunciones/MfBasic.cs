@@ -1,9 +1,8 @@
-﻿using MisFunciones;
-using System;
+﻿using System;
 
 
 
-namespace Biblioteca
+namespace MisFunciones
 {
 
     public static class MfBasic

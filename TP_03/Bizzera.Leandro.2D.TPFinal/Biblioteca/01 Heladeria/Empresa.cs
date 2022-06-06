@@ -143,7 +143,15 @@ namespace Biblioteca
             }
             return null;
         }
-        
+        public static Sabor SaborPorNombre(string nombre)
+        {
+            foreach (Sabor item in sabores)
+            {
+                if (item is not null && item.Nombre == nombre) return item;
+            }
+            return null;
+        }
+
 
         /// <summary>
         /// Busca un cliente por su nombre
@@ -240,6 +248,7 @@ namespace Biblioteca
             GuardarListaClientes();
             GuardarListaSabores();
             GuardarListaEnvases();
+            GuardarListaPedidos();
         }
         public static void RecuperarInfo()
         {
@@ -404,6 +413,19 @@ namespace Biblioteca
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de envases", e));
             }
         }
+        private static void GuardarListaPedidos()
+        {
+            string ruta = Ruta.ArchivoXml(Ruta.Base, "Lista de Pedidos");
+            try
+            {
+                GuardarBase(new SerializadorXml<List<Pedido>>(), ruta, pedidos);
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al guardar lista de Pedidos", e));
+            }
+        }
+
 
 
 

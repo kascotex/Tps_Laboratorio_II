@@ -14,7 +14,8 @@ namespace Heladeria
 {
     public partial class CtrlSabor : UserControl
     {
-        string sabor;
+       private string sabor;
+
 
         private CtrlSabor()
         {
@@ -26,6 +27,7 @@ namespace Heladeria
         {
             this.sabor = sabor;
         }
+        public string Sabor { get => sabor; }
 
         private void CtrlSabor_Load(object sender, EventArgs e)
         {

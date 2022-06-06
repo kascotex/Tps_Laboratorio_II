@@ -10,14 +10,14 @@ namespace Biblioteca
         private int id;
         private string nombre;
         private int cantSabores;
-        private List<Sabor> sabores;
 
 
-
+        public Envase()
+        {
+        }
         public Envase(string nombre, int cantSabores)
         {
             id = ++ultimoId;
-            sabores = new List<Sabor>();
             this.nombre = nombre;
             this.cantSabores = cantSabores;
         }
@@ -34,7 +34,7 @@ namespace Biblioteca
             get { return id; }
             set
             {
-                if (value > ultimoId) ultimoId = value + 1;
+                if (value > ultimoId) ultimoId = value;
                 id = value;
             }
         }

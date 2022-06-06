@@ -33,13 +33,13 @@ namespace Heladeria
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.ctrlEnvases = new Heladeria.CtrlEnvases();
             this.groupBoxSabores = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonMenta = new System.Windows.Forms.Button();
+            this.buttonCremaDelCielo = new System.Windows.Forms.Button();
+            this.buttonDulceDeLeche = new System.Windows.Forms.Button();
+            this.buttonDurazno = new System.Windows.Forms.Button();
             this.buttonLimon = new System.Windows.Forms.Button();
             this.buttonFrutilla = new System.Windows.Forms.Button();
-            this.buttonDulceDeLeche = new System.Windows.Forms.Button();
+            this.buttonVainilla = new System.Windows.Forms.Button();
             this.buttonGranizado = new System.Windows.Forms.Button();
             this.buttonCrema = new System.Windows.Forms.Button();
             this.buttonChocolateAmargo = new System.Windows.Forms.Button();
@@ -47,9 +47,8 @@ namespace Heladeria
             this.buttonChocolate = new System.Windows.Forms.Button();
             this.pictureBoxEnvase = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelSabores = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonConfirmarPedido = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBoxSabores.SuspendLayout();
@@ -79,13 +78,13 @@ namespace Heladeria
             // groupBoxSabores
             // 
             this.groupBoxSabores.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxSabores.Controls.Add(this.button7);
-            this.groupBoxSabores.Controls.Add(this.button8);
-            this.groupBoxSabores.Controls.Add(this.button9);
-            this.groupBoxSabores.Controls.Add(this.button10);
+            this.groupBoxSabores.Controls.Add(this.buttonMenta);
+            this.groupBoxSabores.Controls.Add(this.buttonCremaDelCielo);
+            this.groupBoxSabores.Controls.Add(this.buttonDulceDeLeche);
+            this.groupBoxSabores.Controls.Add(this.buttonDurazno);
             this.groupBoxSabores.Controls.Add(this.buttonLimon);
             this.groupBoxSabores.Controls.Add(this.buttonFrutilla);
-            this.groupBoxSabores.Controls.Add(this.buttonDulceDeLeche);
+            this.groupBoxSabores.Controls.Add(this.buttonVainilla);
             this.groupBoxSabores.Controls.Add(this.buttonGranizado);
             this.groupBoxSabores.Controls.Add(this.buttonCrema);
             this.groupBoxSabores.Controls.Add(this.buttonChocolateAmargo);
@@ -98,49 +97,53 @@ namespace Heladeria
             this.groupBoxSabores.TabIndex = 10;
             this.groupBoxSabores.TabStop = false;
             // 
-            // button7
+            // buttonMenta
             // 
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(458, 167);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 75);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.ButtonSabor_Click);
+            this.buttonMenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonMenta.Location = new System.Drawing.Point(458, 167);
+            this.buttonMenta.Name = "buttonMenta";
+            this.buttonMenta.Size = new System.Drawing.Size(150, 75);
+            this.buttonMenta.TabIndex = 11;
+            this.buttonMenta.Text = "Menta";
+            this.buttonMenta.UseCompatibleTextRendering = true;
+            this.buttonMenta.UseVisualStyleBackColor = true;
+            this.buttonMenta.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
-            // button8
+            // buttonCremaDelCielo
             // 
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(458, 90);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 75);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.ButtonSabor_Click);
+            this.buttonCremaDelCielo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonCremaDelCielo.Location = new System.Drawing.Point(458, 90);
+            this.buttonCremaDelCielo.Name = "buttonCremaDelCielo";
+            this.buttonCremaDelCielo.Size = new System.Drawing.Size(150, 75);
+            this.buttonCremaDelCielo.TabIndex = 10;
+            this.buttonCremaDelCielo.Text = "Crema Del Cielo";
+            this.buttonCremaDelCielo.UseCompatibleTextRendering = true;
+            this.buttonCremaDelCielo.UseVisualStyleBackColor = true;
+            this.buttonCremaDelCielo.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
-            // button9
+            // buttonDulceDeLeche
             // 
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(458, 13);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(150, 75);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.ButtonSabor_Click);
+            this.buttonDulceDeLeche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDulceDeLeche.Location = new System.Drawing.Point(458, 13);
+            this.buttonDulceDeLeche.Name = "buttonDulceDeLeche";
+            this.buttonDulceDeLeche.Size = new System.Drawing.Size(150, 75);
+            this.buttonDulceDeLeche.TabIndex = 9;
+            this.buttonDulceDeLeche.Text = "Dulce De Leche";
+            this.buttonDulceDeLeche.UseCompatibleTextRendering = true;
+            this.buttonDulceDeLeche.UseVisualStyleBackColor = true;
+            this.buttonDulceDeLeche.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
-            // button10
+            // buttonDurazno
             // 
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Location = new System.Drawing.Point(306, 167);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(150, 75);
-            this.button10.TabIndex = 8;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.ButtonSabor_Click);
+            this.buttonDurazno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonDurazno.Location = new System.Drawing.Point(306, 167);
+            this.buttonDurazno.Name = "buttonDurazno";
+            this.buttonDurazno.Size = new System.Drawing.Size(150, 75);
+            this.buttonDurazno.TabIndex = 8;
+            this.buttonDurazno.Text = "Durazno";
+            this.buttonDurazno.UseCompatibleTextRendering = true;
+            this.buttonDurazno.UseVisualStyleBackColor = true;
+            this.buttonDurazno.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
             // buttonLimon
             // 
@@ -150,6 +153,7 @@ namespace Heladeria
             this.buttonLimon.Size = new System.Drawing.Size(150, 75);
             this.buttonLimon.TabIndex = 7;
             this.buttonLimon.Text = "Limon";
+            this.buttonLimon.UseCompatibleTextRendering = true;
             this.buttonLimon.UseVisualStyleBackColor = true;
             this.buttonLimon.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
@@ -161,19 +165,21 @@ namespace Heladeria
             this.buttonFrutilla.Size = new System.Drawing.Size(150, 75);
             this.buttonFrutilla.TabIndex = 6;
             this.buttonFrutilla.Text = "Frutilla";
+            this.buttonFrutilla.UseCompatibleTextRendering = true;
             this.buttonFrutilla.UseVisualStyleBackColor = true;
             this.buttonFrutilla.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
-            // buttonDulceDeLeche
+            // buttonVainilla
             // 
-            this.buttonDulceDeLeche.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDulceDeLeche.Location = new System.Drawing.Point(154, 167);
-            this.buttonDulceDeLeche.Name = "buttonDulceDeLeche";
-            this.buttonDulceDeLeche.Size = new System.Drawing.Size(150, 75);
-            this.buttonDulceDeLeche.TabIndex = 5;
-            this.buttonDulceDeLeche.Text = "Dulce De Leche";
-            this.buttonDulceDeLeche.UseVisualStyleBackColor = true;
-            this.buttonDulceDeLeche.Click += new System.EventHandler(this.ButtonSabor_Click);
+            this.buttonVainilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonVainilla.Location = new System.Drawing.Point(154, 167);
+            this.buttonVainilla.Name = "buttonVainilla";
+            this.buttonVainilla.Size = new System.Drawing.Size(150, 75);
+            this.buttonVainilla.TabIndex = 5;
+            this.buttonVainilla.Text = "Vainilla";
+            this.buttonVainilla.UseCompatibleTextRendering = true;
+            this.buttonVainilla.UseVisualStyleBackColor = true;
+            this.buttonVainilla.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
             // buttonGranizado
             // 
@@ -183,6 +189,7 @@ namespace Heladeria
             this.buttonGranizado.Size = new System.Drawing.Size(150, 75);
             this.buttonGranizado.TabIndex = 4;
             this.buttonGranizado.Text = "Granizado";
+            this.buttonGranizado.UseCompatibleTextRendering = true;
             this.buttonGranizado.UseVisualStyleBackColor = true;
             this.buttonGranizado.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
@@ -194,6 +201,7 @@ namespace Heladeria
             this.buttonCrema.Size = new System.Drawing.Size(150, 75);
             this.buttonCrema.TabIndex = 3;
             this.buttonCrema.Text = "Crema";
+            this.buttonCrema.UseCompatibleTextRendering = true;
             this.buttonCrema.UseVisualStyleBackColor = true;
             this.buttonCrema.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
@@ -216,6 +224,7 @@ namespace Heladeria
             this.buttonChocolateConAlmendras.Size = new System.Drawing.Size(150, 75);
             this.buttonChocolateConAlmendras.TabIndex = 1;
             this.buttonChocolateConAlmendras.Text = "Chocolate Con Almendras";
+            this.buttonChocolateConAlmendras.UseCompatibleTextRendering = true;
             this.buttonChocolateConAlmendras.UseVisualStyleBackColor = true;
             this.buttonChocolateConAlmendras.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
@@ -228,6 +237,7 @@ namespace Heladeria
             this.buttonChocolate.Size = new System.Drawing.Size(150, 75);
             this.buttonChocolate.TabIndex = 0;
             this.buttonChocolate.Text = "Chocolate";
+            this.buttonChocolate.UseCompatibleTextRendering = true;
             this.buttonChocolate.UseVisualStyleBackColor = true;
             this.buttonChocolate.Click += new System.EventHandler(this.ButtonSabor_Click);
             // 
@@ -251,40 +261,35 @@ namespace Heladeria
             this.flowLayoutPanelSabores.Size = new System.Drawing.Size(300, 265);
             this.flowLayoutPanelSabores.TabIndex = 12;
             // 
-            // button1
+            // buttonConfirmarPedido
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(534, 518);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Agregar\r\nPedido";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonConfirmarPedido.BackColor = System.Drawing.Color.LightGreen;
+            this.buttonConfirmarPedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonConfirmarPedido.Location = new System.Drawing.Point(588, 499);
+            this.buttonConfirmarPedido.Name = "buttonConfirmarPedido";
+            this.buttonConfirmarPedido.Size = new System.Drawing.Size(150, 60);
+            this.buttonConfirmarPedido.TabIndex = 13;
+            this.buttonConfirmarPedido.Text = "Confirmar\r\nPedido";
+            this.buttonConfirmarPedido.UseCompatibleTextRendering = true;
+            this.buttonConfirmarPedido.UseVisualStyleBackColor = false;
+            this.buttonConfirmarPedido.Click += new System.EventHandler(this.ButtonConfirmarPedido_Click);
             // 
-            // button2
+            // buttonCancelar
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(721, 518);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 50);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(908, 518);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 50);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Terminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancelar.Location = new System.Drawing.Point(826, 499);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(150, 60);
+            this.buttonCancelar.TabIndex = 15;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseCompatibleTextRendering = true;
+            this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.ButtonCancelar_Click);
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 600);
@@ -295,7 +300,7 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel.Size = new System.Drawing.Size(0, 16);
             // 
             // FormVentas
             // 
@@ -304,9 +309,8 @@ namespace Heladeria
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonConfirmarPedido);
             this.Controls.Add(this.flowLayoutPanelSabores);
             this.Controls.Add(this.pictureBoxEnvase);
             this.Controls.Add(this.groupBoxSabores);
@@ -334,13 +338,13 @@ namespace Heladeria
         private CtrlOpciones ctrlOpciones;
         private CtrlEnvases ctrlEnvases;
         private System.Windows.Forms.GroupBox groupBoxSabores;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonMenta;
+        private System.Windows.Forms.Button buttonCremaDelCielo;
+        private System.Windows.Forms.Button buttonDulceDeLeche;
+        private System.Windows.Forms.Button buttonDurazno;
         private System.Windows.Forms.Button buttonLimon;
         private System.Windows.Forms.Button buttonFrutilla;
-        private System.Windows.Forms.Button buttonDulceDeLeche;
+        private System.Windows.Forms.Button buttonVainilla;
         private System.Windows.Forms.Button buttonGranizado;
         private System.Windows.Forms.Button buttonCrema;
         private System.Windows.Forms.Button buttonChocolateAmargo;
@@ -348,9 +352,8 @@ namespace Heladeria
         private System.Windows.Forms.Button buttonChocolate;
         private System.Windows.Forms.PictureBox pictureBoxEnvase;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSabores;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonConfirmarPedido;
+        private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }

@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 namespace Biblioteca
 {
     public class SerializadorJson<T> : IPersistencia<T>
-    //<< revisar:  where T : class
     {
         /// <summary>
         /// Guarda los datos recibidos en un 
