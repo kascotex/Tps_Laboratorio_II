@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Pedido>
-    <NumPedido>1</NumPedido>
-    <Fecha>2022-06-06T03:02:48.3597194-03:00</Fecha>
-    <Helados />
-    <IdCliente>2</IdCliente>
-  </Pedido>
-</ArrayOfPedido>

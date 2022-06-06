@@ -18,8 +18,6 @@
     <Alta>2022-05-26T03:51:29.491733-03:00</Alta>
     <Pedidos>
       <int>1</int>
-      <int>1</int>
-      <int>1</int>
     </Pedidos>
   </Persona>
   <Persona xsi:type="Cliente">

@@ -14,10 +14,11 @@ namespace Biblioteca
 
         public Envase()
         {
+            id = ++ultimoId;
         }
         public Envase(string nombre, int cantSabores)
+            :this()
         {
-            id = ++ultimoId;
             this.nombre = nombre;
             this.cantSabores = cantSabores;
         }

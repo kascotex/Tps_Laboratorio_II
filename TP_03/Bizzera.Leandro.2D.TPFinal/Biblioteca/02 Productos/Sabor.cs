@@ -1,5 +1,4 @@
-﻿using MisFunciones;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Biblioteca
@@ -19,12 +18,13 @@ namespace Biblioteca
 
         public Sabor()
         {
+            id = ++ultimoId;
+            minimo = 20000;
+            etiquetas = new List<ETipo>();
         }
         private Sabor(string nombre, float costo, float? cantidad)
+           : this()
         {
-            id = ++ultimoId;
-            etiquetas = new List<ETipo>();
-            minimo = 20000;
             Costo = costo;
             Stock = cantidad ?? 0;
             this.nombre = nombre;

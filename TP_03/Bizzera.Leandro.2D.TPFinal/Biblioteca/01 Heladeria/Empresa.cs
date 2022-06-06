@@ -415,16 +415,18 @@ namespace Biblioteca
         }
         private static void GuardarListaPedidos()
         {
-            string ruta = Ruta.ArchivoXml(Ruta.Base, "Lista de Pedidos");
+            string ruta = Ruta.ArchivoJson(Ruta.Base, "Lista de Pedidos");
             try
             {
-                GuardarBase(new SerializadorXml<List<Pedido>>(), ruta, pedidos);
+                GuardarBase(new SerializadorJson<List<Pedido>>(), ruta, pedidos);
             }
             catch (Exception e)
             {
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de Pedidos", e));
             }
         }
+        
+
 
 
 

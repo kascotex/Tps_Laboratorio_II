@@ -21,15 +21,16 @@ namespace Biblioteca
 
         public Pedido()
         {
-        }
-        public Pedido(int numSocioCliente, List<Helado> helados)
-        {
             numPedido = ++ultimoPedido;
             helados = new List<Helado>();
+            fecha = DateTime.Now;
+        }
+        public Pedido(int numSocioCliente, List<Helado> helados)
+            :this()
+        {
             this.numSocioCliente = numSocioCliente;
             this.helados = helados;
-            fecha = DateTime.Now;
-            AsociarPedido();
+            VincularPedido();
         }
 
         public Pedido(int idCliente, List<Helado> helados, DateTime fecha)
@@ -48,7 +49,11 @@ namespace Biblioteca
         public int NumPedido
         {
             get { return numPedido; }
-            set { numPedido = value; }
+            set
+            {
+                if (value > numPedido) numPedido = value;
+                numPedido = value;
+            }
         }
         public DateTime Fecha
         {
@@ -60,7 +65,7 @@ namespace Biblioteca
         public int IdCliente { get => numSocioCliente; set => numSocioCliente = value; }
 
 
-        private void AsociarPedido()
+        private void VincularPedido()
         {
             Empresa.ClientePorNumSocio(numSocioCliente).Pedidos.Add(numPedido);
         }
