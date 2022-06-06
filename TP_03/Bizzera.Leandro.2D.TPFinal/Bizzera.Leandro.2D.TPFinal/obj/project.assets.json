@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Tp3 Test\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
       "projectName": "Bizzera.Leandro.2D.TPFinal",
-      "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\Tp3 Test\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\Tp3 Test\\Bizzera.Leandro.2D.TPFinal\\Bizzera.Leandro.2D.TPFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,8 +71,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
-              "projectPath": "D:\\U.T.N\\Repositorios Github\\Tps_Laboratorio_II\\TP_03\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
+            "C:\\Users\\Usuario\\source\\repos\\Tp3 Test\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Tp3 Test\\Bizzera.Leandro.2D.TPFinal\\Biblioteca\\Biblioteca.csproj"
             }
           }
         }

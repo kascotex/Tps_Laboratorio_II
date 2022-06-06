@@ -118,6 +118,7 @@ namespace Heladeria
             this.textBoxNumSocio.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNumSocio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxNumSocio.Location = new System.Drawing.Point(78, 82);
+            this.textBoxNumSocio.Multiline = true;
             this.textBoxNumSocio.Name = "textBoxNumSocio";
             this.textBoxNumSocio.PlaceholderText = "0000";
             this.textBoxNumSocio.Size = new System.Drawing.Size(60, 34);
@@ -131,6 +132,7 @@ namespace Heladeria
             this.textBoxNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
+            this.textBoxNombre.Multiline = true;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.PlaceholderText = "Apellido, Nombre";
             this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
@@ -154,6 +156,7 @@ namespace Heladeria
             this.textBoxDni.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxDni.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDni.Location = new System.Drawing.Point(214, 82);
+            this.textBoxDni.Multiline = true;
             this.textBoxDni.Name = "textBoxDni";
             this.textBoxDni.PlaceholderText = "0";
             this.textBoxDni.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -198,7 +201,7 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 16);
+            this.statusLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // buttonCancelar
             // 

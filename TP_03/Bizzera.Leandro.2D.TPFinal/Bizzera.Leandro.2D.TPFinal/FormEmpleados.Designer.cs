@@ -54,6 +54,7 @@ namespace Heladeria
             // 
             this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
+            this.textBoxNombre.Multiline = true;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.PlaceholderText = "Nombre";
             this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
@@ -63,6 +64,7 @@ namespace Heladeria
             // 
             this.textBoxApellido.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxApellido.Location = new System.Drawing.Point(10, 82);
+            this.textBoxApellido.Multiline = true;
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.PlaceholderText = "Apellido";
             this.textBoxApellido.Size = new System.Drawing.Size(350, 34);
@@ -88,7 +90,7 @@ namespace Heladeria
             0,
             0});
             this.numericUpDownEdad.Name = "numericUpDownEdad";
-            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 34);
+            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 29);
             this.numericUpDownEdad.TabIndex = 3;
             this.numericUpDownEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDownEdad.Value = new decimal(new int[] {
@@ -111,6 +113,7 @@ namespace Heladeria
             // 
             this.textBoxDni.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDni.Location = new System.Drawing.Point(10, 136);
+            this.textBoxDni.Multiline = true;
             this.textBoxDni.Name = "textBoxDni";
             this.textBoxDni.PlaceholderText = "DNI";
             this.textBoxDni.Size = new System.Drawing.Size(200, 34);
@@ -195,7 +198,7 @@ namespace Heladeria
             this.comboBoxPuesto.FormattingEnabled = true;
             this.comboBoxPuesto.Location = new System.Drawing.Point(120, 191);
             this.comboBoxPuesto.Name = "comboBoxPuesto";
-            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 36);
+            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 29);
             this.comboBoxPuesto.TabIndex = 6;
             // 
             // statusStrip
@@ -211,7 +214,7 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 16);
+            this.statusLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // FormEmpleados
             // 

@@ -29,13 +29,15 @@ namespace Heladeria
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CtrlOpciones));
             this.buttonClientes = new System.Windows.Forms.Button();
-            this.buttonFacturacion = new System.Windows.Forms.Button();
+            this.buttonHerramientas = new System.Windows.Forms.Button();
             this.buttonVentas = new System.Windows.Forms.Button();
             this.buttonEmpleados = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonInicio = new System.Windows.Forms.Button();
+            this.toolTipOpciones = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // buttonClientes
@@ -49,20 +51,23 @@ namespace Heladeria
             this.buttonClientes.Name = "buttonClientes";
             this.buttonClientes.Size = new System.Drawing.Size(140, 100);
             this.buttonClientes.TabIndex = 5;
+            this.toolTipOpciones.SetToolTip(this.buttonClientes, "Ir a Clientes");
             this.buttonClientes.UseVisualStyleBackColor = false;
             // 
-            // buttonFacturacion
+            // buttonHerramientas
             // 
-            this.buttonFacturacion.BackColor = System.Drawing.Color.Transparent;
-            this.buttonFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonFacturacion.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonFacturacion.FlatAppearance.BorderSize = 3;
-            this.buttonFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFacturacion.Location = new System.Drawing.Point(0, 300);
-            this.buttonFacturacion.Name = "buttonFacturacion";
-            this.buttonFacturacion.Size = new System.Drawing.Size(140, 100);
-            this.buttonFacturacion.TabIndex = 4;
-            this.buttonFacturacion.UseVisualStyleBackColor = false;
+            this.buttonHerramientas.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHerramientas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHerramientas.BackgroundImage")));
+            this.buttonHerramientas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHerramientas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonHerramientas.FlatAppearance.BorderSize = 3;
+            this.buttonHerramientas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHerramientas.Location = new System.Drawing.Point(0, 300);
+            this.buttonHerramientas.Name = "buttonHerramientas";
+            this.buttonHerramientas.Size = new System.Drawing.Size(140, 100);
+            this.buttonHerramientas.TabIndex = 4;
+            this.toolTipOpciones.SetToolTip(this.buttonHerramientas, "Mostrar Herramientas");
+            this.buttonHerramientas.UseVisualStyleBackColor = false;
             // 
             // buttonVentas
             // 
@@ -76,6 +81,7 @@ namespace Heladeria
             this.buttonVentas.Name = "buttonVentas";
             this.buttonVentas.Size = new System.Drawing.Size(140, 100);
             this.buttonVentas.TabIndex = 3;
+            this.toolTipOpciones.SetToolTip(this.buttonVentas, "Ir a Ventas");
             this.buttonVentas.UseVisualStyleBackColor = false;
             // 
             // buttonEmpleados
@@ -89,6 +95,7 @@ namespace Heladeria
             this.buttonEmpleados.Name = "buttonEmpleados";
             this.buttonEmpleados.Size = new System.Drawing.Size(140, 100);
             this.buttonEmpleados.TabIndex = 2;
+            this.toolTipOpciones.SetToolTip(this.buttonEmpleados, "Ver Empleados");
             this.buttonEmpleados.UseVisualStyleBackColor = false;
             // 
             // buttonSalir
@@ -103,6 +110,7 @@ namespace Heladeria
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(140, 100);
             this.buttonSalir.TabIndex = 6;
+            this.toolTipOpciones.SetToolTip(this.buttonSalir, "Salir");
             this.buttonSalir.UseVisualStyleBackColor = false;
             // 
             // buttonInicio
@@ -117,6 +125,7 @@ namespace Heladeria
             this.buttonInicio.Name = "buttonInicio";
             this.buttonInicio.Size = new System.Drawing.Size(140, 100);
             this.buttonInicio.TabIndex = 1;
+            this.toolTipOpciones.SetToolTip(this.buttonInicio, "Inicio");
             this.buttonInicio.UseVisualStyleBackColor = false;
             // 
             // CtrlOpciones
@@ -125,7 +134,7 @@ namespace Heladeria
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.buttonClientes);
-            this.Controls.Add(this.buttonFacturacion);
+            this.Controls.Add(this.buttonHerramientas);
             this.Controls.Add(this.buttonVentas);
             this.Controls.Add(this.buttonEmpleados);
             this.Controls.Add(this.buttonSalir);
@@ -139,10 +148,11 @@ namespace Heladeria
         #endregion
 
         private System.Windows.Forms.Button buttonClientes;
-        private System.Windows.Forms.Button buttonFacturacion;
+        private System.Windows.Forms.Button buttonHerramientas;
         private System.Windows.Forms.Button buttonVentas;
         private System.Windows.Forms.Button buttonEmpleados;
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Button buttonInicio;
+        private System.Windows.Forms.ToolTip toolTipOpciones;
     }
 }

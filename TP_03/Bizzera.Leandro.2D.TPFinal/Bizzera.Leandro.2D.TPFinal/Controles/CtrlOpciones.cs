@@ -50,7 +50,7 @@ namespace Heladeria
             buttonInicio.Click += new EventHandler(eventoOpciones);
             buttonVentas.Click += new EventHandler(eventoOpciones);
             buttonEmpleados.Click += new EventHandler(eventoOpciones);
-            buttonFacturacion.Click += new EventHandler(eventoOpciones);
+            buttonHerramientas.Click += new EventHandler(eventoOpciones);
             buttonClientes.Click += new EventHandler(eventoOpciones);
         }
 

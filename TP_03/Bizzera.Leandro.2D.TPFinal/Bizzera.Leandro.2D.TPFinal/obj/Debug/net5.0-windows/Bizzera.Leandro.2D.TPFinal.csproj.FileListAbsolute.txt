@@ -107,3 +107,66 @@ C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFi
 C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\ref\Bizzera.Leandro.2D.TPFinal.dll
 C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.pdb
 C:\Users\Usuario\Downloads\Tps_Laboratorio_II-main\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.exe
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.deps.json
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.runtimeconfig.json
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\ref\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.pdb
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Biblioteca.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\MisFunciones.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Biblioteca.pdb
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\MisFunciones.pdb
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlEmpleado.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlEnvases.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlOpciones.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlSabor.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormClientes.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormEmpleados.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormPrincipal.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormVentas.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro._2D.TPFinal.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\ref\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.pdb
+C:\Users\Usuario\Desktop\Tp 3\Bizzera.Leandro.2D.TPFinal 2\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlEmpleado.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlEnvases.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlOpciones.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.CtrlSabor.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormClientes.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormEmpleados.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormPrincipal.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormVentas.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro._2D.TPFinal.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\ref\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.pdb
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.exe
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.deps.json
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.runtimeconfig.json
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.runtimeconfig.dev.json
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\ref\Bizzera.Leandro.2D.TPFinal.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.pdb
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Biblioteca.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\MisFunciones.dll
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\Biblioteca.pdb
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\bin\Debug\net5.0-windows\MisFunciones.pdb
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.csproj.CopyComplete
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Bizzera.Leandro.2D.TPFinal.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\Tp3 Test\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\obj\Debug\net5.0-windows\Heladeria.FormHerramientas.resources
