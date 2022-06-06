@@ -33,8 +33,8 @@ namespace Heladeria
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
-            this.buttonGuardarClientes = new System.Windows.Forms.Button();
-            this.buttonCargarClientes = new System.Windows.Forms.Button();
+            this.buttonExportarClientes = new System.Windows.Forms.Button();
+            this.buttonImportarClientes = new System.Windows.Forms.Button();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,25 +62,25 @@ namespace Heladeria
             this.ctrlOpciones.Size = new System.Drawing.Size(140, 600);
             this.ctrlOpciones.TabIndex = 8;
             // 
-            // buttonGuardarClientes
+            // buttonExportarClientes
             // 
-            this.buttonGuardarClientes.Location = new System.Drawing.Point(319, 67);
-            this.buttonGuardarClientes.Name = "buttonGuardarClientes";
-            this.buttonGuardarClientes.Size = new System.Drawing.Size(167, 83);
-            this.buttonGuardarClientes.TabIndex = 9;
-            this.buttonGuardarClientes.Text = "Guardar \r\nClientes";
-            this.buttonGuardarClientes.UseVisualStyleBackColor = true;
-            this.buttonGuardarClientes.Click += new System.EventHandler(this.ButtonGuardarClientes_Click);
+            this.buttonExportarClientes.Location = new System.Drawing.Point(319, 67);
+            this.buttonExportarClientes.Name = "buttonExportarClientes";
+            this.buttonExportarClientes.Size = new System.Drawing.Size(150, 100);
+            this.buttonExportarClientes.TabIndex = 9;
+            this.buttonExportarClientes.Text = "Exportar\r\nla lista de\r\nClientes";
+            this.buttonExportarClientes.UseVisualStyleBackColor = true;
+            this.buttonExportarClientes.Click += new System.EventHandler(this.ButtonExportarClientes_Click);
             // 
-            // buttonCargarClientes
+            // buttonImportarClientes
             // 
-            this.buttonCargarClientes.Location = new System.Drawing.Point(518, 67);
-            this.buttonCargarClientes.Name = "buttonCargarClientes";
-            this.buttonCargarClientes.Size = new System.Drawing.Size(167, 83);
-            this.buttonCargarClientes.TabIndex = 10;
-            this.buttonCargarClientes.Text = "Cargar \r\nClientes";
-            this.buttonCargarClientes.UseVisualStyleBackColor = true;
-            this.buttonCargarClientes.Click += new System.EventHandler(this.ButtonCargarClientes_Click);
+            this.buttonImportarClientes.Location = new System.Drawing.Point(518, 67);
+            this.buttonImportarClientes.Name = "buttonImportarClientes";
+            this.buttonImportarClientes.Size = new System.Drawing.Size(150, 100);
+            this.buttonImportarClientes.TabIndex = 10;
+            this.buttonImportarClientes.Text = "Importar\r\nla lista de\r\nClientes";
+            this.buttonImportarClientes.UseVisualStyleBackColor = true;
+            this.buttonImportarClientes.Click += new System.EventHandler(this.ButtonImportarClientes_Click);
             // 
             // FormHerramientas
             // 
@@ -88,8 +88,8 @@ namespace Heladeria
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
-            this.Controls.Add(this.buttonCargarClientes);
-            this.Controls.Add(this.buttonGuardarClientes);
+            this.Controls.Add(this.buttonImportarClientes);
+            this.Controls.Add(this.buttonExportarClientes);
             this.Controls.Add(this.ctrlOpciones);
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
@@ -115,8 +115,8 @@ namespace Heladeria
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private CtrlOpciones ctrlOpciones;
-        private System.Windows.Forms.Button buttonGuardarClientes;
-        private System.Windows.Forms.Button buttonCargarClientes;
+        private System.Windows.Forms.Button buttonExportarClientes;
+        private System.Windows.Forms.Button buttonImportarClientes;
     }
 }
 

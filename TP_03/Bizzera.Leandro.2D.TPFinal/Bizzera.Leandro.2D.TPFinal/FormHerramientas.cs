@@ -85,7 +85,7 @@ namespace Heladeria
 
 
 
-        private void CargarClientes()
+        private void ImportarClientes()
         {
             if (ObtenerRutaParaCargarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
             {
@@ -100,7 +100,7 @@ namespace Heladeria
                 }
             }
         }
-        private void GuardarClientes()
+        private void ExportarClientes()
         {
             if (ObtenerRutaParaGuardarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
             {
@@ -164,14 +164,14 @@ namespace Heladeria
             }
         }
 
-        private void ButtonGuardarClientes_Click(object sender, EventArgs e)
+        private void ButtonExportarClientes_Click(object sender, EventArgs e)
         {
-            GuardarClientes();
+            ExportarClientes();
         }
 
-        private void ButtonCargarClientes_Click(object sender, EventArgs e)
+        private void ButtonImportarClientes_Click(object sender, EventArgs e)
         {
-            CargarClientes();
+            ImportarClientes();
         }
 
 
