@@ -1,0 +1,14 @@
+Error al cargar BackgroundImage
+Orden: 0 - Mensaje: Error al cargar la imagen ''
+Inner StackTrace:
+   at Heladeria.Imagen.CargarImagenPng(String ruta) in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\UtilesForm\Imagen.cs:line 44
+   at Heladeria.Imagen.CargarImagen(String nombre) in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\UtilesForm\Imagen.cs:line 57
+   at Heladeria.Imagen.CargarBackgroundImage(Form form) in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\UtilesForm\Imagen.cs:line 93
+---
+Orden: 1 - Mensaje: Value cannot be null. (Parameter 'path')
+Inner StackTrace:
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at Heladeria.Imagen.CargarImagenPng(String ruta) in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_03\Bizzera.Leandro.2D.TPFinal\Bizzera.Leandro.2D.TPFinal\UtilesForm\Imagen.cs:line 40
+---

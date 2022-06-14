@@ -50,7 +50,7 @@ namespace Biblioteca
         }
         public string DniString
         {
-            get { return string.Format(" DNI : {0}", dni); }
+            get { return string.Format("{0}", dni); }
         }
 
 

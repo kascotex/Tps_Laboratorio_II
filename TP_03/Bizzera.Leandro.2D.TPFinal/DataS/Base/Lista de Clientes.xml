@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPersona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Persona xsi:type="Cliente">
+    <Nombre>Blanca</Nombre>
+    <Apellido>Miguez</Apellido>
+    <Dni>43678874</Dni>
+    <NumSocio>1</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-04T21:29:29.491414-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Marcelo</Nombre>
+    <Apellido>Dominguez</Apellido>
+    <Dni>26446005</Dni>
+    <NumSocio>2</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-26T03:51:29.491733-03:00</Alta>
+    <Pedidos>
+      <int>1</int>
+    </Pedidos>
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lililana</Nombre>
+    <Apellido>Cordero</Apellido>
+    <Dni>38214362</Dni>
+    <NumSocio>3</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-02-27T01:20:29.4917353-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Blas</Nombre>
+    <Apellido>Llorens</Apellido>
+    <Dni>24703867</Dni>
+    <NumSocio>4</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-22T19:23:29.4917366-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Rosa</Nombre>
+    <Apellido>Prada</Apellido>
+    <Dni>30890986</Dni>
+    <NumSocio>5</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-25T08:59:29.4917377-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Moisés</Nombre>
+    <Apellido>Luque</Apellido>
+    <Dni>38893602</Dni>
+    <NumSocio>6</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-15T16:33:29.4917451-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Camila</Nombre>
+    <Apellido>Viña</Apellido>
+    <Dni>31789732</Dni>
+    <NumSocio>7</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-12T23:07:29.4917463-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Silvia</Nombre>
+    <Apellido>Cordero</Apellido>
+    <Dni>22587685</Dni>
+    <NumSocio>8</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-11T00:49:29.4917474-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ángel</Nombre>
+    <Apellido>Ripoll</Apellido>
+    <Dni>40861760</Dni>
+    <NumSocio>9</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-09T14:10:29.4917485-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Alba</Nombre>
+    <Apellido>Miguez</Apellido>
+    <Dni>46281035</Dni>
+    <NumSocio>10</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-22T02:45:29.4917497-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Camila</Nombre>
+    <Apellido>Luque</Apellido>
+    <Dni>15782926</Dni>
+    <NumSocio>11</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-15T01:59:29.4917508-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Silvia</Nombre>
+    <Apellido>Echevarría</Apellido>
+    <Dni>43935298</Dni>
+    <NumSocio>12</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-30T07:44:29.4917519-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ariel</Nombre>
+    <Apellido>Ponce</Apellido>
+    <Dni>25746167</Dni>
+    <NumSocio>13</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-10T19:16:29.491753-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Miguel</Nombre>
+    <Apellido>Ortiz</Apellido>
+    <Dni>20552795</Dni>
+    <NumSocio>14</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-06T21:01:29.4917597-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Blas</Nombre>
+    <Apellido>Ripoll</Apellido>
+    <Dni>37772337</Dni>
+    <NumSocio>15</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-06-01T05:34:29.4917608-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lililana</Nombre>
+    <Apellido>Mosquera</Apellido>
+    <Dni>24472362</Dni>
+    <NumSocio>16</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-09T00:01:29.491762-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Miguel</Nombre>
+    <Apellido>Cortez</Apellido>
+    <Dni>24526477</Dni>
+    <NumSocio>17</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-17T17:25:29.4917631-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Miguel</Nombre>
+    <Apellido>Benitez</Apellido>
+    <Dni>14390030</Dni>
+    <NumSocio>18</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-08T01:13:29.4917643-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Emiliano</Nombre>
+    <Apellido>Heredia</Apellido>
+    <Dni>35699044</Dni>
+    <NumSocio>19</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-11T13:24:29.4917654-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lililana</Nombre>
+    <Apellido>Prada</Apellido>
+    <Dni>14801716</Dni>
+    <NumSocio>20</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-26T06:54:29.4917664-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ángel</Nombre>
+    <Apellido>Ortiz</Apellido>
+    <Dni>37371782</Dni>
+    <NumSocio>21</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-19T20:00:29.4917706-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Manuel</Nombre>
+    <Apellido>Luque</Apellido>
+    <Dni>18768882</Dni>
+    <NumSocio>22</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-30T18:36:29.4917718-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ángel</Nombre>
+    <Apellido>Soto</Apellido>
+    <Dni>42027190</Dni>
+    <NumSocio>23</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-29T13:20:29.4917729-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>José</Nombre>
+    <Apellido>Heredia</Apellido>
+    <Dni>16471226</Dni>
+    <NumSocio>24</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-11T07:10:29.491774-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Brunilda</Nombre>
+    <Apellido>Garcia</Apellido>
+    <Dni>11847536</Dni>
+    <NumSocio>25</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-25T16:20:29.4917751-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Miguel</Nombre>
+    <Apellido>Galán</Apellido>
+    <Dni>16896633</Dni>
+    <NumSocio>26</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-30T23:27:29.4917762-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>ViViana</Nombre>
+    <Apellido>Miguez</Apellido>
+    <Dni>22604270</Dni>
+    <NumSocio>27</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-26T19:17:29.4917772-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lililana</Nombre>
+    <Apellido>Ponce</Apellido>
+    <Dni>17880879</Dni>
+    <NumSocio>28</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-16T03:12:29.4917784-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Rosa</Nombre>
+    <Apellido>Miralles</Apellido>
+    <Dni>32851970</Dni>
+    <NumSocio>29</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-27T21:22:29.4917824-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ariel</Nombre>
+    <Apellido>Garcia</Apellido>
+    <Dni>29353973</Dni>
+    <NumSocio>30</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-04T14:14:29.4917836-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Alba</Nombre>
+    <Apellido>Ortiz</Apellido>
+    <Dni>45848496</Dni>
+    <NumSocio>31</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-09T12:52:29.4917847-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Manuel</Nombre>
+    <Apellido>Ponce</Apellido>
+    <Dni>14658016</Dni>
+    <NumSocio>32</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-12T10:50:29.4917858-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Leo</Nombre>
+    <Apellido>Sandoval</Apellido>
+    <Dni>47270401</Dni>
+    <NumSocio>33</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-04T20:17:29.4917869-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Alba</Nombre>
+    <Apellido>Miguez</Apellido>
+    <Dni>29696948</Dni>
+    <NumSocio>34</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-17T04:09:29.4917881-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lililana</Nombre>
+    <Apellido>Mosquera</Apellido>
+    <Dni>14827968</Dni>
+    <NumSocio>35</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-28T16:33:29.4917892-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>ViViana</Nombre>
+    <Apellido>Frutos</Apellido>
+    <Dni>11887562</Dni>
+    <NumSocio>36</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-20T10:50:29.4917903-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ámbar</Nombre>
+    <Apellido>Leocadio</Apellido>
+    <Dni>27594375</Dni>
+    <NumSocio>37</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-14T17:30:29.4917942-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Valeria</Nombre>
+    <Apellido>Cortez</Apellido>
+    <Dni>45572170</Dni>
+    <NumSocio>38</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-02T21:11:29.4917954-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Blas</Nombre>
+    <Apellido>Bello</Apellido>
+    <Dni>35605437</Dni>
+    <NumSocio>39</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-27T10:12:29.4917965-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Lina</Nombre>
+    <Apellido>Prada</Apellido>
+    <Dni>41960085</Dni>
+    <NumSocio>40</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-22T09:51:29.4917976-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Blas</Nombre>
+    <Apellido>Llorens</Apellido>
+    <Dni>15410381</Dni>
+    <NumSocio>41</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-16T22:07:29.4917987-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Rodrigo</Nombre>
+    <Apellido>Leocadio</Apellido>
+    <Dni>43408881</Dni>
+    <NumSocio>42</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-24T05:50:29.4917998-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Emiliano</Nombre>
+    <Apellido>Prada</Apellido>
+    <Dni>40550827</Dni>
+    <NumSocio>43</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-22T19:22:29.4918009-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ámbar</Nombre>
+    <Apellido>Ponce</Apellido>
+    <Dni>25625983</Dni>
+    <NumSocio>44</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-14T20:20:29.491802-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Teobaldo</Nombre>
+    <Apellido>Mendizábal</Apellido>
+    <Dni>24812577</Dni>
+    <NumSocio>45</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-06-01T15:28:29.4918078-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Victoria</Nombre>
+    <Apellido>Córdoba</Apellido>
+    <Dni>18141343</Dni>
+    <NumSocio>46</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-08T03:42:29.4918104-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Ámbar</Nombre>
+    <Apellido>Mendizábal</Apellido>
+    <Dni>45937848</Dni>
+    <NumSocio>47</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-05-03T03:41:29.4918125-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Alba</Nombre>
+    <Apellido>Cordero</Apellido>
+    <Dni>30396637</Dni>
+    <NumSocio>48</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-23T20:37:29.4918137-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Rosa</Nombre>
+    <Apellido>Llorens</Apellido>
+    <Dni>12669902</Dni>
+    <NumSocio>49</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-03-13T04:22:29.4918149-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>Florencia</Nombre>
+    <Apellido>Cortez</Apellido>
+    <Dni>15698494</Dni>
+    <NumSocio>50</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-04-23T02:48:29.4918161-03:00</Alta>
+    <Pedidos />
+  </Persona>
+  <Persona xsi:type="Cliente">
+    <Nombre>lio</Nombre>
+    <Apellido>pol</Apellido>
+    <Dni>123123</Dni>
+    <NumSocio>51</NumSocio>
+    <Puntos>0</Puntos>
+    <Alta>2022-06-05T20:15:24.9780808-03:00</Alta>
+    <Pedidos />
+  </Persona>
+</ArrayOfPersona>

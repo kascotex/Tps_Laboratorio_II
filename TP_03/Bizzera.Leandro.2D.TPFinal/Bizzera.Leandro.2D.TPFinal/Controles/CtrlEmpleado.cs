@@ -31,7 +31,7 @@ namespace Heladeria
         {
             get { return empleado; }
         }
-                
+
 
 
         private void CtrlEmpleado_Load(object sender, EventArgs e)
@@ -44,13 +44,13 @@ namespace Heladeria
             try
             {
                 pictureBoxEmpleado.Image = Imagen.CargarImagen(empleado.Puesto.ToString());
+                labelNombre.Text = empleado.NombreCompleto;
+                labelId.Text = empleado.IdString;
             }
             catch (Exception e)
             {
                 Log.GuardarExcepcion(new Exception("Error al CargarImagenPng empleado", e));
             }
-            labelNombre.Text = empleado.NombreCompleto;
-            labelId.Text = empleado.IdString;
         }
 
         public void CargarEventos(FormEmpleados form)

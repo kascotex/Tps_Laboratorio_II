@@ -45,6 +45,7 @@ namespace Heladeria
             this.comboBoxPuesto = new System.Windows.Forms.ComboBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.labelDni = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEdad)).BeginInit();
             this.groupBoxEditar.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -90,7 +91,7 @@ namespace Heladeria
             0,
             0});
             this.numericUpDownEdad.Name = "numericUpDownEdad";
-            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 29);
+            this.numericUpDownEdad.Size = new System.Drawing.Size(60, 34);
             this.numericUpDownEdad.TabIndex = 3;
             this.numericUpDownEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDownEdad.Value = new decimal(new int[] {
@@ -112,11 +113,10 @@ namespace Heladeria
             // textBoxDni
             // 
             this.textBoxDni.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxDni.Location = new System.Drawing.Point(10, 136);
+            this.textBoxDni.Location = new System.Drawing.Point(61, 136);
             this.textBoxDni.Multiline = true;
             this.textBoxDni.Name = "textBoxDni";
-            this.textBoxDni.PlaceholderText = "DNI";
-            this.textBoxDni.Size = new System.Drawing.Size(200, 34);
+            this.textBoxDni.Size = new System.Drawing.Size(162, 34);
             this.textBoxDni.TabIndex = 5;
             // 
             // flowLayoutPanelEmpleados
@@ -178,6 +178,7 @@ namespace Heladeria
             // groupBoxEditar
             // 
             this.groupBoxEditar.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxEditar.Controls.Add(this.labelDni);
             this.groupBoxEditar.Controls.Add(this.comboBoxPuesto);
             this.groupBoxEditar.Controls.Add(this.labelId);
             this.groupBoxEditar.Controls.Add(this.textBoxNombre);
@@ -198,7 +199,7 @@ namespace Heladeria
             this.comboBoxPuesto.FormattingEnabled = true;
             this.comboBoxPuesto.Location = new System.Drawing.Point(120, 191);
             this.comboBoxPuesto.Name = "comboBoxPuesto";
-            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 29);
+            this.comboBoxPuesto.Size = new System.Drawing.Size(240, 36);
             this.comboBoxPuesto.TabIndex = 6;
             // 
             // statusStrip
@@ -214,7 +215,18 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel.Size = new System.Drawing.Size(0, 16);
+            // 
+            // labelDni
+            // 
+            this.labelDni.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelDni.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDni.Location = new System.Drawing.Point(10, 136);
+            this.labelDni.Name = "labelDni";
+            this.labelDni.Size = new System.Drawing.Size(51, 34);
+            this.labelDni.TabIndex = 8;
+            this.labelDni.Text = "DNI:";
+            this.labelDni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormEmpleados
             // 
@@ -266,5 +278,6 @@ namespace Heladeria
         private System.Windows.Forms.ComboBox comboBoxPuesto;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.Label labelDni;
     }
 }

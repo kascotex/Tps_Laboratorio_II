@@ -1,4 +1,5 @@
 ﻿using Biblioteca;
+using MisFunciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,16 +95,20 @@ namespace Heladeria
                     }
                 }
             }
+            else flowLayoutPanelEmpleados.Controls.Add(new CtrlEmpleado(new Empleado()));
         }
 
 
         private void MostrarEmpleado(Empleado empleado)
         {
+            int min = (int)numericUpDownEdad.Minimum;
+            int max = (int)numericUpDownEdad.Maximum;
+
+            if (MfBasic.EnRango(empleado.Edad, min, max)) numericUpDownEdad.Value = empleado.Edad;
             if (labelId.Text != Empleado.NextIdString()) labelId.Text = empleado.IdString;
             textBoxNombre.Text = empleado.Nombre;
             textBoxApellido.Text = empleado.Apellido;
             textBoxDni.Text = empleado.DniString;
-            numericUpDownEdad.Value = empleado.Edad;
             comboBoxPuesto.SelectedItem = empleado.Puesto;
         }
 
@@ -136,7 +141,7 @@ namespace Heladeria
             string msj;
 
             Empleado.EPuesto puesto = (Empleado.EPuesto)comboBoxPuesto.SelectedValue;
-            int.TryParse(textBoxDni.Text.Remove(0, 6), out int dni);
+            int.TryParse(textBoxDni.Text.Trim(), out int dni);
             int edad = (int)numericUpDownEdad.Value;
             string apellido = textBoxApellido.Text;
             string nombre = textBoxNombre.Text;
