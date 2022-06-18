@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MisFunciones/1.0.0": {
+        "runtime": {
+          "MisFunciones.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MisFunciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
