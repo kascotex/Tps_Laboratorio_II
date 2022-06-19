@@ -14,9 +14,7 @@ namespace Heladeria
     public partial class FormHerramientas : Form, IControlOpcionActual
     {
         private string opcionActual;
-
         string rutaDelArchivo;
-        string nombreDelArchivo;
 
 
 
@@ -30,6 +28,7 @@ namespace Heladeria
         {
             get { return opcionActual; }
         }
+        
 
         private void FormHerramientas_Load(object sender, EventArgs e)
         {
@@ -73,63 +72,66 @@ namespace Heladeria
         }
 
 
-        private string RutaDelArchivo
+
+
+
+        private void ImportarSabores()
         {
-            get { return rutaDelArchivo; }
-            set
-            {
-                rutaDelArchivo = value;
-                if (!(value is null)) nombreDelArchivo = rutaDelArchivo.Substring(rutaDelArchivo.LastIndexOf('\\') + 1);
-            }
-        }
+            string msj = "Error al importar lista de sabores";
 
-
-
-        private void ImportarClientes()
-        {
-            if (ObtenerRutaParaCargarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
+            if (ObtenerRutaParaAbrirArchivo(Ruta.Base, "Archivo json|*.json"))
             {
                 try
                 {
-                    Empresa.Clientes = new SerializadorXml<List<Cliente>>().Leer(RutaDelArchivo);
-                    MessageBox.Show($"Se Cargo la lista de clientes\n con {Empresa.Clientes.Count} clientes.");
+                    Empresa.Sabores = new SerializadorJson<List<Sabor>>().Leer(rutaDelArchivo);
+                    msj = $"Se importo la lista de sabores\n con {Empresa.Sabores.Count} sabores.";
                 }
                 catch (Exception e)
                 {
-                    Log.GuardarExcepcion(new Exception("Error al guardar lista de clientes", e));
+                    Log.GuardarExcepcion(new Exception(msj, e));
+                }
+                finally
+                {
+                    MessageBox.Show(msj);
                 }
             }
         }
-        private void ExportarClientes()
+        private void ExportarSabores()
         {
-            if (ObtenerRutaParaGuardarArchivo(Ruta.ArchivosDeTexto, "Archivo xml|*.xml"))
+            string msj = "Error al exportar lista de sabores";
+
+            if (ObtenerRutaParaGuardarArchivo(Ruta.Base, "Archivo json|*.json"))
             {
                 try
                 {
-                    new SerializadorXml<List<Cliente>>().Guardar(RutaDelArchivo, Empresa.Clientes);
-                    MessageBox.Show($"Se guardo la lista de clientes\n con {Empresa.Clientes.Count} clientes.");
+                    new SerializadorJson<List<Sabor>>().Guardar(rutaDelArchivo, Empresa.Sabores);
+                    msj = $"Se exporto la lista de sabores\n con {Empresa.Sabores.Count} sabores.";
                 }
                 catch (Exception e)
                 {
-                    Log.GuardarExcepcion(new Exception("Error al guardar lista de clientes", e));
+                    Log.GuardarExcepcion(new Exception(msj, e));
+                }
+                finally
+                {
+                    MessageBox.Show(msj);
                 }
             }
         }
 
 
 
-        private bool ObtenerRutaParaCargarArchivo(string directorioInicial, string filtro)
+        private bool ObtenerRutaParaAbrirArchivo(string directorioInicial, string filtro)
         {
             OpenFileDialog archivo = new OpenFileDialog();
             ObtenerRuta(archivo, directorioInicial, filtro);
-            if (RutaDelArchivo is null) return false;
+            if (rutaDelArchivo is null) return false;
             return true;
         }
         private bool ObtenerRutaParaGuardarArchivo(string directorioInicial, string filtro)
         {
             SaveFileDialog archivo = new SaveFileDialog();
             ObtenerRuta(archivo, directorioInicial, filtro);
-            if (RutaDelArchivo is null) return false;
+            if (rutaDelArchivo is null) return false;
             return true;
         }
         private void ObtenerRuta(FileDialog archivo, string directorioInicial, string filtro)
@@ -137,8 +139,8 @@ namespace Heladeria
             archivo.Filter = filtro;
             archivo.InitialDirectory = directorioInicial;
 
-            if (archivo.ShowDialog() == DialogResult.OK) RutaDelArchivo = archivo.FileName;
-            else RutaDelArchivo = null;
+            if (archivo.ShowDialog() == DialogResult.OK) rutaDelArchivo = archivo.FileName;
+            else rutaDelArchivo = null;
         }
 
 
@@ -166,12 +168,12 @@ namespace Heladeria
 
         private void ButtonExportarClientes_Click(object sender, EventArgs e)
         {
-            ExportarClientes();
+            ExportarSabores();
         }
 
         private void ButtonImportarClientes_Click(object sender, EventArgs e)
         {
-            ImportarClientes();
+            ImportarSabores();
         }
 
 

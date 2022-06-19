@@ -31,19 +31,26 @@ namespace Heladeria
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ctrlOpciones = new Heladeria.CtrlOpciones();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 600);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1200, 22);
             this.statusStrip.TabIndex = 0;
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 16);
             // 
             // ctrlOpciones
             // 
@@ -54,10 +61,15 @@ namespace Heladeria
             this.ctrlOpciones.Size = new System.Drawing.Size(140, 600);
             this.ctrlOpciones.TabIndex = 8;
             // 
-            // statusLabel
+            // labelBar
             // 
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.labelInfo.BackColor = System.Drawing.Color.Silver;
+            this.labelInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelInfo.Location = new System.Drawing.Point(281, 137);
+            this.labelInfo.Name = "labelBar";
+            this.labelInfo.Size = new System.Drawing.Size(748, 32);
+            this.labelInfo.TabIndex = 10;
+            this.labelInfo.Text = "Cargando";
             // 
             // FormPrincipal
             // 
@@ -65,6 +77,7 @@ namespace Heladeria
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.ctrlOpciones);
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
@@ -88,6 +101,7 @@ namespace Heladeria
         private System.Windows.Forms.StatusStrip statusStrip;
         private CtrlOpciones ctrlOpciones;
         private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.Label labelInfo;
     }
 }
 

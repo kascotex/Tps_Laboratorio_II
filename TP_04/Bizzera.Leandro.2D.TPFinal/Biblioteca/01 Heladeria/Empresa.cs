@@ -16,7 +16,6 @@ namespace Biblioteca
         private static SqlConnection conexion;
 
 
-
         private static string nombre;
         private static Empleado usuarioActual;
         private static Cliente clienteActual;
@@ -25,6 +24,7 @@ namespace Biblioteca
         private static List<Pedido> pedidos;
         private static List<Cliente> clientes;
         private static List<Empleado> empleados;
+
 
 
         static Empresa()
@@ -52,6 +52,10 @@ namespace Biblioteca
         }
 
 
+
+        public static string CadenaConexion { get => cadenaConexion; }
+        public static SqlCommand Comando { get => comando; }
+        public static SqlConnection Conexion { get => conexion; }
         public static string Nombre
         {
             get { return nombre; }
@@ -145,44 +149,27 @@ namespace Biblioteca
             }
         }
 
-        public static string CadenaConexion { get => cadenaConexion; set => cadenaConexion = value; }
-        public static SqlCommand Comando { get => comando; set => comando = value; }
-        public static SqlConnection Conexion { get => conexion; set => conexion = value; }
+
 
         public static Envase EnvasePorNombre(string nombre)
         {
-            foreach (Envase item in envases)
-            {
-                if (item is not null && item.Nombre == nombre) return item;
-            }
-            return null;
+            return envases.FiltrarElemento(e => e.Nombre == nombre);
         }
         public static Sabor SaborPorNombre(string nombre)
         {
-            foreach (Sabor item in sabores)
-            {
-                if (item is not null && item.Nombre == nombre) return item;
-            }
-            return null;
+            return sabores.FiltrarElemento(s => s.Nombre == nombre);
         }
 
 
         /// <summary>
         /// Busca un cliente por su nombre
         /// </summary>
-        /// <param name="nombre">El nombre de cliente a buscar</param>
+        /// <param name="nombreCompleto">El nombre de cliente a buscar</param>
         /// <returns>El cliente que coincide con el nombre pasado como
         /// argumento o <see langword="null"></see> si no hay coincidencia</returns>
-        public static Cliente ClientePorNombreCompleto(string nombre)
+        public static Cliente ClientePorNombreCompleto(string nombreCompleto)
         {
-            if (nombre is not null)
-            {
-                foreach (Cliente item in clientes)
-                {
-                    if (item is not null && item.NombreCompleto == nombre) return item;
-                }
-            }
-            return null;
+            return clientes.FiltrarElemento(c => c.NombreCompleto == nombreCompleto);
         }
 
         /// <summary>
@@ -193,18 +180,11 @@ namespace Biblioteca
         /// <see langword="null"></see> si no hay coincidencia</returns>
         public static Cliente ClientePorDni(int dni)
         {
-            if (dni > 0)
-            {
-                foreach (Cliente item in clientes)
-                {
-                    if (item.Dni == dni) return item;
-                }
-            }
-            return null;
+            return clientes.FiltrarElemento(c => c.Dni == dni);
         }
         public static Cliente ClientePorDni(string dni)
         {
-            if (int.TryParse(dni, out int d)) return ClientePorDni(d);
+            if (int.TryParse(dni, out int num)) return ClientePorDni(num);
             return null;
         }
 
@@ -216,23 +196,13 @@ namespace Biblioteca
         /// <see langword="null"></see> si no hay coincidencia</returns>
         public static Cliente ClientePorNumSocio(int numSocio)
         {
-            if (numSocio > 0)
-            {
-                foreach (Cliente item in clientes)
-                {
-                    if (item.NumSocio == numSocio) return item;
-                }
-            }
-            return null;
+            return clientes.FiltrarElemento(c => c.NumSocio == numSocio);
         }
         public static Cliente ClientePorNumSocio(string numSocio)
         {
             if (int.TryParse(numSocio, out int n)) return ClientePorNumSocio(n);
             return null;
         }
-
-
-
 
 
 

@@ -10,13 +10,13 @@ namespace Biblioteca
 {
     public class SerializadorJson<T> : IPersistencia<T>
     {
+        // Se aplica lo aprendido en la Clase 10 - Excepciones.
+        // Se aplica lo aprendido en la Clase 12 - Tipos Genéricos.
+        // Se aplica lo aprendido en la Clase 13 - Interfaces.
+        // Se aplica lo aprendido en la clase 14 - Serializacion
         /// <summary>
         /// Guarda los datos recibidos en un 
         /// archivo con formato <see langword="json"></see> en la ruta dada
-        /// Se aplica lo aprendido en la Clase 10 - Excepciones.
-        /// Se aplica lo aprendido en la Clase 12 - Tipos Genéricos.
-        /// Se aplica lo aprendido en la Clase 13 - Interfaces.
-        /// Se aplica lo aprendido en la clase 14 - Serializacion
         /// </summary>
         /// <param name="ruta">Ruta completa del archivo incuida la extencion</param>
         /// <param name="datos">Los datos a guardar en 
@@ -41,15 +41,15 @@ namespace Biblioteca
             }
         }
 
+        // Se aplica lo aprendido en la Clase 10 - Excepciones.
+        // Se aplica lo aprendido en la Clase 12 - Tipos Genéricos.
+        // Se aplica lo aprendido en la Clase 13 - Interfaces.
+        // Se aplica lo aprendido en la clase 14 - Serializacion
         /// <summary>
         /// Lee en formato <see langword="json"></see> los datos en la ruta dada 
-        /// Se aplica lo aprendido en la Clase 10 - Excepciones.
-        /// Se aplica lo aprendido en la Clase 12 - Tipos Genéricos.
-        /// Se aplica lo aprendido en la Clase 13 - Interfaces.
-        /// Se aplica lo aprendido en la clase 14 - Serializacion
         /// </summary>
         /// <param name="ruta">Ruta completa del archivo incuida la extencion</param>
-        /// <returns>Los datos en formato <see langword="json"></see></returns>
+        /// <returns>Los datos en tipo <T> del archivo <see langword="json"></see></returns>
         /// <exception cref="NoSeImportaronDatosException"></exception>Exception>
         public T Leer(string ruta)
         {

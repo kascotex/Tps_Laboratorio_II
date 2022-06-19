@@ -13,8 +13,8 @@ namespace Heladeria
 {
     public partial class FormPrincipal : Form
     {
-        private Button opcionActual;
-
+        //  private Button opcionActual;
+        private bool cargaFinalizada;
 
         public FormPrincipal()
         {
@@ -26,9 +26,11 @@ namespace Heladeria
         {
             CargarImagenes();
             // Harcodear();
-            CargarBase();
+            //CargarBase();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
+            labelInfo.Text = $"Aguarde unos instantes mientras se cargan los datos...";
+            Task.Run(CargarBase);
         }
 
         private void Harcodear()
@@ -38,7 +40,18 @@ namespace Heladeria
         private void CargarBase()
         {
             Empresa.RecuperarInfo();
+            cargaFinalizada = true;
+            MessageBox.Show("Carga Finalizada");
+            if (InvokeRequired) BeginInvoke(new Action(MostrarInfo));
+            else MostrarInfo();
         }
+
+        private void MostrarInfo()
+        {
+            labelInfo.Visible = false;
+
+        }
+
         private void CargarImagenes()
         {
             Imagen.CargarBasicas(this);
@@ -101,10 +114,14 @@ namespace Heladeria
 
         public void CtrlOpciones_Click(object sender, EventArgs e)
         {
-            if (sender is Control ctrl && ctrl is Button boton)
+            if (cargaFinalizada)
             {
-                ManejadorDeOpciones(boton.Name);
+                if (sender is Control ctrl && ctrl is Button boton)
+                {
+                    ManejadorDeOpciones(boton.Name);
+                }
             }
+            else MessageBox.Show("Aguarde a que finalize la carga de datos.");
         }
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {

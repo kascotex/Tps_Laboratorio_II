@@ -118,7 +118,7 @@ namespace Heladeria
             string msj;
 
             Empleado.EPuesto puesto = (Empleado.EPuesto)comboBoxPuesto.SelectedValue;
-            int.TryParse(textBoxDni.Text.Remove(0, 6), out int dni);
+            int.TryParse(textBoxDni.Text, out int dni);
             int edad = (int)numericUpDownEdad.Value;
             string apellido = textBoxApellido.Text;
             string nombre = textBoxNombre.Text;
@@ -219,13 +219,14 @@ namespace Heladeria
             {
                 HabilitarEdicion(buttonEditar.Visible);
                 ctrlActual = null;
-                LimpiarGroupBox(0);
             }
-            else if (ctrlActual is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{ctrlActual.Empleado.NombreCompleto}?"))
+            else if (ctrlActual is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{ctrlActual.Empleado.NombreCompleto}"))
             {
                 Empresa.Empleados.Remove(ctrlActual.Empleado);
                 RefrescarPanelEmpleados();
             }
+
+            LimpiarGroupBox(0);
         }
 
         private void ButtonAgregar_Click(object sender, EventArgs e)

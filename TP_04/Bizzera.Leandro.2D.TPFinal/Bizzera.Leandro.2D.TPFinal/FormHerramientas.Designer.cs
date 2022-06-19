@@ -68,7 +68,7 @@ namespace Heladeria
             this.buttonExportarClientes.Name = "buttonExportarClientes";
             this.buttonExportarClientes.Size = new System.Drawing.Size(150, 100);
             this.buttonExportarClientes.TabIndex = 9;
-            this.buttonExportarClientes.Text = "Exportar\r\nla lista de\r\nClientes";
+            this.buttonExportarClientes.Text = "Exportar\r\nla lista de\r\nSabores";
             this.buttonExportarClientes.UseVisualStyleBackColor = true;
             this.buttonExportarClientes.Click += new System.EventHandler(this.ButtonExportarClientes_Click);
             // 
@@ -78,7 +78,7 @@ namespace Heladeria
             this.buttonImportarClientes.Name = "buttonImportarClientes";
             this.buttonImportarClientes.Size = new System.Drawing.Size(150, 100);
             this.buttonImportarClientes.TabIndex = 10;
-            this.buttonImportarClientes.Text = "Importar\r\nla lista de\r\nClientes";
+            this.buttonImportarClientes.Text = "Importar\r\nla lista de\r\nSabores";
             this.buttonImportarClientes.UseVisualStyleBackColor = true;
             this.buttonImportarClientes.Click += new System.EventHandler(this.ButtonImportarClientes_Click);
             // 

@@ -244,7 +244,6 @@ namespace Heladeria
             // pictureBoxEnvase
             // 
             this.pictureBoxEnvase.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxEnvase.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnvase.Image")));
             this.pictureBoxEnvase.Location = new System.Drawing.Point(150, 3);
             this.pictureBoxEnvase.Name = "pictureBoxEnvase";
             this.pictureBoxEnvase.Size = new System.Drawing.Size(300, 300);
