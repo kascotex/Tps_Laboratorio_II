@@ -14,7 +14,6 @@ namespace Heladeria
 {
     public partial class FormPrincipal : Form
     {
-        //  private Button opcionActual;
         private bool cargaFinalizada;
 
         public FormPrincipal()
@@ -25,7 +24,7 @@ namespace Heladeria
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            Empresa.EventoPedidoAleatorio += new PedidoAleatorioHandler(Empresa.PedidoAleatorio);
+            Empresa.NotificadorDeGuardado += new EventoAleatorioHandler(Aleatorio);
             CargarImagenes();
           //  Harcodear();
             MostrarStatusLabel();
@@ -36,14 +35,7 @@ namespace Heladeria
 
         private void Aleatorio()
         {
-            while (true)
-            {
-                Thread.Sleep(10000);
-                Empresa.PedidoAleatorio();
-                Empresa.RespaldarClientes();
-            }
-
-
+            MessageBox.Show("Se actualizo la base con los nuevos clientes");
         }
 
         private void Harcodear()
@@ -57,7 +49,7 @@ namespace Heladeria
             Task.Run(MostrarCartel);
             Empresa.RecuperarInfo();
             cargaFinalizada = true;
-            Task.Run(Aleatorio);
+            Task.Run(Empresa.Aleatorio);
             if (InvokeRequired) BeginInvoke(new Action(MostrarInfo));
             else MostrarInfo();
         }

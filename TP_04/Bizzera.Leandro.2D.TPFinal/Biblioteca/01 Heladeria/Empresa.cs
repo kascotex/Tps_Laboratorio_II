@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Biblioteca
@@ -27,7 +28,7 @@ namespace Biblioteca
         private static List<Cliente> clientesLocal;
         private static List<Empleado> empleados;
 
-        public static event PedidoAleatorioHandler EventoPedidoAleatorio;
+        public static event EventoAleatorioHandler NotificadorDeGuardado;
 
         static Empresa()
         {
@@ -217,13 +218,24 @@ namespace Biblioteca
 
 
 
+        public static void Aleatorio()
+        {
+            while (true)
+            {
+                Thread.Sleep(10000);
+                PedidoAleatorio();
+               
+                RespaldarClientes();
+            }
+
+        }
+
         public static void PedidoAleatorio()
         {
             Random rnd = new Random();
             List<Helado> helados = new List<Helado>();
             List<Sabor> listaSabores = new List<Sabor>();
-            Cliente cliente;
-
+            Cliente cliente;            
 
             if (Clientes.Count < 2 || rnd.Next(0, 2) == 1)
             {
@@ -247,7 +259,11 @@ namespace Biblioteca
 
         public static void RespaldarClientes()
         {
-           //<< quitar if (clientesLocal.Count > 10) GuardarListaClientes();
+           if (clientesLocal.Count > 10)
+            {
+                GuardarListaClientes();
+                NotificadorDeGuardado();
+            }
         }
 
         internal static bool EsDniRepetido(int dni)
@@ -421,7 +437,6 @@ namespace Biblioteca
             {
                 if (item is not null)
                 {
-                    // if ((item.NumSocio > ultimoId && Cliente.Guardar(item)) || Cliente.Modificar(item))
                     if (item.NumSocio > ultimoId) Cliente.Guardar(item);
                     else Cliente.Modificar(item);
                 }
@@ -431,7 +446,6 @@ namespace Biblioteca
         private static void GuardarListaPersonas(List<Persona> lista, string tipo)
         {
             string ruta = Ruta.ArchivoXml(Ruta.Base, $"Lista de {tipo}");
-
             try
             {
                 GuardarBase(new SerializadorXml<List<Persona>>(), ruta, lista);
