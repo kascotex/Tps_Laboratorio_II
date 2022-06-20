@@ -128,7 +128,7 @@ namespace Heladeria
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBoxNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBoxNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
@@ -152,7 +152,7 @@ namespace Heladeria
             // 
             // textBoxDni
             // 
-            this.textBoxDni.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.textBoxDni.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBoxDni.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textBoxDni.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDni.Location = new System.Drawing.Point(214, 82);
@@ -201,7 +201,7 @@ namespace Heladeria
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel.Size = new System.Drawing.Size(0, 16);
             // 
             // buttonCancelar
             // 

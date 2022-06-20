@@ -36,6 +36,8 @@ namespace Heladeria
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
             CargarListaDePedidos();
+            CargarListaDeClientes();
+            label1.Text = Empresa.ClientesLocal.Count.ToString();
         }
 
         private void CargarListaDePedidos()
@@ -46,7 +48,14 @@ namespace Heladeria
                 if (item is not null) listboxPedidos.Items.Add(item);
             }
         }
-
+        private void CargarListaDeClientes()
+        {
+            listBoxClientes.Items.Clear();
+            foreach (Cliente item in Empresa.Clientes)
+            {
+                if (item is not null) listBoxClientes.Items.Add(item);
+            }
+        }
         private void CargarImagenes()
         {
             Imagen.CargarBasicas(this);

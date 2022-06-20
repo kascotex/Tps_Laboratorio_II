@@ -2,31 +2,37 @@
   {
     "Nombre": "Kilo",
     "Id": 1,
-    "CantSabores": 4
+    "CantSabores": 4,
+    "Precio": 600
   },
   {
     "Nombre": "Medio",
     "Id": 2,
-    "CantSabores": 4
+    "CantSabores": 4,
+    "Precio": 300
   },
   {
     "Nombre": "Cuarto",
     "Id": 3,
-    "CantSabores": 3
+    "CantSabores": 3,
+    "Precio": 150
   },
   {
     "Nombre": "Tacita",
     "Id": 4,
-    "CantSabores": 3
+    "CantSabores": 3,
+    "Precio": 150
   },
   {
     "Nombre": "Cucurucho",
     "Id": 5,
-    "CantSabores": 2
+    "CantSabores": 2,
+    "Precio": 100
   },
   {
     "Nombre": "Vasito",
     "Id": 6,
-    "CantSabores": 2
+    "CantSabores": 2,
+    "Precio": 75
   }
 ]

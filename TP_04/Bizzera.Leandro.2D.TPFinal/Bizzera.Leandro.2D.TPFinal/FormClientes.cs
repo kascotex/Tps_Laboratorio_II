@@ -117,7 +117,7 @@ namespace Heladeria
             string[] nombreCompleto = textBoxNombre.Text.Split(',');
             int.TryParse(textBoxDni.Text, out int dni);
 
-            if (nombreCompleto.Count() == 2)
+            if (nombreCompleto.Length == 2)
             {
                 apellido = nombreCompleto[0];
                 nombre = nombreCompleto[1];
@@ -210,10 +210,14 @@ namespace Heladeria
 
         private void ButtonEliminar_Click(object sender, EventArgs e)
         {
-            if (cliente is not null && Mensaje.EstaSeguroQue($"desea eliminar a:\n{cliente.NombreCompleto}"))
+            if (cliente is not null && Mensaje.EstaSeguroQue($"desea dar de baja a:\n{cliente.NombreCompleto}"))
             {
-                Empresa.Clientes.Remove(cliente);
-                cliente = null;
+                cliente.EstaActivo = false;
+                if (!Empresa.ClientesLocal.Contains(cliente))
+                {
+                    Empresa.Clientes.Remove(cliente);
+                    Empresa.ClientesLocal.Add(cliente);
+                }
                 CargarBuscarClientes();
                 LimpiarGroupBox();
             }

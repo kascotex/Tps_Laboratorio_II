@@ -62,20 +62,10 @@ namespace Biblioteca
         }
 
         public List<Helado> Helados { get => helados; set => helados = value; }
-        public int IdCliente { get => numSocioCliente; set => numSocioCliente = value; }
-
-
-        //  private void VincularPedido()
-        //  {
-        //      Empresa.ClientePorNumSocio(numSocioCliente).Pedidos.Add(numPedido);
-        //  }
-
+        public int IdCliente { get => numSocioCliente; set => numSocioCliente = value; }       
 
        
-        public string MostrarPedido()
-        {
-            return $"numero {numPedido} cliente {IdCliente} fecha {fecha}";
-        }
+       
         public override string ToString()
         {
             return $"Ticket N° {numPedido} cliente {IdCliente} fecha {fecha}";

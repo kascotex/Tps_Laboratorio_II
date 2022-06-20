@@ -36,6 +36,8 @@ namespace Heladeria
             this.buttonExportarClientes = new System.Windows.Forms.Button();
             this.buttonImportarClientes = new System.Windows.Forms.Button();
             this.listboxPedidos = new System.Windows.Forms.ListBox();
+            this.listBoxClientes = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,28 +67,50 @@ namespace Heladeria
             // 
             // buttonExportarClientes
             // 
-            this.buttonExportarClientes.Location = new System.Drawing.Point(319, 67);
+            this.buttonExportarClientes.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonExportarClientes.Location = new System.Drawing.Point(157, 61);
             this.buttonExportarClientes.Name = "buttonExportarClientes";
-            this.buttonExportarClientes.Size = new System.Drawing.Size(150, 100);
+            this.buttonExportarClientes.Size = new System.Drawing.Size(155, 70);
             this.buttonExportarClientes.TabIndex = 9;
-            this.buttonExportarClientes.Text = "Exportar\r\nla lista de\r\nSabores";
-            this.buttonExportarClientes.UseVisualStyleBackColor = true;
+            this.buttonExportarClientes.Text = "Exportar lista\r\nde Sabores";
+            this.buttonExportarClientes.UseVisualStyleBackColor = false;
             this.buttonExportarClientes.Click += new System.EventHandler(this.ButtonExportarClientes_Click);
             // 
             // buttonImportarClientes
             // 
-            this.buttonImportarClientes.Location = new System.Drawing.Point(518, 67);
+            this.buttonImportarClientes.BackColor = System.Drawing.Color.Coral;
+            this.buttonImportarClientes.Location = new System.Drawing.Point(157, 136);
             this.buttonImportarClientes.Name = "buttonImportarClientes";
-            this.buttonImportarClientes.Size = new System.Drawing.Size(150, 100);
+            this.buttonImportarClientes.Size = new System.Drawing.Size(155, 70);
             this.buttonImportarClientes.TabIndex = 10;
-            this.buttonImportarClientes.Text = "Importar\r\nla lista de\r\nSabores";
-            this.buttonImportarClientes.UseVisualStyleBackColor = true;
+            this.buttonImportarClientes.Text = "Importar lista\r\nde Sabores";
+            this.buttonImportarClientes.UseVisualStyleBackColor = false;
             this.buttonImportarClientes.Click += new System.EventHandler(this.ButtonImportarClientes_Click);
-            
-            this.listboxPedidos.Location = new System.Drawing.Point(318, 200);
+            // 
+            // listboxPedidos
+            // 
+            this.listboxPedidos.ItemHeight = 28;
+            this.listboxPedidos.Location = new System.Drawing.Point(332, 61);
             this.listboxPedidos.Name = "listboxPedidos";
-            this.listboxPedidos.Size= new System.Drawing.Size(650, 300);
+            this.listboxPedidos.Size = new System.Drawing.Size(571, 144);
             this.listboxPedidos.TabIndex = 11;
+            // 
+            // listBox1
+            // 
+            this.listBoxClientes.ItemHeight = 28;
+            this.listBoxClientes.Location = new System.Drawing.Point(332, 241);
+            this.listBoxClientes.Name = "listBox1";
+            this.listBoxClientes.Size = new System.Drawing.Size(571, 144);
+            this.listBoxClientes.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(942, 241);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 28);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "label1";
             // 
             // FormHerramientas
             // 
@@ -94,6 +118,8 @@ namespace Heladeria
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 622);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listBoxClientes);
             this.Controls.Add(this.buttonImportarClientes);
             this.Controls.Add(this.buttonExportarClientes);
             this.Controls.Add(this.ctrlOpciones);
@@ -125,6 +151,8 @@ namespace Heladeria
         private System.Windows.Forms.Button buttonExportarClientes;
         private System.Windows.Forms.Button buttonImportarClientes;
         private System.Windows.Forms.ListBox listboxPedidos;
+        private System.Windows.Forms.ListBox listBoxClientes;
+        private System.Windows.Forms.Label label1;
     }
 }
 

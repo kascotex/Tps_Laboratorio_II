@@ -27,7 +27,7 @@ namespace Heladeria
         {
             Empresa.EventoPedidoAleatorio += new PedidoAleatorioHandler(Empresa.PedidoAleatorio);
             CargarImagenes();
-            // Harcodear();
+          //  Harcodear();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
             Task.Run(CargarBase);
@@ -49,6 +49,8 @@ namespace Heladeria
         private void Harcodear()
         {
             Hardcodeo.CrearHeladeria();
+            cargaFinalizada = true;
+            MostrarInfo();
         }
         private void CargarBase()
         {

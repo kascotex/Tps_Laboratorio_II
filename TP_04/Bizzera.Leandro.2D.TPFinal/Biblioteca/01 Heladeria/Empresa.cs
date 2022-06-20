@@ -99,9 +99,10 @@ namespace Biblioteca
 
                 return lista;
             }
-
-            set { clientesLocal = value; }
+            set { value = clientesLocal; }
         }
+        public static List<Cliente> ClientesLocal
+        { get => clientesLocal; }
         public static List<Empleado> Empleados
         {
             get { return empleados; }
@@ -115,7 +116,7 @@ namespace Biblioteca
                 string[] lista = new string[Clientes.Count];
                 foreach (Cliente item in Clientes)
                 {
-                    if (item is not null) lista[i++] = item.NombreCompleto;
+                    if (item is not null && item.EstaActivo) lista[i++] = item.NombreCompleto;
                 }
                 return lista;
             }
@@ -128,7 +129,7 @@ namespace Biblioteca
                 string[] lista = new string[Clientes.Count];
                 foreach (Cliente item in Clientes)
                 {
-                    if (item is not null) lista[i++] = item.Apellido;
+                    if (item is not null && item.EstaActivo) lista[i++] = item.Apellido;
                 }
                 return lista;
             }
@@ -141,7 +142,7 @@ namespace Biblioteca
                 string[] lista = new string[Clientes.Count];
                 foreach (Cliente item in Clientes)
                 {
-                    if (item is not null) lista[i++] = item.Dni.ToString();
+                    if (item is not null && item.EstaActivo) lista[i++] = item.Dni.ToString();
                 }
                 return lista;
             }
@@ -154,12 +155,11 @@ namespace Biblioteca
                 string[] lista = new string[Clientes.Count];
                 foreach (Cliente item in Clientes)
                 {
-                    if (item is not null) lista[i++] = item.NumSocio.ToString();
+                    if (item is not null && item.EstaActivo) lista[i++] = item.NumSocio.ToString();
                 }
                 return lista;
             }
         }
-
 
 
         public static Envase EnvasePorNombre(string nombre)
@@ -279,6 +279,7 @@ namespace Biblioteca
         {
             CargarListaEmpleados();
             CargarListaClientes();
+            //  CargarListaClientesDesdeArchivo();//<< quitar
             CargarListaEnvases();
             CargarListaSabores();
         }
@@ -353,31 +354,7 @@ namespace Biblioteca
         }
         private static void CargarListaClientes()
         {
-            try
-            {
-                conexion.Open();
-                comando.CommandText = "select * from Clientes";
-                SqlDataReader dr = comando.ExecuteReader();
-
-                while (dr.Read())
-                {
-                    clientesBase.Add(new Cliente(
-                        Convert.ToString(dr["nombre"]),
-                        Convert.ToString(dr["apellido"]),
-                        Convert.ToInt32(dr["dni"]),
-                        Convert.ToDateTime(dr["alta"]),
-                        Convert.ToInt32(dr["numSocio"]),
-                        Convert.ToByte(dr["estaActivo"])));
-                }
-            }
-            catch (Exception e)
-            {
-                Log.GuardarExcepcion(new Exception("Error al cargar lista de clientes", e));
-            }
-            finally
-            {
-                conexion.Close();
-            }
+            clientesBase = Cliente.Leer();
         }
 
         private static void CargarListaClientesDesdeArchivo()
@@ -390,7 +367,7 @@ namespace Biblioteca
 
                 foreach (Persona item in lista)
                 {
-                    if (item is not null && item is Cliente cliente) Clientes.Add(cliente);
+                    if (item is not null && item is Cliente cliente) clientesLocal.Add(cliente);
                 }
             }
             catch (Exception e)
@@ -414,12 +391,42 @@ namespace Biblioteca
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de empleados", e));
             }
         }
-        private static void GuardarListaClientes()
+        public static void GuardarListaClientes()//<< hacer
         {
-            // foreach (Cliente item in clientes)
-            // {
-            //     Cliente.Guardar(item);
-            // }
+            int ultimoId = 0;
+            // List<Cliente> lista
+            try
+            {
+                conexion.Open();
+                comando.CommandText = "select top(1) numSocio from Clientes order by numSocio desc";
+                SqlDataReader dr = comando.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    ultimoId = Convert.ToInt32(dr["numSocio"]);
+                }
+
+                if (ultimoId < 1) throw new Exception($"Error al guardar base: ultimo Id = {ultimoId}");
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de clientes", e));
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            foreach (Cliente item in clientesLocal)
+            {
+                if (item is not null)
+                {
+                    // if ((item.NumSocio > ultimoId && Cliente.Guardar(item)) || Cliente.Modificar(item))
+                    if (item.NumSocio > ultimoId) Cliente.Guardar(item);
+                    else Cliente.Modificar(item);
+                }
+            }
+            clientesLocal.Clear();
         }
         private static void GuardarListaPersonas(List<Persona> lista, string tipo)
         {

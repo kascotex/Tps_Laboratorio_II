@@ -25,8 +25,7 @@ namespace Biblioteca
             numSocio = ++ultimonumSocio;
             alta = DateTime.Now;
             estaActivo = 1;
-            //   pedidos = new List<int>();
-        }//<< eliminar
+        }
         public Cliente(string nombre, string apellido, int dni, DateTime alta)
             : this(nombre, apellido, dni)
         {
@@ -57,12 +56,7 @@ namespace Biblioteca
         {
             get { return IdToString(NumSocio); }
         }
-        //public int Puntos
-        //{
-        //    get { return puntos; }
-        //    set { puntos = value; }
-        //}
-        //<< eliminar
+
         public DateTime Alta
         {
             get { return alta; }
@@ -81,12 +75,7 @@ namespace Biblioteca
                 estaActivo = 0;
             }
         }
-        // public List<int> Pedidos 
-        // {
-        //     get { return pedidos; }
-        //     set { pedidos = value; }
-        // }
-        //<< eliminar
+
 
 
 
@@ -95,10 +84,7 @@ namespace Biblioteca
         {
             return string.Format("{0:0000}", numSocio);
         }
-        private void CalcularPuntaje(Pedido pedido)
-        {
 
-        }
 
 
         public static string EsClienteValido(string nombre, string apellido, int dni)
@@ -106,26 +92,10 @@ namespace Biblioteca
             return EsPersonaValida(nombre, apellido, dni, true);
         }
 
-        public static void DarBaja(int numSocio)
+
+        public static bool Modificar(Cliente cliente)
         {
-            try
-            {
-                Empresa.Conexion.Open();
-                // Empresa.Comando.CommandText = $"DELETE FROM CLIENTES WHERE numSocio = {numSocio}";
-                Empresa.Comando.CommandText = $" UPDATE CLIENTES SET estaActivo = 0 WHERE numSocio = {numSocio}";
-                Empresa.Comando.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                Log.GuardarExcepcion(new Exception("Error al Eliminar Cliente", e));
-            }
-            finally
-            {
-                Empresa.Conexion.Close();
-            }
-        }
-        public static void Modificar(Cliente cliente)
-        {
+            bool retorno = false;
             try
             {
                 Empresa.Comando.Parameters.Clear();
@@ -140,6 +110,7 @@ namespace Biblioteca
                 Empresa.Comando.Parameters.AddWithValue("@estaActivo", cliente.estaActivo);
 
                 Empresa.Comando.ExecuteNonQuery();
+                retorno = true;
             }
             catch (Exception e)
             {
@@ -149,10 +120,12 @@ namespace Biblioteca
             {
                 Empresa.Conexion.Close();
             }
+            return retorno;
         }
 
-        public static void Guardar(Cliente cliente)
+        public static bool Guardar(Cliente cliente)
         {
+            bool retorno = false;
             try
             {
                 Empresa.Comando.Parameters.Clear();
@@ -164,7 +137,6 @@ namespace Biblioteca
                 Empresa.Comando.Parameters.AddWithValue("@alta", cliente.alta);
                 Empresa.Comando.Parameters.AddWithValue("@dni", cliente.dni);
                 Empresa.Comando.Parameters.AddWithValue("@estaActivo", cliente.estaActivo);
-                // Empresa.Comando.Parameters.AddWithValue("@numSocio", cliente.numSocio);
 
                 Empresa.Comando.ExecuteNonQuery();
             }
@@ -172,43 +144,81 @@ namespace Biblioteca
             {
                 Empresa.Conexion.Close();
             }
+            return retorno;
         }
 
-        //  public static Cliente LeerPorId(int numSocio)
-        //  {
-        //      Cliente cliente = null;
-        //
-        //      try
-        //      {
-        //          Empresa.Conexion.Open();
-        //          Empresa.Comando.CommandText = $"SELECT * FROM CLIENTES WHERE CODIGO_JUEGO = {numSocio}";
-        //
-        //          using (SqlDataReader dataReader = Empresa.Comando.ExecuteReader())
-        //          {
-        //              while (dataReader.Read())
-        //              {
-        //                  cliente = new Cliente(dataReader["NOMBRE"].ToString(),
-        //                      Convert.ToDouble(dataReader["PRECIO"]),
-        //                      dataReader["GENERO"].ToString(),
-        //                      Convert.ToInt32(dataReader["CODIGO_JUEGO"]),
-        //                      Convert.ToInt32(dataReader["CODIGO_USUARIO"]));
-        //              }
-        //          }
-        //      }
-        //      catch (Exception e)
-        //      {
-        //         Log.GuardarExcepcion(new Exception("Error al Leer Cliente", e));
-        //      }
-        //      finally
-        //      {
-        //          Empresa.Conexion.Close();
-        //      }
-        //
-        //      return cliente;
-        //  }
+        public static Cliente LeerPorId(int numSocio)
+        {
+            Cliente cliente = null;
 
+            try
+            {
+                Empresa.Conexion.Open();
+                Empresa.Comando.CommandText = $"SELECT * FROM CLIENTES WHERE numSocio = {numSocio}";
 
+                using (SqlDataReader dr = Empresa.Comando.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        cliente = new Cliente(
+                                Convert.ToString(dr["nombre"]),
+                                Convert.ToString(dr["apellido"]),
+                                Convert.ToInt32(dr["dni"]),
+                                Convert.ToDateTime(dr["alta"]),
+                                Convert.ToInt32(dr["numSocio"]),
+                                Convert.ToByte(dr["estaActivo"]));
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al Leer Cliente", e));
+            }
+            finally
+            {
+                Empresa.Conexion.Close();
+            }
 
+            return cliente;
+        }
 
+        public static List<Cliente> Leer()
+        {
+            List<Cliente> lista = new List<Cliente>();
+
+            try
+            {
+                Empresa.Comando.Parameters.Clear();
+                Empresa.Conexion.Open();
+                Empresa.Comando.CommandText = "select * from Clientes";
+                SqlDataReader dr = Empresa.Comando.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    lista.Add(new Cliente(
+                        Convert.ToString(dr["nombre"]),
+                        Convert.ToString(dr["apellido"]),
+                        Convert.ToInt32(dr["dni"]),
+                        Convert.ToDateTime(dr["alta"]),
+                        Convert.ToInt32(dr["numSocio"]),
+                        Convert.ToByte(dr["estaActivo"])));
+                }
+            }
+            catch (Exception e)
+            {
+                Log.GuardarExcepcion(new Exception("Error al cargar lista de clientes", e));
+            }
+            finally
+            {
+                Empresa.Conexion.Close();
+            }
+
+            return lista;
+        }
+
+        public override string ToString()
+        {
+            return $"{numSocio} {NombreCompleto} {EstaActivo}";
+        }
     }
 }

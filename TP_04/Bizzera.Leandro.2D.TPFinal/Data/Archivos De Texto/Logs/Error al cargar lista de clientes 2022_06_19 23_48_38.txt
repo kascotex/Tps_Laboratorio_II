@@ -1,0 +1,13 @@
+
+Orden: 0 - Mensaje: Error al cargar lista de clientes
+Inner StackTrace:
+
+---
+Orden: 1 - Mensaje: The connection was not closed. The connection's current state is open.
+Inner StackTrace:
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Biblioteca.Cliente.Guardar(Cliente cliente) in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_04\Bizzera.Leandro.2D.TPFinal\Biblioteca\03 Personas\Cliente.cs:line 128
+   at Biblioteca.Empresa.GuardarListaClientes() in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_04\Bizzera.Leandro.2D.TPFinal\Biblioteca\01 Heladeria\Empresa.cs:line 416
+---
