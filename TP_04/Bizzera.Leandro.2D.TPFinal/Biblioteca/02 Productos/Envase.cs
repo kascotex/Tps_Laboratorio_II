@@ -10,17 +10,19 @@ namespace Biblioteca
         private int id;
         private string nombre;
         private int cantSabores;
+        private float precio;
 
 
         public Envase()
         {
             id = ++ultimoId;
         }
-        public Envase(string nombre, int cantSabores)
+        public Envase(string nombre, int cantSabores, float precio)
             :this()
         {
             this.nombre = nombre;
             this.cantSabores = cantSabores;
+            this.precio = precio;
         }
 
 
@@ -45,10 +47,6 @@ namespace Biblioteca
             set { cantSabores = value; }
         }
 
-
-
-
-
-
+        public float Precio { get => precio; set => precio = value; }
     }
 }

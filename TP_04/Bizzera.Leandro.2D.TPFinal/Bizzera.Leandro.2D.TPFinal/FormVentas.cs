@@ -191,7 +191,11 @@ namespace Heladeria
             if (Empresa.ClienteActual is not null && CrearHelado())
             {
                 Empresa.Pedidos.Add(new Pedido(Empresa.ClienteActual.NumSocio, helados));
-                MessageBox.Show("Pedido confirmado.");
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("Pedido confirmado.");
+                sb.AppendLine($"{Empresa.ClienteActual.NombreCompleto}");
+                sb.AppendLine($"{envaseActual.Nombre} - ${envaseActual.Precio}");
+                MessageBox.Show(sb.ToString());
             }
             else MessageBox.Show("No se pudo confirmar el pedido.");
         }

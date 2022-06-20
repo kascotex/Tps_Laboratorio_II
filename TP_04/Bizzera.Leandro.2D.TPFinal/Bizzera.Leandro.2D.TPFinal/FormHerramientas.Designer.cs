@@ -35,6 +35,7 @@ namespace Heladeria
             this.ctrlOpciones = new Heladeria.CtrlOpciones();
             this.buttonExportarClientes = new System.Windows.Forms.Button();
             this.buttonImportarClientes = new System.Windows.Forms.Button();
+            this.listboxPedidos = new System.Windows.Forms.ListBox();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,11 @@ namespace Heladeria
             this.buttonImportarClientes.Text = "Importar\r\nla lista de\r\nSabores";
             this.buttonImportarClientes.UseVisualStyleBackColor = true;
             this.buttonImportarClientes.Click += new System.EventHandler(this.ButtonImportarClientes_Click);
+            
+            this.listboxPedidos.Location = new System.Drawing.Point(318, 200);
+            this.listboxPedidos.Name = "listboxPedidos";
+            this.listboxPedidos.Size= new System.Drawing.Size(650, 300);
+            this.listboxPedidos.TabIndex = 11;
             // 
             // FormHerramientas
             // 
@@ -91,6 +97,7 @@ namespace Heladeria
             this.Controls.Add(this.buttonImportarClientes);
             this.Controls.Add(this.buttonExportarClientes);
             this.Controls.Add(this.ctrlOpciones);
+            this.Controls.Add(this.listboxPedidos);
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -117,6 +124,7 @@ namespace Heladeria
         private CtrlOpciones ctrlOpciones;
         private System.Windows.Forms.Button buttonExportarClientes;
         private System.Windows.Forms.Button buttonImportarClientes;
+        private System.Windows.Forms.ListBox listboxPedidos;
     }
 }
 

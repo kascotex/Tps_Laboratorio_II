@@ -35,6 +35,16 @@ namespace Heladeria
             CargarImagenes();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
+            CargarListaDePedidos();
+        }
+
+        private void CargarListaDePedidos()
+        {
+            listboxPedidos.Items.Clear();
+            foreach (Pedido item in Empresa.Pedidos)
+            {
+                if (item is not null) listboxPedidos.Items.Add(item);
+            }
         }
 
         private void CargarImagenes()

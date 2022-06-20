@@ -61,15 +61,17 @@ namespace Heladeria
             this.ctrlOpciones.Size = new System.Drawing.Size(140, 600);
             this.ctrlOpciones.TabIndex = 8;
             // 
-            // labelBar
+            // labelInfo
             // 
+            this.labelInfo.AutoSize = true;
             this.labelInfo.BackColor = System.Drawing.Color.Silver;
             this.labelInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelInfo.Location = new System.Drawing.Point(281, 137);
-            this.labelInfo.Name = "labelBar";
-            this.labelInfo.Size = new System.Drawing.Size(748, 32);
+            this.labelInfo.Location = new System.Drawing.Point(263, 9);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(99, 28);
             this.labelInfo.TabIndex = 10;
-            this.labelInfo.Text = "Cargando";
+            this.labelInfo.Text = "Cargando los datos .....";
+           
             // 
             // FormPrincipal
             // 

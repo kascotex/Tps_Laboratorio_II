@@ -17,5 +17,5 @@ Inner StackTrace:
    at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
    at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
    at System.Data.SqlClient.SqlConnection.Open()
-   at Biblioteca.Empresa.CargarListaClientes() in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_04\Bizzera.Leandro.2D.TPFinal\Biblioteca\01 Heladeria\Empresa.cs:line 317
+   at Biblioteca.Empresa.CargarListaClientes() in D:\U.T.N\Repositorios Github\Tps_Laboratorio_II\TP_04\Bizzera.Leandro.2D.TPFinal\Biblioteca\01 Heladeria\Empresa.cs:line 358
 ---

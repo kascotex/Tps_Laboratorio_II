@@ -26,11 +26,11 @@ namespace Biblioteca
             fecha = DateTime.Now;
         }
         public Pedido(int numSocioCliente, List<Helado> helados)
-            :this()
+            : this()
         {
             this.numSocioCliente = numSocioCliente;
             this.helados = helados;
-          //  VincularPedido();
+            //  VincularPedido();
         }
 
         public Pedido(int idCliente, List<Helado> helados, DateTime fecha)
@@ -65,12 +65,21 @@ namespace Biblioteca
         public int IdCliente { get => numSocioCliente; set => numSocioCliente = value; }
 
 
-      //  private void VincularPedido()
-      //  {
-      //      Empresa.ClientePorNumSocio(numSocioCliente).Pedidos.Add(numPedido);
-      //  }
-    
-    
-    
+        //  private void VincularPedido()
+        //  {
+        //      Empresa.ClientePorNumSocio(numSocioCliente).Pedidos.Add(numPedido);
+        //  }
+
+
+       
+        public string MostrarPedido()
+        {
+            return $"numero {numPedido} cliente {IdCliente} fecha {fecha}";
+        }
+        public override string ToString()
+        {
+            return $"Ticket N° {numPedido} cliente {IdCliente} fecha {fecha}";
+        }
+
     }
 }

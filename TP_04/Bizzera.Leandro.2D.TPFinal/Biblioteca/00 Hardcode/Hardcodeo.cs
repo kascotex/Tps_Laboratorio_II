@@ -30,12 +30,12 @@ namespace Biblioteca
         {
             List<Envase> lista = new List<Envase>();
 
-            lista.Add(new Envase("Kilo", 4));
-            lista.Add(new Envase("Medio", 4));
-            lista.Add(new Envase("Cuarto", 3));
-            lista.Add(new Envase("Tacita", 3));
-            lista.Add(new Envase("Cucurucho", 2));
-            lista.Add(new Envase("Vasito", 2));
+            lista.Add(new Envase("Kilo", 4,600));
+            lista.Add(new Envase("Medio", 4,300));
+            lista.Add(new Envase("Cuarto", 3,150));
+            lista.Add(new Envase("Tacita", 3,150));
+            lista.Add(new Envase("Cucurucho", 2,100));
+            lista.Add(new Envase("Vasito", 2,75));
 
             return lista;
         }
@@ -158,6 +158,7 @@ namespace Biblioteca
             return new Cliente(NombreRnd(), ApellidoRnd(), dni, FechaAltaRnd());
         }
 
+       
 
 
         /// <summary>

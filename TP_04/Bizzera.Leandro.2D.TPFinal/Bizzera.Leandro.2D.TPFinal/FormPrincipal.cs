@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,13 +25,25 @@ namespace Heladeria
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            Empresa.EventoPedidoAleatorio += new PedidoAleatorioHandler(Empresa.PedidoAleatorio);
             CargarImagenes();
             // Harcodear();
-            //CargarBase();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
-            labelInfo.Text = $"Aguarde unos instantes mientras se cargan los datos...";
             Task.Run(CargarBase);
+            
+        }
+
+        private void Aleatorio()
+        {
+            while (true)
+            {
+                Thread.Sleep(10000);
+                Empresa.PedidoAleatorio();
+                Empresa.RespaldarClientes();
+            }
+
+
         }
 
         private void Harcodear()
@@ -39,17 +52,60 @@ namespace Heladeria
         }
         private void CargarBase()
         {
+            Task.Run(MostrarCartel);
             Empresa.RecuperarInfo();
             cargaFinalizada = true;
-            MessageBox.Show("Carga Finalizada");
+            Task.Run(Aleatorio);
             if (InvokeRequired) BeginInvoke(new Action(MostrarInfo));
             else MostrarInfo();
+        }
+        private void MostrarCartel()
+        {
+            while (!cargaFinalizada)
+            {
+                Thread.Sleep(200);
+                if (InvokeRequired) BeginInvoke(new Action(CartelCargando));
+                else CartelCargando();
+            }
+        }
+        private void CartelCargando()
+        {
+            switch (labelInfo.Text)
+            {
+                case "Cargando los datos .....":
+                    labelInfo.Text = "Cargando los datos  ....";
+                    break;
+                case "Cargando los datos  ....":
+                    labelInfo.Text = "Cargando los datos . ...";
+                    break;
+                case "Cargando los datos . ...":
+                    labelInfo.Text = "Cargando los datos .. ..";
+                    break;
+                case "Cargando los datos .. ..":
+                    labelInfo.Text = "Cargando los datos ... .";
+                    break;
+                case "Cargando los datos ... .":
+                    labelInfo.Text = "Cargando los datos .... ";
+                    break;
+                case "Cargando los datos .... ":
+                    labelInfo.Text = "Cargando los datos .....";
+                    break;
+
+            }
         }
 
         private void MostrarInfo()
         {
-            labelInfo.Visible = false;
+            StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine($"Cantidad de Empleados: {Empresa.Empleados.Count}");
+            sb.AppendLine($"Cantidad de Clientes: {Empresa.Clientes.Count}");
+            sb.AppendLine($"Cantidad de Envases: {Empresa.Envases.Count}");
+            sb.AppendLine($"Cantidad de Sabores: {Empresa.Sabores.Count}");
+
+            labelInfo.Text = sb.ToString();
+            MessageBox.Show("Carga Finalizada");
+            labelInfo.Visible = false;
         }
 
         private void CargarImagenes()
@@ -64,7 +120,7 @@ namespace Heladeria
         {
             if (Empresa.ClienteActual is null)
             {
-                statusLabel.Text = "Ningun Cliente Seleccionado";
+                statusLabel.Text = "Ningún Cliente Seleccionado";
                 statusStrip.BackColor = Color.Silver;
             }
             else

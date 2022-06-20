@@ -7,4 +7,6 @@ using System.Threading.Tasks;
 namespace Biblioteca
 {
     public delegate bool DelegadoFiltrar<T>(T filtro);
+    public delegate void PedidoAleatorioHandler();
+    // public delegate void PedidoAleatorioHandler(Pedido sender, NewsletterEventArgs eventArgs);
 }

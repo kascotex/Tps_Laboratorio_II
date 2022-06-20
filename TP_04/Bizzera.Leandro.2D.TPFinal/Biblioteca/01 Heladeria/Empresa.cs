@@ -11,6 +11,7 @@ namespace Biblioteca
     public static class Empresa
     {
 
+
         private static string cadenaConexion;
         private static SqlCommand comando;
         private static SqlConnection conexion;
@@ -22,17 +23,19 @@ namespace Biblioteca
         private static List<Sabor> sabores;
         private static List<Envase> envases;
         private static List<Pedido> pedidos;
-        private static List<Cliente> clientes;
+        private static List<Cliente> clientesBase;
+        private static List<Cliente> clientesLocal;
         private static List<Empleado> empleados;
 
-
+        public static event PedidoAleatorioHandler EventoPedidoAleatorio;
 
         static Empresa()
         {
             sabores = new List<Sabor>();
             envases = new List<Envase>();
             pedidos = new List<Pedido>();
-            clientes = new List<Cliente>();
+            clientesBase = new List<Cliente>();
+            clientesLocal = new List<Cliente>();
             empleados = new List<Empleado>();
 
             cadenaConexion = @"Data Source=DESKTOP-8IDHMHG\MSSQLSERVER06;Initial Catalog=HELADERIA_DB;Integrated Security=True";
@@ -88,8 +91,16 @@ namespace Biblioteca
         }
         public static List<Cliente> Clientes
         {
-            get { return clientes; }
-            set { clientes = value; }
+            get
+            {
+                List<Cliente> lista = new List<Cliente>();
+                lista.AddRange(clientesBase);
+                lista.AddRange(clientesLocal);
+
+                return lista;
+            }
+
+            set { clientesLocal = value; }
         }
         public static List<Empleado> Empleados
         {
@@ -101,8 +112,8 @@ namespace Biblioteca
             get
             {
                 int i = 0;
-                string[] lista = new string[clientes.Count];
-                foreach (Cliente item in clientes)
+                string[] lista = new string[Clientes.Count];
+                foreach (Cliente item in Clientes)
                 {
                     if (item is not null) lista[i++] = item.NombreCompleto;
                 }
@@ -114,8 +125,8 @@ namespace Biblioteca
             get
             {
                 int i = 0;
-                string[] lista = new string[clientes.Count];
-                foreach (Cliente item in clientes)
+                string[] lista = new string[Clientes.Count];
+                foreach (Cliente item in Clientes)
                 {
                     if (item is not null) lista[i++] = item.Apellido;
                 }
@@ -127,8 +138,8 @@ namespace Biblioteca
             get
             {
                 int i = 0;
-                string[] lista = new string[clientes.Count];
-                foreach (Cliente item in clientes)
+                string[] lista = new string[Clientes.Count];
+                foreach (Cliente item in Clientes)
                 {
                     if (item is not null) lista[i++] = item.Dni.ToString();
                 }
@@ -140,8 +151,8 @@ namespace Biblioteca
             get
             {
                 int i = 0;
-                string[] lista = new string[clientes.Count];
-                foreach (Cliente item in clientes)
+                string[] lista = new string[Clientes.Count];
+                foreach (Cliente item in Clientes)
                 {
                     if (item is not null) lista[i++] = item.NumSocio.ToString();
                 }
@@ -169,7 +180,7 @@ namespace Biblioteca
         /// argumento o <see langword="null"></see> si no hay coincidencia</returns>
         public static Cliente ClientePorNombreCompleto(string nombreCompleto)
         {
-            return clientes.FiltrarElemento(c => c.NombreCompleto == nombreCompleto);
+            return Clientes.FiltrarElemento(c => c.NombreCompleto == nombreCompleto);
         }
 
         /// <summary>
@@ -180,7 +191,7 @@ namespace Biblioteca
         /// <see langword="null"></see> si no hay coincidencia</returns>
         public static Cliente ClientePorDni(int dni)
         {
-            return clientes.FiltrarElemento(c => c.Dni == dni);
+            return Clientes.FiltrarElemento(c => c.Dni == dni);
         }
         public static Cliente ClientePorDni(string dni)
         {
@@ -196,7 +207,7 @@ namespace Biblioteca
         /// <see langword="null"></see> si no hay coincidencia</returns>
         public static Cliente ClientePorNumSocio(int numSocio)
         {
-            return clientes.FiltrarElemento(c => c.NumSocio == numSocio);
+            return Clientes.FiltrarElemento(c => c.NumSocio == numSocio);
         }
         public static Cliente ClientePorNumSocio(string numSocio)
         {
@@ -206,15 +217,45 @@ namespace Biblioteca
 
 
 
+        public static void PedidoAleatorio()
+        {
+            Random rnd = new Random();
+            List<Helado> helados = new List<Helado>();
+            List<Sabor> listaSabores = new List<Sabor>();
+            Cliente cliente;
 
 
+            if (Clientes.Count < 2 || rnd.Next(0, 2) == 1)
+            {
+                cliente = Hardcodeo.CrearCliente();
+                clientesLocal.Add(cliente);
+            }
+            else cliente = Clientes[rnd.Next(0, Clientes.Count)];
+
+            Envase envase = envases[rnd.Next(0, envases.Count)];
+
+            for (int i = 0; i < envase.CantSabores; i++)
+            {
+                listaSabores.Add(sabores[rnd.Next(0, sabores.Count)]);
+            }
+
+            helados.Add(new Helado(envase, listaSabores));
+
+            pedidos.Add(new Pedido(cliente.NumSocio, helados));
+        }
+
+
+        public static void RespaldarClientes()
+        {
+            if (clientesLocal.Count > 10) GuardarListaClientes();
+        }
 
         internal static bool EsDniRepetido(int dni)
         {
             List<Persona> lista = new List<Persona>();
 
             lista.AddRange(empleados);
-            lista.AddRange(clientes);
+            lista.AddRange(clientesBase);
 
             foreach (Persona item in lista)
             {
@@ -320,7 +361,7 @@ namespace Biblioteca
 
                 while (dr.Read())
                 {
-                    clientes.Add(new Cliente(
+                    clientesBase.Add(new Cliente(
                         Convert.ToString(dr["nombre"]),
                         Convert.ToString(dr["apellido"]),
                         Convert.ToInt32(dr["dni"]),
@@ -339,9 +380,8 @@ namespace Biblioteca
             }
         }
 
-        /*         private static void CargarListaClientes()
+        private static void CargarListaClientesDesdeArchivo()
         {
-
             string ruta = Ruta.ArchivoXml(Ruta.Base, "Lista de clientes");
             List<Persona> lista;
             try
@@ -350,7 +390,7 @@ namespace Biblioteca
 
                 foreach (Persona item in lista)
                 {
-                    if (item is not null && item is Cliente cliente) clientes.Add(cliente);
+                    if (item is not null && item is Cliente cliente) Clientes.Add(cliente);
                 }
             }
             catch (Exception e)
@@ -358,7 +398,7 @@ namespace Biblioteca
                 Log.GuardarExcepcion(new Exception("Error al cargar lista de clientes", e));
             }
         }
-      */
+
 
         private static void GuardarListaEmpleados()
         {
