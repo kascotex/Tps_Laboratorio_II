@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Heladeria
 {
-    public interface IControlOpcionActual //  public interface IPersistencia<T>
+    public interface IControlOpcionActual 
     {
         string OpcionActual { get; }
         

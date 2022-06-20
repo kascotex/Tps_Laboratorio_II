@@ -41,7 +41,7 @@ namespace Biblioteca
 
 
 
-
+       
         public static int UltimoPedido
         {
             get { return ultimoPedido; }
@@ -60,6 +60,20 @@ namespace Biblioteca
             get { return fecha; }
             set { fecha = value; }
         }
+        public float Total
+        {
+            get { return CalcularTotal(); }
+        }
+
+        private float CalcularTotal()
+        {
+            float total = 0;
+            foreach (Helado item in helados)
+            {
+                if (item is not null) total += item.Envase.Precio;
+            }
+            return total;
+        }
 
         public List<Helado> Helados { get => helados; set => helados = value; }
         public int IdCliente { get => numSocioCliente; set => numSocioCliente = value; }       
@@ -68,7 +82,7 @@ namespace Biblioteca
        
         public override string ToString()
         {
-            return $"Ticket N° {numPedido} cliente {IdCliente} fecha {fecha}";
+            return $"Ticket N° {numPedido} {fecha} -  {Empresa.ClientePorNumSocio(IdCliente).NombreCompleto} ${Total}";
         }
 
     }

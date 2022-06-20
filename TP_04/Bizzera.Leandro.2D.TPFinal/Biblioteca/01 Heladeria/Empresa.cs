@@ -247,7 +247,7 @@ namespace Biblioteca
 
         public static void RespaldarClientes()
         {
-            if (clientesLocal.Count > 10) GuardarListaClientes();
+           //<< quitar if (clientesLocal.Count > 10) GuardarListaClientes();
         }
 
         internal static bool EsDniRepetido(int dni)
@@ -391,7 +391,7 @@ namespace Biblioteca
                 Log.GuardarExcepcion(new Exception("Error al guardar lista de empleados", e));
             }
         }
-        public static void GuardarListaClientes()//<< hacer
+        public static void GuardarListaClientes()
         {
             int ultimoId = 0;
             // List<Cliente> lista

@@ -218,7 +218,9 @@ namespace Biblioteca
 
         public override string ToString()
         {
-            return $"{numSocio} {NombreCompleto} {EstaActivo}";
+            string estado = (EstaActivo) ? " Activo" : "De baja";
+
+            return $"{estado} - Socio N°: {numSocio} {NombreCompleto}";
         }
     }
 }

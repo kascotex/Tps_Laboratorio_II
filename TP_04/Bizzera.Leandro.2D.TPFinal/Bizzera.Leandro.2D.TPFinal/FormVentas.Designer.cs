@@ -317,7 +317,7 @@ namespace Heladeria
             this.Controls.Add(this.ctrlEnvases);
             this.Controls.Add(this.ctrlOpciones);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormVentas";

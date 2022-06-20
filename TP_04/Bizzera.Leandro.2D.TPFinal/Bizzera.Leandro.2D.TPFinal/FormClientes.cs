@@ -85,7 +85,7 @@ namespace Heladeria
         /// </summary>
         private void MostrarCliente()
         {
-            if (cliente is not null)
+            if (cliente is not null && cliente.EstaActivo)
             {
                 textBoxDni.Text = cliente.Dni.ToString();
                 textBoxNombre.Text = cliente.NombreCompleto;

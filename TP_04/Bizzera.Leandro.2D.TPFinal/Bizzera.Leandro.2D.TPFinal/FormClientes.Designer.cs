@@ -38,9 +38,9 @@ namespace Heladeria
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
             this.labelDni = new System.Windows.Forms.Label();
             this.textBoxNumSocio = new System.Windows.Forms.TextBox();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.labelSocio = new System.Windows.Forms.Label();
             this.textBoxDni = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.buttonModo = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -126,19 +126,6 @@ namespace Heladeria
             this.textBoxNumSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxNumSocio.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
-            // textBoxNombre
-            // 
-            this.textBoxNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxNombre.Location = new System.Drawing.Point(10, 28);
-            this.textBoxNombre.Multiline = true;
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.PlaceholderText = "Apellido, Nombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
-            this.textBoxNombre.TabIndex = 0;
-            this.textBoxNombre.Leave += new System.EventHandler(this.TextBox_Leave);
-            // 
             // labelSocio
             // 
             this.labelSocio.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -164,6 +151,19 @@ namespace Heladeria
             this.textBoxDni.TabIndex = 5;
             this.textBoxDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxDni.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // textBoxNombre
+            // 
+            this.textBoxNombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxNombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxNombre.Location = new System.Drawing.Point(10, 33);
+            this.textBoxNombre.Multiline = true;
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.PlaceholderText = "Apellido, Nombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(350, 34);
+            this.textBoxNombre.TabIndex = 0;
+            this.textBoxNombre.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // buttonModo
             // 
@@ -244,7 +244,7 @@ namespace Heladeria
             this.Controls.Add(this.buttonAgregar);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormClientes";

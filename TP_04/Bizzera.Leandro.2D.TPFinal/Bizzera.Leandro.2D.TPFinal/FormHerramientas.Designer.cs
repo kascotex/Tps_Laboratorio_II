@@ -90,23 +90,23 @@ namespace Heladeria
             // listboxPedidos
             // 
             this.listboxPedidos.ItemHeight = 28;
-            this.listboxPedidos.Location = new System.Drawing.Point(332, 61);
+            this.listboxPedidos.Location = new System.Drawing.Point(441, 45);
             this.listboxPedidos.Name = "listboxPedidos";
-            this.listboxPedidos.Size = new System.Drawing.Size(571, 144);
+            this.listboxPedidos.Size = new System.Drawing.Size(639, 200);
             this.listboxPedidos.TabIndex = 11;
             // 
-            // listBox1
+            // listBoxClientes
             // 
             this.listBoxClientes.ItemHeight = 28;
-            this.listBoxClientes.Location = new System.Drawing.Point(332, 241);
-            this.listBoxClientes.Name = "listBox1";
-            this.listBoxClientes.Size = new System.Drawing.Size(571, 144);
+            this.listBoxClientes.Location = new System.Drawing.Point(441, 323);
+            this.listBoxClientes.Name = "listBoxClientes";
+            this.listBoxClientes.Size = new System.Drawing.Size(639, 200);
             this.listBoxClientes.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(942, 241);
+            this.label1.Location = new System.Drawing.Point(441, 537);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 28);
             this.label1.TabIndex = 13;
@@ -127,7 +127,7 @@ namespace Heladeria
             this.Controls.Add(this.statusStrip);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormHerramientas";

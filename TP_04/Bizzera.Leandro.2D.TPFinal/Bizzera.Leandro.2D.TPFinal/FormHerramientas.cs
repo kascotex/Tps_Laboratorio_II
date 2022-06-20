@@ -37,7 +37,7 @@ namespace Heladeria
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
             CargarListaDePedidos();
             CargarListaDeClientes();
-            label1.Text = Empresa.ClientesLocal.Count.ToString();
+            label1.Text = $"Registros que se deben respaldar: {Empresa.ClientesLocal.Count}";
         }
 
         private void CargarListaDePedidos()
