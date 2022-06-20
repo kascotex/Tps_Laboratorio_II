@@ -26,7 +26,7 @@ namespace Heladeria
         {
             Empresa.NotificadorDeGuardado += new EventoAleatorioHandler(Aleatorio);
             CargarImagenes();
-          //  Harcodear();
+            // Harcodear();
             MostrarStatusLabel();
             ctrlOpciones.CargarEventos(CtrlOpciones_Click);
             Task.Run(CargarBase);

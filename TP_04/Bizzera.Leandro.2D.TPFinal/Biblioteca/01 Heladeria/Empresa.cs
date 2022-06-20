@@ -295,7 +295,6 @@ namespace Biblioteca
         {
             CargarListaEmpleados();
             CargarListaClientes();
-            //  CargarListaClientesDesdeArchivo();//<< quitar
             CargarListaEnvases();
             CargarListaSabores();
         }
@@ -410,7 +409,7 @@ namespace Biblioteca
         public static void GuardarListaClientes()
         {
             int ultimoId = 0;
-            // List<Cliente> lista
+
             try
             {
                 conexion.Open();
@@ -441,6 +440,7 @@ namespace Biblioteca
                     else Cliente.Modificar(item);
                 }
             }
+
             clientesLocal.Clear();
         }
         private static void GuardarListaPersonas(List<Persona> lista, string tipo)

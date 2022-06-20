@@ -90,8 +90,6 @@ namespace Biblioteca
         {
             string msj = string.Empty;
 
-            // return EsPersonaValida(nombre, apellido, dni, true);
-
             if (!EsNombreValido(nombre)) msj += "El nombre es invalido. (solo letras y al menos dos carecteres)\n";
             if (!EsNombreValido(apellido)) msj += "El apellido es invalido. (solo letras y al menos dos carecteres)\n";
             if (!MfBasic.EnRango(edad, 16, 99)) msj += "La Edad es invalida. (solo numeros desde 16 a 99 años)\n";

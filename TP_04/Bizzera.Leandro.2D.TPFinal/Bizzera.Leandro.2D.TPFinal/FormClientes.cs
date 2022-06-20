@@ -245,12 +245,6 @@ namespace Heladeria
 
 
 
-        private void Form_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
-
 
     }
 }

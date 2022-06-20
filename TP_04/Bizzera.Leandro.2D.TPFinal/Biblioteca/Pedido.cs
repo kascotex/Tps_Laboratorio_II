@@ -30,7 +30,6 @@ namespace Biblioteca
         {
             this.numSocioCliente = numSocioCliente;
             this.helados = helados;
-            //  VincularPedido();
         }
 
         public Pedido(int idCliente, List<Helado> helados, DateTime fecha)
